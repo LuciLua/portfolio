@@ -21,8 +21,3 @@ function rotatorr (){
 }
 
 setInterval(rotatorr, 3000);
-
-window.addEventListener('scroll', function(){
-    const header = document.getElementById('menu')
-    header.classList.toggle("sticky", window.scrollY > 0);
-});
