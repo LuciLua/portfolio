@@ -40,7 +40,7 @@
 body{
     height: 100%;
     width: 100%;
-    background-color: #fff;
+    background-color: #DADADA;
 }
 
 .init{
@@ -220,19 +220,18 @@ body{
 }
 
 .menu ul li a:hover{
-    color: rgb(38, 38, 38);
+    color: rgb(249, 100, 7);
 }
 
 
 #home, #about, #contact{
     max-width: 100%;
     height: 600px;
-    background-color: rgb(218, 218, 218);
-    margin-bottom: 10px;
+    background-color: #DADADA;
 }
 
 #about{
-    background-color: rgb(38, 38, 38);
+    background-color: #DADADA;
 }
 
 #home, .home{
@@ -300,6 +299,7 @@ body{
     font-family: 'sk';
     font-size: 60px;
     text-align: center;
+    background-color: transparent;
 }
 
 .grid{
@@ -309,6 +309,7 @@ body{
     display: flex;
     flex-wrap: wrap;   
     justify-content: center;
+    background: transparent;
 }
 
 
@@ -373,6 +374,7 @@ button a{
     outline: none;
 }
 
+/* botões */
 
 #btn-1{
     background-color: rgb(56, 185, 255);
@@ -391,242 +393,177 @@ button a{
 
 .escrito{
     width: 100%;
-    height: 500px;
+    height: 800px;
     position: relative;
     display: flex;
     user-select: none;
 }
 
-.escrito .border{
-    z-index: 10000;
-    color: #fff;
-    font-size: 60px;
-    font-family: helvetica;
-    font-weight: 900;
-    justify-content: center;
-    background: -webkit-linear-gradient(rgb(77, 255, 0), rgb(6, 198, 228));
-    z-index: 200;
-    user-select: none;
-    align-items: center;
-    height: 100%;
-    width: 10px;
-    position: relative;
-    margin-left: auto;
-    margin-right: auto;
-}
 
-.obras{
-position: absolute;
-width: 50%;
-height: 100%;
-}
-
-.obras .itens-obras{
-    position: relative;
-    z-index: 20000;
-    color: #fff;
-    font-size: 30px;
-    font-family: helvetica;
-    font-weight: 900;
-    justify-content: center;
-    z-index: 2000;
-    user-select: none;
-    align-items: center;
-    height: 100%;
-    width: 100%;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 50px;
-}
-
-.obras .itens-obras h2{
-    color: rgba(255, 255, 255, 0.308);
-    font-size: 30px;
-    font-weight: 800;
-    letter-spacing: 6px;
-}
-
-.obras .itens-obras h4, .obras .itens-obras a{
-    font-size: 13px;
-    color: rgba(0, 0, 0, 0);
-    background-color: #b02828;
-    border-radius: 40px;
-    width: 115px;
-    text-align: center;
-    visibility: hidden;
-    color: #fff;
-}
-
-.obras .itens-obras p{
-    font-size: 20px;
-    font-family: Helvetica;
-    text-align: justify;
-    font-weight: 100;
-    color: rgba(121, 121, 121, 0.194);
-}
-
-.obras:hover  p, .obras:hover h2, .obras:hover h4, .obras:hover a{
-    color: rgb(255, 255, 255);
-    transition: 1s;
-    visibility: visible;
-}
-
-
-.left{
+/* .left{
     height: 100%;
     width: 50%;
     background-color: rgba(114, 53, 53, 0.438);  
-}
+} */
 
 
 .right{
-    background-color: rgb(0, 0, 0);
+    background-color: #DADADA;
+    box-shadow: 1px 0px 7px rgba(152, 152, 152, 0.543);
     height: 100%;
     width: 100%;
     justify-content: center;
     display: flex;
     align-items: center;
     flex-direction: column;
+    position: relative;
     
 }
 
-.left img{
+/* .left img{
     display: none;
 }
 
 .left #img-l{
     display: none;
-}
+} */
 
-#img-l{
+/* #img-l{
     max-width: 100%;
     min-width: 100%;
     height: 100%;
     object-fit: cover;
     filter: brightness(0.2);
-}
+} */
 
-.right h1 span{
+ #text span{
     display: none;
     background: -webkit-linear-gradient(rgb(255, 0, 119), rgb(64, 0, 255));
 }
 
-.right h1 span{
+ #text  span{
     position: relative;
     display: none;
 }
 
-.right #text #a1, .right #text #a2, .right #text #a3{
+ #text #a1,  #text #a2,  #text #a3{
     font-weight: 800;
     font-size: 100%;
     font-family: Inter;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text!important;
+    -webkit-text-fill-color: transparent!important;
 }
 
-.right #a1{
+ #text #a1{
     background: -webkit-linear-gradient(rgb(255, 0, 119), rgb(64, 0, 255));
-    font-size: 50%;
+
 }
-.right #a2{
+ #text #a2{
     background: -webkit-linear-gradient(rgb(0, 255, 174), rgb(0, 42, 255));
 
+
 }
-.right #a3{
+ #text #a3{
     background: -webkit-linear-gradient(rgb(255, 234, 0), rgb(255, 0, 0));
+
 }
 
 
- @media only screen and (max-width: 600px) {
-    .title{
-        top: -40px;
-    }
+.pega{
+    width: 90px;
+    height: 50px;
+    background: #d2d2d2;
+    position: absolute;
+    border-top-left-radius: 60px;
+    border-top-right-radius: 60px;
+    top: -40px;
+    box-shadow: 0 -5px 10px rgba(0, 0, 0, 0.123);
+}
+ 
 
-    #memul{
-        width: 100%;
-        justify-content: center;
-    }
+  .quad{
+      position: relative;
+      width: 100%;
+      height: 100%;
+      justify-content: center;
+      background-color: transparent;
+      align-items: center;
+      display: flex;
+      margin-bottom: 50px;
+      z-index: 100;
+      overflow: hidden
 
-    .memul ul li{
-        margin: 10px;
-        list-style: none;
-        background-color: red!important;
-        border-radius: 50px;
-        padding: 0px;
-    }
+  }
+
+ .quad-1{
+      position: relative;
+      z-index: 100;
+      width: 300px;
+      height: 430px;
+      background:#d2d2d2;
+      backdrop-filter: blur(2px);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 30px;
+      /* overflow: hidden; */
+      border-radius: 4px;
+      /* box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.304); */
+      margin-left: 5px;
+      margin-right: 5px;
+  }
+
+
+  .quad-1 .text{
+
+    position: relative;
+    transition: 2s;
+    top: 100px;
+    opacity: 0%;
+    color: rgb(97, 97, 97);
     
-    .menu ul li a{
-        font-family: Arial;
-        color: rgb(0, 0, 0);
-        text-decoration: none;
-        font-weight: 600;
-    }
+  }
+
+  .quad-1 .text p, .quad-1 .text h1{
+    z-index: 10;
+    position: relative;
+
+  }
+
+.quad-1{
+    top: 525px;
+    transition: 1s;
+    box-shadow: 0px 1px 9px rgba(0, 0, 0, 0.53);
+}
+  
+  .quad-1:hover .text, .quad-1:hover{
+    position: relative;
+    opacity: 100%;
+    top: -10px;
+}
+
+
+.quad-1:hover .text h1, .quad-1 .text h1{
+color: #1c1c1c;
+}
+
+
+
+.quad .imagem{
+    position: absolute;
+    overflow: hidden;
+    z-index: 0;
+    max-width: 100%;
+    min-width: 100%;
+    min-height: 100%;
+    filter: brightness(0.4) saturate(3) hue-rotate(17deg)contrast(0.3);
+   transition: 2s;
+    object-fit: cover;
+    top: 10px;
     
-    .memul ul li a:hover{
-        color: rgb(38, 38, 38);
-    }
+}
 
-    #memul .burg{
-        display: none;
-    }
-
-
-
-
-    .sticky{
-        display: flex;
-        flex-direction: column;
-        position: relative;
-        top: 70px!important;
-        right: 140px!important;
-
-    }
-    .sticky li{
-        margin: 5px!important;
-        position: relative;
-    }
-
-    .sticky button{
-        width: 20px;
-        height: 20px;
-        padding: 0;
-        margin: 0;
-        background-color: transparent;
-        color: rgb(169, 169, 169);
-        font-weight: 100;
-        position: relative;
-    }
-
-    .sticky {
-        
-        background-color: transparent!important;
-        text-align: center!important;
-        
-        
-    }
-
-    .sticky .burg button{
-        color: rgb(255, 255, 255)!important;
-    }
-
-    .sticky #but {
-        
-        width: 50px!important;
-        height: 50px!important;
-       background-color: #f98100db!important;
-       text-align: center!important;
-       font-size: 13px;
-    }
-
-    .sticky .burg {
-        display: flex!important;
-        background-color: transparent!important;
-    }
-
-
-    .viraisso .m{
-        display: none!important;
-    }
-
-  } 
+.quad-1:hover::after .imagem{
+    filter: blur(10px)!important;
+}
 

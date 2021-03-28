@@ -1,0 +1,90 @@
+@media only screen and (max-width: 600px) {
+    .title{
+        top: -40px;
+    }
+
+    #memul{
+        width: 100%;
+        justify-content: center;
+        backdrop-filter: none;
+    }
+
+    .memul ul li{
+        margin: 10px;
+        list-style: none;
+        background-color: red!important;
+        border-radius: 50px;
+        padding: 0px;
+    }
+    
+    .menu ul li a{
+        font-family: Arial;
+        color: rgb(0, 0, 0);
+        text-decoration: none;
+        font-weight: 600;
+    }
+    
+    .memul ul li a:hover{
+        color: rgb(38, 38, 38);
+    }
+
+    #memul .burg{
+        display: none;
+    }
+
+    .sticky{
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        top: 70px!important;
+        right: 140px!important;
+
+    }
+    .sticky li{
+        margin: 5px!important;
+        position: relative;
+    }
+
+    .sticky button{
+        width: 20px;
+        height: 20px;
+        padding: 0;
+        margin: 0;
+        background-color: transparent;
+        color: rgb(169, 169, 169);
+        font-weight: 100;
+        position: relative;
+    }
+
+    .sticky {
+        
+        background-color: transparent!important;
+        text-align: center!important;
+        
+        
+    }
+
+    .sticky .burg button{
+        color: rgb(255, 255, 255)!important;
+    }
+
+    .sticky #but {
+        
+        width: 50px!important;
+        height: 50px!important;
+       background-color: #f98100db!important;
+       text-align: center!important;
+       font-size: 13px;
+    }
+
+    .sticky .burg {
+        display: flex!important;
+        background-color: transparent!important;
+    }
+
+
+    .viraisso .m{
+        display: none!important;
+    }
+
+  }
