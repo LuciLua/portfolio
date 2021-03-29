@@ -15,6 +15,7 @@
     <meta name="author" content="Luci Lua">
     <meta name="robots" content="index, follow">
     <meta name="reply-to" content="luci.lua81@gmail.com">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 </head>
 <body>
         <div class="menu" id="menu">
@@ -35,7 +36,7 @@
             <div class="title">
                 <h1><span>Portfólio</span>.Art</h1>
                 <h3>I'm developer. I'm Designer</h3>
-                <button id="start"><a href="#grid">Iniciar</a></button>
+                <button id="start"><a href="#baixe">Iniciar</a></button>
             </div>
         
         </div>
@@ -50,28 +51,51 @@
                 </div>  -->
 
 
-                <div class="right">
+                <div class="right" >
                     <h1><span id="baixe">Audiovisual</span></h1>
                     <div class="quad">
-                        <img src="/img/dialogo.png" class="imagem" alt="">
+                        <div class="imagem" id="imagem" alt=""></div>
+                        <p id="p-i">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam nulla vel maiores suscipit minima esse ea fugit rerum inventore, nobis voluptatum. Laborum corrupti, aperiam nostrum ipsa non hic modi molestias!</p>
+                        <div></div>
                         <div class="quad-1" id="quad-1">
-                            <div class="pega"></div>
+                            <div class="pega" id="pega" onclick="toggleMenuA()"></div>
                             <div class="text">
-                                <h1>Lorem Ipsum</h1>
+                                <h1>Neutrum</h1>
                                 <br>
-                                 <p>Lorem ipsum, dolor sit amet consectetur 
-                                    adipisicing elit. Eos voluptate temporibus
-                                    necessitatibus consequatur molestiae.
-                                    Quisquam, dolore laudantium magnam quo,
-                                    ipsum ratione repellendus nulla minima
-                                    facilis porro, optio aspernatur corporis
-                                     numquam!</p>
+                                 <p>Contemplado pelo premio Janelas Abertas, Neutrum é um curta de animação 
+                                     desenvolvido por mim e mais 2 pessoas. Pude estar estar criando
+                                     tanto os cenários em 3D como também o planejamento geral.
+                                     Além disso, trabalhei com diversas técncias cinematográficas e de edição,
+                                     já que fui a responsável por isso.
+                                 </p>
+                                     <div class="lista-audiovi">
+                                        <ul>
+                                            <li>
+                                                <a href="#">
+                                                    <span class="icon"><i class="fa fa-play" aria-hidden="true"></i></span>
+                                                    <span class="titulo">Assistir</span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <span class="icon"><i class="fa fa-info" aria-hidden="true"></i></span>
+                                                    <span class="titulo">Descrição</span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <span class="icon"><i class="fa fa-heart" aria-hidden="true"></i></span>
+                                                    <span class="titulo">Curtir</span>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
                             </div>
                         </div>
                         <div class="quad-1"id="quad-2">
-                            <div class="pega"></div>
+                            <div class="pega" id="pega2" onclick="toggleMenuB()"></div>
                             <div class="text">
-                                <h1>Lorem Ipsum</h1>
+                                <h1>Moda e futurismo</h1>
                                 <br>
                                  <p>Lorem ipsum, dolor sit amet consectetur 
                                     adipisicing elit. Eos voluptate temporibus
@@ -80,13 +104,35 @@
                                     ipsum ratione repellendus nulla minima
                                     facilis porro, optio aspernatur corporis
                                      numquam!</p>
+                                     <div class="lista-audiovi">
+                                        <ul>
+                                            <li>
+                                                <a href="#">
+                                                    <span class="icon"><i class="fa fa-play" aria-hidden="true"></i></span>
+                                                    <span class="titulo">Assistir</span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <span class="icon"><i class="fa fa-info" aria-hidden="true"></i></span>
+                                                    <span class="titulo">Descrição</span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <span class="icon"><i class="fa fa-heart" aria-hidden="true"></i></span>
+                                                    <span class="titulo">Curtir</span>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
                             </div>
                         </div>
 
                         <div class="quad-1"id="quad-3"> 
-                            <div class="pega"></div>                               
+                            <div class="pega" id="pega3" onclick="toggleMenuC()"></div>                               
                             <div class="text">
-                                <h1>Lorem Ipsum</h1>
+                                <h1>A vingança da Pomba</h1>
                                 <br>
                                  <p>Lorem ipsum, dolor sit amet consectetur 
                                     adipisicing elit. Eos voluptate temporibus
@@ -95,6 +141,28 @@
                                     ipsum ratione repellendus nulla minima
                                     facilis porro, optio aspernatur corporis
                                      numquam!</p>
+                                     <div class="lista-audiovi">
+                                        <ul>
+                                            <li>
+                                                <a href="#">
+                                                    <span class="icon"><i class="fa fa-play" aria-hidden="true"></i></span>
+                                                    <span class="titulo">Assistir</span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <span class="icon"><i class="fa fa-info" aria-hidden="true"></i></span>
+                                                    <span class="titulo">Descrição</span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <span class="icon"><i class="fa fa-heart" aria-hidden="true"></i></span>
+                                                    <span class="titulo">Curtir</span>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
                             </div>
                         </div>
                         <img src="" class="imagem">

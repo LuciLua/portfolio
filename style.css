@@ -29,12 +29,26 @@
     src: url(/fonts/Antapani-ExtraBold.otf);
 }
 
+*::-webkit-scrollbar { 
+    width: 6px;
+    background-color: #DADADA;
+}
+
+::-webkit-scrollbar-thumb {
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    background: rgba(0, 0, 0, 0.756); 
+    -webkit-box-shadow: inset 0 0 1px rgba(0,0,0,0.5); 
+}
+
+
 *{
     box-sizing:border-box;
     margin: 0;
     padding:0;
     scroll-behavior:smooth;
     font-family: Arial;
+    }
 }
 
 body{
@@ -44,7 +58,7 @@ body{
 }
 
 .init{
-    height: 600px;
+    height: 900px;
     width: 100%;
     background: linear-gradient(rgb(218, 218, 218),rgb(218, 218, 218));
 }
@@ -66,7 +80,6 @@ body{
     flex-wrap: wrap;
     justify-content: center;
     position: relative;
-    top: -200px;
     align-items: center;
     width: 100%;
     height: 100%;
@@ -75,6 +88,7 @@ body{
     position: absolute;
     -webkit-font-smoothing: antialiased;
     pointer-events: none;
+    top:  0px;
 }
 
 .title h1{
@@ -471,13 +485,15 @@ button a{
 
 .pega{
     width: 90px;
-    height: 50px;
-    background: #d2d2d2;
+    height: 45px;
+    background: #d2d2d23a;
     position: absolute;
     border-top-left-radius: 60px;
     border-top-right-radius: 60px;
-    top: -40px;
-    box-shadow: 0 -5px 10px rgba(0, 0, 0, 0.123);
+    top: -45px;
+    box-shadow: 0 -10px 10px rgba(0, 0, 0, 0.123);
+    z-index: 1000;
+    cursor: pointer;
 }
  
 
@@ -490,17 +506,17 @@ button a{
       align-items: center;
       display: flex;
       margin-bottom: 50px;
-      z-index: 100;
+      z-index: 1000;
       overflow: hidden
 
   }
 
  .quad-1{
       position: relative;
-      z-index: 100;
+      z-index:100;
       width: 300px;
       height: 430px;
-      background:#d2d2d2;
+      background: #d2d2d23a;
       backdrop-filter: blur(2px);
       display: flex;
       justify-content: center;
@@ -517,53 +533,141 @@ button a{
   .quad-1 .text{
 
     position: relative;
-    transition: 2s;
+    transition: 1s;
     top: 100px;
     opacity: 0%;
-    color: rgb(97, 97, 97);
+    color: rgb(234, 234, 234);
     
   }
 
-  .quad-1 .text p, .quad-1 .text h1{
-    z-index: 10;
-    position: relative;
+.quad-1 .text p, .quad-1 .text h1{
+  z-index: 10;
+  position: relative;
+}
 
-  }
 
 .quad-1{
-    top: 525px;
-    transition: 1s;
-    box-shadow: 0px 1px 9px rgba(0, 0, 0, 0.53);
+    top: 520px;
+    transition:0.6s;
+    box-shadow: 0px 10px 13px rgba(0, 0, 0, 0.53);
+    backdrop-filter: blur(10px);
 }
   
-  .quad-1:hover .text, .quad-1:hover{
-    position: relative;
-    opacity: 100%;
-    top: -10px;
+.pega:hover .quad-1{
+    top: -380px;
+    transition: 2s;
+}
+
+
+.quad-1.active{
+    top: 0px;
+}
+
+.quad-1.active .text{
+    opacity: 1005;
+    top: 10px;
+}
+
+
+.pega::before{
+    content: '\f062';
+    font-family: fontAwesome;
+    color: rgba(255, 255, 255, 0.571);
+    position: absolute;
+    left: 39px;
+    top: 19px;
+    font-size: 14px;
+}
+
+.pega.active:before{
+    content: '\f063';
 }
 
 
 .quad-1:hover .text h1, .quad-1 .text h1{
-color: #1c1c1c;
+color: #ffffff;
 }
-
 
 
 .quad .imagem{
     position: absolute;
     overflow: hidden;
-    z-index: 0;
+    z-index: -100;
     max-width: 100%;
     min-width: 100%;
     min-height: 100%;
-    filter: brightness(0.4) saturate(3) hue-rotate(17deg)contrast(0.3);
-   transition: 2s;
+   transition: 0.3s;
     object-fit: cover;
     top: 10px;
-    
 }
 
-.quad-1:hover::after .imagem{
-    filter: blur(10px)!important;
+#imagem{
+    background-color: #fa7602;
 }
+
+.neutrum{
+    background-image: url(/img/neutrum.png);
+    background-repeat: no-repeat;
+    object-fit: cover;
+    background-size: 100%;
+}
+
+.dialogos{
+    background-image: url(/img/dialogo.png);
+    background-repeat: no-repeat;
+    object-fit: cover;
+    background-size: 100%;
+}
+
+.pomba{
+    background-image: url(/img/pomba.png);
+    background-repeat: no-repeat;
+    object-fit: cover;
+    background-size: 100%;
+    background-position: left;
+}
+
+.p-i-none{
+    display: none;
+}
+
+
+#p-i{
+    font-family: poppins;
+    position: absolute;
+    margin-left: 5%;
+    margin-right: 5%;
+    font-size: 100%;
+    text-align: center;
+    color: #fff;
+}
+
+.lista-audiovi ul{
+    list-style: none;
+    position: relative;
+    margin-top: 30px;
+}
+
+.lista-audiovi ul li{
+    margin-top: 9px;
+}
+
+.lista-audiovi ul li a{
+    color: #fff;
+    text-decoration: none;
+    line-height: 20px;
+    display: flex;
+}
+
+.lista-audiovi ul li a .icon .fa{
+    position: relative;
+    width: 20px;
+    height: 20px;
+    justify-content: center;
+    display: flex;
+}
+
+
+
+
 
