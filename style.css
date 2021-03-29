@@ -598,33 +598,35 @@ color: #ffffff;
     min-height: 100%;
    transition: 0.3s;
     object-fit: cover;
-    top: 10px;
 }
 
 #imagem{
     background-color: #fa7602;
+    min-height: 100%;
+    max-width: 100%;
+    background-position: top;
 }
+
+.dialogos{
+    background-image: url(/img/dialogo.jpg);
+    background-repeat: no-repeat;
+    object-fit: cover;
+
+}
+
 
 .neutrum{
     background-image: url(/img/neutrum.png);
     background-repeat: no-repeat;
     object-fit: cover;
-    background-size: 100%;
+
 }
 
-.dialogos{
-    background-image: url(/img/dialogo.png);
-    background-repeat: no-repeat;
-    object-fit: cover;
-    background-size: 100%;
-}
 
 .pomba{
     background-image: url(/img/pomba.png);
     background-repeat: no-repeat;
     object-fit: cover;
-    background-size: 100%;
-    background-position: left;
 }
 
 .p-i-none{

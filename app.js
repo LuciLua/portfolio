@@ -37,7 +37,7 @@ function toggleMenuA(){
     menu.classList.toggle('active');
     toggle.classList.toggle('active');
     // fundoPerso.style.backgroundImage="img/snake.png"
-    fundoPerso.classList.toggle('neutrum')
+    fundoPerso.classList.toggle('dialogos')
     te.classList.toggle('p-i-none')
 
 }
@@ -47,7 +47,7 @@ function toggleMenuB(){
     let toggle2 = document.querySelector('#pega2');
     menu2.classList.toggle('active');
     toggle2.classList.toggle('active');
-    fundoPerso.classList.toggle('dialogos')
+    fundoPerso.classList.toggle('neutrum')
     te.classList.toggle('p-i-none')
 }
 
