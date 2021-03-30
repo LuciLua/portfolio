@@ -46,5 +46,3 @@ function toggleMenuC(){
     fundoPerso.classList.toggle('pomba')
     te.classList.toggle('p-i-none')
 }
-
-
