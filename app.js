@@ -10,19 +10,6 @@ function rotator (){
 
 setInterval(rotator, 1500);
 
-// var img = document.getElementById('left')
-// var im = img.getElementsByTagName('img')
-// var o = 0;
-
-// function rotatorr (){
-//     im[o].style.display = 'none';
-//     o = (o + 1) % im.length;
-//     im[o].style.display = 'initial';
-// }
-
-// setInterval(rotatorr, 3000);
-
-
 function abreMenu(){
     var menuA = document.getElementById('memul')
     menuA.classList.toggle("viraisso")
@@ -36,7 +23,6 @@ function toggleMenuA(){
     let toggle = document.querySelector('#pega');
     menu.classList.toggle('active');
     toggle.classList.toggle('active');
-    // fundoPerso.style.backgroundImage="img/snake.png"
     fundoPerso.classList.toggle('dialogos')
     te.classList.toggle('p-i-none')
 

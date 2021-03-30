@@ -29,6 +29,11 @@
     src: url(/fonts/Antapani-ExtraBold.otf);
 }
 
+@font-face{
+    font-family: 'font1';
+    src: url(/fonts/font.woff2);
+}
+
 *::-webkit-scrollbar { 
     width: 6px;
     background-color: #DADADA;
@@ -58,9 +63,10 @@ body{
 }
 
 .init{
-    height: 900px;
+    height: 950px;
     width: 100%;
     background: linear-gradient(rgb(218, 218, 218),rgb(218, 218, 218));
+    margin-bottom: 9px;
 }
 
 .som{
@@ -237,15 +243,20 @@ body{
     color: rgb(249, 100, 7);
 }
 
-
-#home, #about, #contact{
-    max-width: 100%;
-    height: 600px;
+#home{
     background-color: #DADADA;
+    max-width: 100%;
+}
+
+#contact{
+    background-color: #DADADA;
+    max-width: 100%;
 }
 
 #about{
     background-color: #DADADA;
+    max-width: 100%;
+    height: 100px;
 }
 
 #home, .home{
@@ -299,9 +310,8 @@ body{
 
 /* fim do inicio */
 
-#baixe{
-    margin-top: 0px;
-    margin-bottom: 35px;
+.til{
+    background-color: transparent;
     color: rgb(0, 0, 0);
     font-weight: 100;
     justify-content: center;
@@ -313,7 +323,6 @@ body{
     font-family: 'sk';
     font-size: 60px;
     text-align: center;
-    background-color: transparent;
 }
 
 .grid{
@@ -323,14 +332,11 @@ body{
     display: flex;
     flex-wrap: wrap;   
     justify-content: center;
-    background: transparent;
 }
 
 
 #grid{
     background-color: transparent;
-    justify-content: center;
-    align-items: center;
     position: relative;
     margin: 5px;
 
@@ -340,7 +346,7 @@ body{
    #grid-1, #grid-2, #grid-3, #grid-4{
     align-items: center; 
     position: relative;
-    margin: 5px;
+    margin: 10px;
     border: 0px solid transparent;
     width: 200px;
     height: 200px;
@@ -366,6 +372,8 @@ body{
     filter: hue-rotate(0deg)contrast(1);
 }
 
+/* botões */
+
 button{
     width: 160px;
     height: 40px;
@@ -378,6 +386,7 @@ button{
     font-weight: 600;
     font-size: 16px;
     outline: none;
+    cursor: pointer;
 
 }
 
@@ -388,7 +397,7 @@ button a{
     outline: none;
 }
 
-/* botões */
+
 
 #btn-1{
     background-color: rgb(56, 185, 255);
@@ -413,16 +422,8 @@ button a{
     user-select: none;
 }
 
-
-/* .left{
-    height: 100%;
-    width: 50%;
-    background-color: rgba(114, 53, 53, 0.438);  
-} */
-
-
 .right{
-    background-color: #DADADA;
+    background-color: transparent;
     box-shadow: 1px 0px 7px rgba(152, 152, 152, 0.543);
     height: 100%;
     width: 100%;
@@ -430,27 +431,10 @@ button a{
     display: flex;
     align-items: center;
     flex-direction: column;
-    position: relative;
-    
+    position: relative;  
 }
 
-/* .left img{
-    display: none;
-}
-
-.left #img-l{
-    display: none;
-} */
-
-/* #img-l{
-    max-width: 100%;
-    min-width: 100%;
-    height: 100%;
-    object-fit: cover;
-    filter: brightness(0.2);
-} */
-
- #text span{
+#text span{
     display: none;
     background: -webkit-linear-gradient(rgb(255, 0, 119), rgb(64, 0, 255));
 }
@@ -505,9 +489,9 @@ button a{
       background-color: transparent;
       align-items: center;
       display: flex;
-      margin-bottom: 50px;
       z-index: 1000;
-      overflow: hidden
+      overflow: hidden;
+      
 
   }
 
@@ -522,22 +506,18 @@ button a{
       justify-content: center;
       align-items: center;
       padding: 30px;
-      /* overflow: hidden; */
       border-radius: 4px;
-      /* box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.304); */
       margin-left: 5px;
       margin-right: 5px;
   }
 
 
-  .quad-1 .text{
-
+.quad-1 .text{
     position: relative;
     transition: 1s;
-    top: 100px;
+    top: 70px;
     opacity: 0%;
     color: rgb(234, 234, 234);
-    
   }
 
 .quad-1 .text p, .quad-1 .text h1{
@@ -547,15 +527,15 @@ button a{
 
 
 .quad-1{
-    top: 520px;
+    top: 565px;
     transition:0.6s;
     box-shadow: 0px 10px 13px rgba(0, 0, 0, 0.53);
-    backdrop-filter: blur(10px);
+    backdrop-filter: blur(5px);
 }
-  
-.pega:hover .quad-1{
-    top: -380px;
-    transition: 2s;
+
+.quad-1:hover{
+    top: 550px;
+    transition: 0.s;
 }
 
 
@@ -565,7 +545,8 @@ button a{
 
 .quad-1.active .text{
     opacity: 1005;
-    top: 10px;
+    top: 5px;
+
 }
 
 
@@ -577,15 +558,16 @@ button a{
     left: 39px;
     top: 19px;
     font-size: 14px;
+    
 }
 
 .pega.active:before{
     content: '\f063';
 }
 
-
 .quad-1:hover .text h1, .quad-1 .text h1{
 color: #ffffff;
+font-family: font1;
 }
 
 
@@ -601,22 +583,21 @@ color: #ffffff;
 }
 
 #imagem{
-    background-color: #fa7602;
+    background:linear-gradient(rgb(0, 0, 0), rgb(28, 28, 28));
     min-height: 100%;
     max-width: 100%;
     background-position: top;
 }
 
 .dialogos{
-    background-image: url(/img/dialogo.jpg);
+    background-image: url(/img/dialogo.jpg)!important;
     background-repeat: no-repeat;
     object-fit: cover;
-
 }
 
 
 .neutrum{
-    background-image: url(/img/neutrum.png);
+    background-image: url(/img/neutrum.png)!important;
     background-repeat: no-repeat;
     object-fit: cover;
 
@@ -624,7 +605,7 @@ color: #ffffff;
 
 
 .pomba{
-    background-image: url(/img/pomba.png);
+    background-image: url(/img/pomba.png)!important;
     background-repeat: no-repeat;
     object-fit: cover;
 }
@@ -635,13 +616,26 @@ color: #ffffff;
 
 
 #p-i{
-    font-family: poppins;
     position: absolute;
     margin-left: 5%;
     margin-right: 5%;
-    font-size: 100%;
+    font-size: 40px;
     text-align: center;
     color: #fff;
+    font-family: font1;
+    font-weight: 800;
+    color: #fff;
+    animation: bloom 2s ease infinite;
+}
+
+@keyframes bloom{
+    0%, 100%{
+    text-shadow: rgba(255, 255, 255, 0.372) 0 0 20px;
+    }
+    50%{
+    text-shadow: rgba(255, 255, 255, 0.372) 0 0 15px;
+
+    }
 }
 
 .lista-audiovi ul{
