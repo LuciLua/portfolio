@@ -1,14 +1,14 @@
-var text = document.getElementById('text');
-var word = text.getElementsByTagName('span');
-var i = 0;
+// var text = document.getElementById('text');
+// var word = text.getElementsByTagName('span');
+// var i = 0;
 
-function rotator (){
-    word[i].style.display = 'none';
-    i = (i + 1) % word.length;
-    word[i].style.display = 'initial';
-}
+// function rotator (){
+//     word[i].style.display = 'none';
+//     i = (i + 1) % word.length;
+//     word[i].style.display = 'initial';
+// }
 
-setInterval(rotator, 1500);
+// setInterval(rotator, 1500);
 
 function abreMenu(){
     var menuA = document.getElementById('memul')
@@ -25,6 +25,7 @@ function toggleMenuA(){
     toggle.classList.toggle('active');
     fundoPerso.classList.toggle('dialogos')
     te.classList.toggle('p-i-none')
+    document.getElementById('svgA'.destroy)
 
 }
 
