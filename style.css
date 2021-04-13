@@ -59,25 +59,13 @@
 body{
     height: 100%;
     width: 100%;
-    background-color: #DADADA;
 }
 
 .init{
-    height: 950px;
+    height: 100vh;
     width: 100%;
-    background: linear-gradient(rgb(218, 218, 218),rgb(218, 218, 218));
+    background: linear-gradient(rgb(5, 19, 30),rgb(0, 42, 132));
     margin-bottom: 9px;
-}
-
-.som{
-    width: 100%;
-    overflow: hidden;
-    height: 60px;
-    background: rgb(218, 218, 218);
-    box-shadow: 0px -20px 15px rgb(218, 218, 218);
-    top: -55px;
-    position: relative;
-    z-index: 1;
 }
 
 .title{
@@ -100,8 +88,8 @@ body{
 .title h1{
     font-weight: 800;
     font-size: 30px;
-    font-family: 'basie';
-    color: rgb(255, 135, 6);
+    font-family: Helvetica;
+    color: rgb(255, 255, 255);
     user-select: none;
 }
 
@@ -110,19 +98,18 @@ body{
     font-weight: 100;
     font-size: 13px;
     font-family: Helvetica;
-    color: rgb(128, 128, 128);
+    color: rgb(242, 242, 242);
     user-select: none;
 }
 
 .title h1 span{
-    color: #232323;
+    color: #ffffff;
     font-weight: 800;
 }
 
 .title #start{
-    background-color: #ffffff0f;
-    border: 1px solid #fa7602;
-    color: #fa7602fe;
+    background-color: #404151;
+    border: none;
     backdrop-filter: blur(2px) saturate(0.4);
     font-size: 22px;
     font-family: 'ww';
@@ -130,8 +117,7 @@ body{
 }
 
 .title #start:hover{
-    background-color: #ffffff5e;
-    border: 1px solid #fa7602;
+    background-color: #e3004f;
     backdrop-filter: blur(2px) saturate(1);
     pointer-events: all!important;
     user-select: all!important;
@@ -139,17 +125,17 @@ body{
 }
 
 .title #start a{
-    color: #fa7602;
+    color: #ffffff;
     pointer-events: all!important;
     user-select: none!important;
     z-index: 1000;
     text-decoration: none;
+    width: 100%;
+    height: 100%;
+    padding: 12px 39px;
+    border-radius: 60px;
 }
 
-.title #start a:hover{
-    color: #ff6200ee;
-
-}
 
 .init iframe{
     position: relative;
@@ -234,13 +220,13 @@ body{
 
 .menu ul li a{
     font-family: Arial;
-    color: rgb(12, 12, 12);
+    color: rgb(255, 255, 255);
     text-decoration: none;
     font-weight: 600;
 }
 
 .menu ul li a:hover{
-    color: rgb(249, 100, 7);
+    color: rgb(203, 203, 203);
 }
 
 #home{
