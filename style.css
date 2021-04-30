@@ -361,9 +361,9 @@ button a{
     z-index: 1;
     background-color: var(--green-1);
     color: var(--write);
-    width: 95px;
+    width: fit-content;
     height: fit-content;
-    padding: 1px 20px;
+    padding: 5px 20px;
 }
 
  .experience{
@@ -398,5 +398,87 @@ button a{
     z-index: 2;
     text-align: center;
     color: #8e8e8e;
+
+}
+
+.line{
+    height: 1px;
+    width: 80%;
+    border-bottom:  1px solid #909194;
+    z-index: 10;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+#contact{
+    position: relative;
+
+}
+
+.contact-align{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 90vh;
+    padding: 20px;
+
+}
+
+.contact-align h1{
+    font-family: Lexend;
+    font-family: 500;
+    font-size: 30px;
+    color: #fff;
+    margin-bottom: 50px;
+}
+.contact-align h1::first-letter{
+    font-family: Lexend;
+    font-family: 500;
+    color: var(--green-1)
+}
+
+.contact-align p{
+    font-family: Lexend;
+    font-size: 1.5vh;
+    font-weight: 300;
+    width: 100%;
+    color: #ffffff;
+    width: 95%;
+    line-height: 1.9;
+    text-align: justify;
+    padding: 20px;
+
+
+    min-width: 300px;
+    display: flex;
+    align-items: center;    
+
+}
+
+
+.left{
+    flex-direction: column;
+    display: flex;
+    width: 100%;
+    height: fit-content;
+}
+
+.left h1, .left p{
+    position: relative;
+ 
+}
+
+.right{
+    flex-direction: column;
+    display: flex;
+    width: 100%;
+    height: fit-content;
+}
+
+.right h1, .right p{
+    position: relative;
+    float: right;
 
 }
