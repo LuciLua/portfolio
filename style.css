@@ -67,13 +67,17 @@ body{
 
 /* botao init */
 
-button{
+.title button{
     width: 160px;
     height: 40px;
     margin: 30px;
+
+    padding: 0px 85px 0px 0px;
+
     justify-content: center;
-    display: inline;
+    display: flex;
     align-items: center;
+
     border-radius: 60px;
     border: none;
     font-weight: 600;
@@ -126,7 +130,7 @@ button a{
 }
 
 .title h1 span{
-    color: #ff0044;
+    color: rgb(0, 255, 102);
     font-weight: 800;
 }
 
@@ -140,8 +144,7 @@ button a{
 }
 
 .title #start:hover{
-    background-color: #e3004f;
-    backdrop-filter: blur(2px) saturate(1);
+    background-color: rgb(0, 255, 102);
     pointer-events: all!important;
     user-select: all!important;
     z-index: 1000;
@@ -158,6 +161,11 @@ button a{
     padding: 12px 39px;
     border-radius: 60px;
 }
+
+.title #start:hover a{
+    color: #000000;
+}
+
 
 /* menu */
 
@@ -198,7 +206,7 @@ button a{
 }
 
 .sticky li a:hover{
-    color: rgb(255, 0, 43)!important;
+    color: rgb(0, 255, 102)!important;
 }
 
 .sticky li {
@@ -227,28 +235,31 @@ button a{
 }
 
 .menu ul li a:hover{
-    color: rgb(255, 0, 43);
+    color: rgb(0, 255, 102);
 }
 
 /* paginas */
 
-.pages{
+#init{
     height: 100vh;
+}
+
+.pages{
     width: 100%;
     max-width: 100%;
 }
 
-#audiovisual, #contact, #code{
+#cardme, #paragraph, #code{
     background: var(--background);
     position: relative;
 }
 
-#audiovisual{
+#cardme{
     /* border: 1px solid rgb(255, 0, 0); */
     z-index: 2;
 }
 
-#contact{
+#paragraph{
     /* border: 1px solid blue; */
 }
 
@@ -262,7 +273,7 @@ button a{
 /* geral para todas as paginas */
 
 
-#audiovisual{
+#cardme{
     height: fit-content;
 }
 
@@ -296,7 +307,7 @@ button a{
     max-height: 40vh; */
     min-height: fit-content;
 
-    background-color: #111115f3;
+    background-color: #111115fc;
     box-shadow: black 0 0 13px;
     border-radius: 10px;
 
@@ -327,6 +338,8 @@ button a{
 
     border-radius: 60%;
     overflow: hidden;
+
+    box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.568);
 }
 
 .cards .img img{
@@ -336,13 +349,13 @@ button a{
     object-fit: cover;
 }
 
-.cards h2{
+/* .cards h2{
     color: rgb(255, 255, 255);
     font-size: 25px;
     font-family: 'Lexend';
     font-weight: 800;
     z-index: 1;
-}
+} */
 
 .cards p{
     color: rgb(137, 137, 137);
@@ -360,14 +373,29 @@ button a{
 .cards button{
     position: relative;
     z-index: 1;
-    background-color: #30a05d;
-    color: var(--write);
+    background-color: rgb(0, 255, 102);
+    color: black;
     width: fit-content;
     height: fit-content;
     padding: 5px 20px;
     font-family: Lexend;
     font-weight: 500;
     font-size: 15px;
+    border: #00ff6600 1px solid;
+    transition: 0.1s;
+    border-radius: 60px;
+    outline: none;
+    cursor: pointer;
+    margin-bottom: 25px;
+}
+
+.cards button:hover{
+    background-color: rgba(0, 255, 102, 0.098);
+    color: rgb(255, 255, 255);
+    border: #00ff66 1px solid;
+
+    transform: scale(1.06);
+    transition: 0.1s;
 }
 
 .line{
@@ -378,21 +406,26 @@ button a{
     position: relative;
     margin-left: auto;
     margin-right: auto;
+    margin-top: 90px;
+    margin-bottom: 90px;
 }
 
 
 
-#contact{
+#paragraph{
     position: relative;
-
+    padding: 20px;
 }
 
 .contact-align{
     display: flex;
     flex-wrap: wrap;
+
     width: 100%;
     height: fit-content;
     padding: 20px;
+
+    margin-top: 60px;
 
 
 }
@@ -452,3 +485,94 @@ button a{
     position: relative;
 }
 
+
+.quad{
+    width: 100%;
+    max-width: 100%;
+    position: relative;
+
+    padding: 40px;
+
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.quad .q-a{
+    width: 250px;
+    max-width: 250px;
+    min-width: 250px;
+
+    min-height: 250px;
+    max-height: 250px;
+    height: 250px;
+
+    margin: 20px;
+    box-shadow: 0 0 13px black;
+
+    position: relative;
+
+    border-radius: 3px;
+
+    overflow: hidden;
+
+    z-index: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: left;
+}
+
+.quad .q-a:hover{
+    background-color: #00ff66;
+    width: 100%;
+    height: 100%;
+    z-index: 100;
+}
+
+.quad .q-a:hover .content, .quad .q-a:hover img{
+    display: none;
+}
+
+.quad .q-a .content{
+    position: absolute;
+    font-size: 20px;
+    z-index: 10;
+    font-family: Lexend;
+
+    margin-left: 20px;
+    top: 140px;
+}
+
+.quad .q-a h2{
+    color: rgb(255, 255, 255);
+    font-family: Lexend;
+    font-weight: 300;
+    background-color: #00ff6600;
+    border-bottom: 1px solid #00ff66;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+}
+
+.quad .q-a p{
+    position: relative;
+    width: 180px;
+    color: rgb(120, 120, 120);
+    font-size: 13px;
+    z-index: 10;
+    font-family: Arial;
+
+    line-height: 1.5;
+}
+
+.quad .q-a img{
+    max-width: 100%;
+    width: 100%;
+    height: 100%;
+
+    filter: brightness(0.3);
+
+    position: relative;
+    object-fit: cover;
+}
