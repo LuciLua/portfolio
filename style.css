@@ -2,10 +2,9 @@
 
     --write: #fff;
 
-    --green-1: rgb(0, 255, 136);
+    --green-1: #1ED567;
 
     --pink-0: #1a1821;
-    --pink-1: rgb(30, 213, 103);
 }
 
 
@@ -257,6 +256,12 @@ button a{
 /* fim do inicio */
 
 /* geral para todas as paginas */
+
+
+#audiovisual{
+    height: fit-content;
+}
+
 .titulo-page{
     background-color: transparent;
     color: rgb(255, 255, 255);
@@ -280,11 +285,10 @@ button a{
 
     display: flex;
     flex-wrap: wrap;
-    padding-top: 20px;
     padding-bottom: 20px;
     justify-content: center;
     align-items: center;
-    background-color: var(--pink-1);
+    background-color: var(--green-1);
 
     z-index: 3;
 
@@ -293,7 +297,8 @@ button a{
 
 .cards{
     width: 45%;
-    min-width: 400px;
+    min-width: 250px;
+    max-width: 500px;
 
     height: 40vh;
     background-color: var(--pink-0);
@@ -308,6 +313,8 @@ button a{
     align-items: center;
     justify-content: center;
 
+    top: 0;
+
     padding: 30px;
 
     z-index: 5;
@@ -317,8 +324,9 @@ button a{
 .svg-curve{
     transform: rotateX(180deg);
     position: relative;
-    top: -190px;
+    top: -10px;
     z-index: 3;
+    /* filter: hue-rotate(20deg) saturate(2); */
 }
 
 .svg-curve-2{
@@ -353,6 +361,9 @@ button a{
     z-index: 1;
     background-color: var(--green-1);
     color: var(--write);
+    width: 95px;
+    height: fit-content;
+    padding: 1px 20px;
 }
 
  .experience{
