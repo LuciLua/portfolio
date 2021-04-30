@@ -1,6 +1,8 @@
-@font-face{
-    font-family: 'potra';
-    src: url(/fonts/Potra.ttf);
+:root{
+    --green-1: rgb(0, 255, 136);
+
+    --pink-0: #1a1821;
+    --pink-1: rgb(70, 26, 114);
 }
 
 
@@ -237,7 +239,7 @@ button a{
 }
 
 #audiovisual{
-    border: 1px solid rgb(255, 0, 0);
+    /* border: 1px solid rgb(255, 0, 0); */
 }
 
 #contact{
@@ -269,72 +271,80 @@ button a{
 
 
 .galery{
-    border: 1px solid black;
-    width: 90%;
+    width: 100%;
     margin-top: 20px;
     margin-bottom: 20px;
     height: fit-content;
-    overflow-y: hidden;
-    margin-left: auto;
-    margin-right: auto;
-    overflow-x: scroll;
+    max-height: 100%;
+
     display: flex;
+    flex-wrap: wrap;
     padding-top: 20px;
     padding-bottom: 20px;
-}
+    justify-content: center;
+    align-items: center;
+    background-color: var(--pink-1);
 
-.galery::-webkit-scrollbar{
-    height: 10px;
 }
 
 .cards{
-    width: 400px;
-    height: 600px;
-    min-width: 400px;
-    min-height: 600px;
-    margin-left: 10px;
-    margin-right: 10px;
-    background-color: #131315;
-    text-align: center;
+    width: 45%;
+    min-width: 600px;
+    max-width: 500px;
+
+    height: 50vh;
+    background-color: var(--pink-0);
+    box-shadow: black 0 0 13px;
+    border-radius: 10px;
+
+    position: relative;
+    margin: 20px;
+
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
-    flex-direction: column;
-    position: relative;
+
+    padding: 30px;
 }
 
+
 .cards h2{
-    color: rgb(205, 205, 205);
+    color: rgb(255, 255, 255);
     font-size: 45px;
     font-family: 'Lexend';
     font-weight: 800;
     z-index: 1;
-    position: absolute;
-    top: 30%;
 }
 
 .cards p{
-    color: rgb(205, 205, 205);
+    color: var(--green-1);
     font-size: 25px;
     font-family: 'Lexend';
-    font-weight: 300;
+    font-weight: 500;
     z-index: 1;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+
 }
 
+
 .cards button{
-    position: absolute;
-    bottom: 20%;
     z-index: 1;
+    background-color: var(--green-1);
+    color: #fff;
 }
 
  .experience{
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-direction: column;
     width: 100%;
     height: 100%;
     position: relative;
+    padding: 0;
+    margin: 0;
 
 
 }
@@ -343,24 +353,20 @@ button a{
     font-size: 2rem;
     z-index: 2;
     position: absolute;
-    top: 5%;
+    top:9%;
+    color: #fff;
 }
 
 .experience p{
     font-family: 'Lexend', sans-serif;
     font-weight: 300;
+    align-self: center;
+    width: 50%;
+    top: 18%;
+    position: absolute;
     font-size: 2vh;
     z-index: 2;
-    position: absolute;
-    width: 50%;
-    max-width: 50%;
-    height: 20%;
-    max-height: 20%;
-    top: 12%;
     text-align: center;
-    overflow: hidden;
-    text-overflow:ellipsis;
     color: #8e8e8e;
-    white-space: nowrap;
-    
+
 }
