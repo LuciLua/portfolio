@@ -24,6 +24,8 @@
     src: url(/fonts/font.woff2);
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100;300;500;800&display=swap');
+
 *::-webkit-scrollbar { 
     width: 6px;
     background-color: #DADADA;
@@ -50,8 +52,34 @@ body{
     width: 100%;
 }
 
+/* inicial */
+
 #init{
     background: linear-gradient(rgb(5, 19, 30),rgb(35, 38, 43)40%);
+}
+
+/* botao init */
+
+button{
+    width: 160px;
+    height: 40px;
+    margin: 30px;
+    justify-content: center;
+    display: inline;
+    align-items: center;
+    border-radius: 60px;
+    border: none;
+    font-weight: 600;
+    font-size: 16px;
+    outline: none;
+    cursor: pointer;
+}
+
+button a{
+    color: #fff;
+    font-weight: 600;
+    font-size: 16px;
+    outline: none;
 }
 
 /* titulo */
@@ -205,6 +233,7 @@ body{
 
 #audiovisual, #contact, #code{
     background: rgb(35, 38, 43);
+    position: relative;
 }
 
 #audiovisual{
@@ -222,6 +251,7 @@ body{
 
 /* fim do inicio */
 
+/* geral para todas as paginas */
 .titulo-page{
     background-color: transparent;
     color: rgb(255, 255, 255);
@@ -237,26 +267,100 @@ body{
     text-align: center;
 }
 
-/* botao init */
 
-button{
-    width: 160px;
-    height: 40px;
-    margin: 30px;
-    justify-content: center;
-    display: inline;
-    align-items: center;
-    border-radius: 60px;
-    border: none;
-    font-weight: 600;
-    font-size: 16px;
-    outline: none;
-    cursor: pointer;
+.galery{
+    border: 1px solid black;
+    width: 90%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    height: fit-content;
+    overflow-y: hidden;
+    margin-left: auto;
+    margin-right: auto;
+    overflow-x: scroll;
+    display: flex;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
-button a{
-    color: #fff;
-    font-weight: 600;
-    font-size: 16px;
-    outline: none;
+.galery::-webkit-scrollbar{
+    height: 10px;
+}
+
+.cards{
+    width: 400px;
+    height: 600px;
+    min-width: 400px;
+    min-height: 600px;
+    margin-left: 10px;
+    margin-right: 10px;
+    background-color: #131315;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+}
+
+.cards h2{
+    color: rgb(205, 205, 205);
+    font-size: 45px;
+    font-family: 'Lexend';
+    font-weight: 800;
+    z-index: 1;
+    position: absolute;
+    top: 30%;
+}
+
+.cards p{
+    color: rgb(205, 205, 205);
+    font-size: 25px;
+    font-family: 'Lexend';
+    font-weight: 300;
+    z-index: 1;
+}
+
+.cards button{
+    position: absolute;
+    bottom: 20%;
+    z-index: 1;
+}
+
+ .experience{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    position: relative;
+
+
+}
+.experience h2{
+    font-family: 'Lexend', sans-serif;
+    font-size: 2rem;
+    z-index: 2;
+    position: absolute;
+    top: 5%;
+}
+
+.experience p{
+    font-family: 'Lexend', sans-serif;
+    font-weight: 300;
+    font-size: 2vh;
+    z-index: 2;
+    position: absolute;
+    width: 50%;
+    max-width: 50%;
+    height: 20%;
+    max-height: 20%;
+    top: 12%;
+    text-align: center;
+    overflow: hidden;
+    text-overflow:ellipsis;
+    color: #8e8e8e;
+    white-space: nowrap;
+    
 }
