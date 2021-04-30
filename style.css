@@ -5,6 +5,8 @@
     --green-1: #00ff66;
 
     --pink-0: #1a1821;
+
+    --background: rgb(22, 22, 27);
 }
 
 
@@ -54,6 +56,7 @@
 body{
     height: 100%;
     width: 100%;
+    background-color: var(--background);
 }
 
 /* inicial */
@@ -65,6 +68,7 @@ body{
 #init img{
     position: absolute;
     max-width: 100%;
+    min-width: 100%;
     min-height: 100%;
     object-fit: cover;
     z-index: -5;
@@ -75,11 +79,10 @@ body{
 .gradient{
     width: 100%;
     height: 100px;
-    background: linear-gradient(rgba(205, 196, 196, 0),#23262b);
+    background: linear-gradient(rgba(205, 196, 196, 0) 60%,var(--background));
     bottom: 0;
     position: absolute;
     object-fit: cover;
-
     
 }
 
@@ -257,7 +260,7 @@ button a{
 }
 
 #audiovisual, #contact, #code{
-    background: rgb(35, 38, 43);
+    background: var(--background);
     position: relative;
 }
 
@@ -288,28 +291,33 @@ button a{
 .galery{
     width: 100%;
     height: fit-content;
-    max-height: fit-content;
 
     display: flex;
     flex-wrap: wrap;
-    padding-bottom: 20px;
     justify-content: center;
     align-items: center;
-    background: radial-gradient(var(--green-1) -20%,rgba(255, 255, 255, 0) 50%);
-    background-size: 4px;
+
+    padding-bottom: 20px;
+    padding-top: 20px;
+    border: none;
+
+
+    background: radial-gradient(var(--green-1) -50%,rgba(255, 255, 255, 0) 50%);
+    background-size: 8px;
 
     z-index: 3;
-
-
 }
+
 
 .cards{
     width: 45%;
     min-width: 250px;
-    max-width: 500px;
+    max-width: 400px;
+/* 
+    max-height: 40vh; */
+    min-height: fit-content;
 
-    height: 40vh;
-    background-color: var(--pink-0);
+    background-color: #111115f3;
     box-shadow: black 0 0 13px;
     border-radius: 10px;
 
@@ -331,7 +339,13 @@ button a{
 
 .cards .img{
     width: 130px;
+    max-width: 130px;
+    min-width: 130px;
+
     height: 130px;
+    max-height: 130px;
+    min-height: 130px;
+
     border-radius: 60%;
     overflow: hidden;
 }
@@ -352,7 +366,7 @@ button a{
 }
 
 .cards p{
-    color: var(--green-1);
+    color: rgb(137, 137, 137);
     font-size: 15px;
     font-family: 'Lexend';
     font-weight: 500;
@@ -365,22 +379,25 @@ button a{
 
 
 .cards button{
+    position: relative;
     z-index: 1;
-    background-color: var(--green-1);
+    background-color: #30a05d;
     color: var(--write);
     width: fit-content;
     height: fit-content;
     padding: 5px 20px;
+    font-family: Lexend;
+    font-weight: 500;
+    font-size: 1rem;
 }
 
 .line{
-    height: 10px;
+    height: 1px;
     width: 80%;
     border-bottom:  1px solid #909194;
     z-index: 10;
     position: relative;
     margin-left: auto;
-    background: #1ed56746;
     margin-right: auto;
 }
 
@@ -395,20 +412,20 @@ button a{
     display: flex;
     flex-wrap: wrap;
     width: 100%;
-    height: 90vh;
+    height: fit-content;
     padding: 20px;
+
+
 }
 
 .contact-align h1{
     font-family: Lexend;
-    font-family: 500;
     font-size: 30px;
     color: #fff;
     margin-bottom: 20px;
 }
 .contact-align h1::first-letter{
     font-family: Lexend;
-    font-family: 500;
     color: var(--green-1)
 }
 
@@ -454,21 +471,4 @@ button a{
 
 .right h1, .right p{
     position: relative;
-}
-
-@media (max-width: 640px){
-    .left, .right{
-        width: 100%;
-        margin-left: auto;
-        margin-right: auto;
-    }
-    .left p, .right p{
-        width: 100%;
-        margin-left: auto;
-        margin-right: auto;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-direction: column;
-    }
 }
