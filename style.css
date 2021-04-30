@@ -9,27 +9,6 @@
     --background: rgb(22, 22, 27);
 }
 
-
-@font-face{
-    font-family: 'sk';
-    src: url(/fonts/Scratch\ I.ttf);
-}
-
-@font-face{
-    font-family: 'minimal';
-    src: url(/fonts/minimal.otf);
-}
-
-@font-face{
-    font-family: 'basie';
-    src: url(/fonts/Antapani-ExtraBold.otf);
-}
-
-@font-face{
-    font-family: 'font1';
-    src: url(/fonts/font.woff2);
-}
-
 @import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100;300;500;800&display=swap');
 
 *::-webkit-scrollbar { 
@@ -388,7 +367,7 @@ button a{
     padding: 5px 20px;
     font-family: Lexend;
     font-weight: 500;
-    font-size: 1rem;
+    font-size: 15px;
 }
 
 .line{
@@ -431,7 +410,7 @@ button a{
 
 .contact-align p{
     font-family: Lexend;
-    font-size: 1.5vh;
+    font-size: 13px;
     font-weight: 300;
     width: 100%;
     color: #bdbdbd;
@@ -472,3 +451,4 @@ button a{
 .right h1, .right p{
     position: relative;
 }
+
