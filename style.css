@@ -41,7 +41,7 @@ body{
 /* inicial */
 
 #init{
-    background: linear-gradient(rgb(5, 19, 30),rgb(35, 38, 43)40%);
+    background: linear-gradient(rgb(10, 11, 11),var(--background)40%);
 }
 
 #init img{
@@ -65,33 +65,6 @@ body{
     
 }
 
-/* botao init */
-
-.title button{
-    width: 160px;
-    height: 40px;
-    margin: 30px;
-
-    padding: 0px 85px 0px 0px;
-
-    justify-content: center;
-    display: flex;
-    align-items: center;
-
-    border-radius: 60px;
-    border: none;
-    font-weight: 600;
-    font-size: 16px;
-    outline: none;
-    cursor: pointer;
-}
-
-button a{
-    color: #fff;
-    font-weight: 600;
-    font-size: 16px;
-    outline: none;
-}
 
 /* titulo */
 
@@ -134,35 +107,58 @@ button a{
     font-weight: 800;
 }
 
-.title #start{
-    background-color: #404151;
-    border: none;
-    backdrop-filter: blur(2px) saturate(0.4);
-    font-size: 22px;
-    font-family: 'ww';
-    letter-spacing: 5px;
-}
+/* botao init */
 
-.title #start:hover{
-    background-color: rgb(0, 255, 102);
-    pointer-events: all!important;
-    user-select: all!important;
-    z-index: 1000;
-}
+.title button{
+    justify-content: center;
+    display: flex;
+    align-items: center;
 
-.title #start a{
-    color: #ffffff;
-    pointer-events: all!important;
-    user-select: none!important;
-    z-index: 1000;
-    text-decoration: none;
-    width: 100%;
-    height: 100%;
-    padding: 12px 39px;
     border-radius: 60px;
+    border: none;
+
+    font-weight: 600;
+    font-size: 16px;
+
+    outline: none;
+    cursor: pointer;
+
+    letter-spacing: 5px;
+    transition: 0.3s;
+    background-color: #31333b;
+    color: #ffffff;
+    box-shadow: 0 10px 13px rgba(0, 0, 0, 0.427);
+
+    width: 140px;
+    height: 30px;
+
+    user-select: none!important;
+    pointer-events: stroke;
+
+    z-index: 1000;
 }
 
-.title #start:hover a{
+
+.title button:hover{
+    background-color: rgb(0, 255, 102);
+    
+    user-select: none!important;
+
+    z-index: 1000;
+    transform: scale(1.07);
+
+    transition: 0.3s;
+}
+
+.title a{
+    user-select: none;
+}
+
+.title a{
+    text-decoration: none;
+}
+
+.title button:hover{
     color: #000000;
 }
 
@@ -497,12 +493,13 @@ button a{
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
+    transition: 0.4s;
 }
 
 .quad .q-a{
-    width: 250px;
-    max-width: 250px;
-    min-width: 250px;
+    width: 350px;
+    max-width: 350px;
+    min-width: 350px;
 
     min-height: 250px;
     max-height: 250px;
@@ -522,17 +519,12 @@ button a{
     display: flex;
     align-items: center;
     justify-content: left;
+
 }
 
-.quad .q-a:hover{
-    background-color: #00ff66;
-    width: 100%;
-    height: 100%;
-    z-index: 100;
-}
+.quad .q-a:hover .content, .quad .q-a:hover img{   
+    filter: blur(3px) brightness(0.2);
 
-.quad .q-a:hover .content, .quad .q-a:hover img{
-    display: none;
 }
 
 .quad .q-a .content{
@@ -543,6 +535,14 @@ button a{
 
     margin-left: 20px;
     top: 140px;
+    transition: 0.3s;
+    left: 0;
+
+}
+
+.quad .q-a:hover .content{
+    transition: 0.3s;
+    left: 500px;
 }
 
 .quad .q-a h2{
@@ -576,3 +576,69 @@ button a{
     position: relative;
     object-fit: cover;
 }
+
+.quad .q-a .btn-h{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+
+    position: absolute;
+    opacity: 0%;
+
+    transition: 0.3s;
+
+}
+
+.quad .q-a:hover .btn-h{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+    top: 0;
+
+    opacity: 100%;
+    transition: 0.3s;
+
+    position: absolute;
+}
+
+.quad .q-a button{
+    border-radius: 40px;
+    border: none;
+    width: 100px;
+    height: 30px;
+    cursor: pointer;
+    background-color: #ffffffe4;
+    color: rgb(12, 12, 12);
+    margin: 10px;
+
+    font-family: Lexend;
+    z-index: 10;
+
+    transition: 0.2s;
+
+}
+
+.quad .q-a .git{
+    background-color: #16161a;
+    border: #fff 1px solid;
+    color: #fff;
+}
+
+.quad .q-a .acc:hover, .quad .q-a .git:hover{
+    background-color: #16161a;
+    border: rgb(0, 255, 102) 1px solid;
+    color: #fff;
+
+    transition: 0.2s;
+}
+
