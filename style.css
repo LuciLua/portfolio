@@ -671,6 +671,8 @@ body{
 
     display: flex;
     justify-content: center;
+
+    margin-bottom: 100px;
 }
 
 .p-init h2{
@@ -746,5 +748,103 @@ font-size: 15px;
 }
 
 
-/* subpagina projetos */
+/* subpagina about */
+
+.content-about{
+    display: flex;
+    justify-content: center;
+
+    flex-wrap: wrap;
+}
+
+#about-subpagina .photo, #about-subpagina .photo img{
+    max-width: 100%;
+    position: relative;
+}
+
+#about-subpagina .photo{
+    overflow: hidden;
+    border-radius: 60%;
+    width: 300px;
+    max-width: 300px;
+    min-width: 300px;
+
+    height: 300px;
+    max-height: 300px;
+    min-height: 300px;
+
+    box-shadow: 0 0 15px black;
+    position:relative;
+}
+
+
+#about-subpagina .photo img{
+    width: 190%;
+    min-width: 190%;
+    height: 100%;
+    min-height: 100%;
+    object-fit: cover;
+    filter: hue-rotate(60deg);
+}
+
+#about-subpagina .content-about .ball-name{
+    width: 300px;
+    min-width: 300px;
+    max-width: 300px;
+
+    height: 300px;
+    min-height: 300px;
+    max-height: 300px;
+    /* background-color: #00ff663c; */
+
+    position: absolute;
+    display: flex;
+    align-items: flex-end;
+}
+
+#about-subpagina  .content-about  h1{
+    color: #fff;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+
+    font-family: Lexend;
+    font-weight: 500;
+
+    right: 50px;
+
+    width: 70px;
+    height: 70px;
+    max-width: 70px;
+    min-width: 70px;
+    max-height: 70px;
+    min-height: 70px;
+    
+    background-color: rgba(35, 38, 43, 0.413);
+    border: #00ff66 1px dashed;
+    border-radius: 60%;
+}
+
+#about-subpagina .content-about p{
+    color: rgb(142, 142, 142);
+    font-size: 15px;
+    display: flex;
+    /* background-color: rgba(44, 49, 63, 0.194); */
+    margin: 20px;
+
+    text-align: justify;
+    justify-content: center;
+    align-items: center;
+
+    width: 500px;
+
+    padding: 50px;
+
+    line-height: 1.5;
+}
+
+
+
 
