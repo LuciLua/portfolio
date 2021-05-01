@@ -141,7 +141,7 @@ body{
 
 .title button:hover{
     background-color: rgb(0, 255, 102);
-    
+
     user-select: none!important;
 
     z-index: 1000;
@@ -245,7 +245,7 @@ body{
     max-width: 100%;
 }
 
-#cardme, #paragraph, #code{
+#cardme, #paragraph, #projetos-p{
     background: var(--background);
     position: relative;
 }
@@ -259,7 +259,7 @@ body{
     /* border: 1px solid blue; */
 }
 
-#code{
+#projetos-p{
     /* border: 1px solid yellow; */
 }
 
@@ -577,6 +577,9 @@ body{
     object-fit: cover;
 }
 
+/* botoes dos cards projects */
+
+
 .quad .q-a .btn-h{
     display: flex;
     flex-direction: column;
@@ -591,54 +594,157 @@ body{
     opacity: 0%;
 
     transition: 0.3s;
-
 }
 
 .quad .q-a:hover .btn-h{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-
-    width: 100%;
-    height: 100%;
-    z-index: 10;
-    top: 0;
-
     opacity: 100%;
     transition: 0.3s;
-
-    position: absolute;
 }
 
-.quad .q-a button{
-    border-radius: 40px;
-    border: none;
-    width: 100px;
-    height: 30px;
+.quad .q-a .btn-h a{
+    outline: none;
     cursor: pointer;
-    background-color: #ffffffe4;
-    color: rgb(12, 12, 12);
-    margin: 10px;
-
+    
     font-family: Lexend;
     z-index: 10;
 
     transition: 0.2s;
 
+    text-decoration: none;
+    background-color: #ffffffe4;
+    border: none;
+    border-radius: 40px;
+    width: 120px;
+    height: 30px;
+
+    margin: 10px;
+
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.quad .q-a .git{
-    background-color: #16161a;
-    border: #fff 1px solid;
-    color: #fff;
+
+.quad .q-a .btn-h .acc{
+    background-color: #ffffff!important;
+    border:  #ffffff 1.5px solid;
 }
 
-.quad .q-a .acc:hover, .quad .q-a .git:hover{
-    background-color: #16161a;
-    border: rgb(0, 255, 102) 1px solid;
-    color: #fff;
+.quad .q-a .btn-h .git{
+    background-color: #00000083!important;
+    border:  #ffffff 1.5px solid;
+}
+
+.quad .q-a .btn-h .acc:hover, .quad .q-a .btn-h .git:hover{
+    background-color: #16161a!important;
+    border: rgb(0, 255, 102) 1.5px solid;
 
     transition: 0.2s;
 }
+
+.quad .q-a .btn-h a:hover button{
+    color: #fff;
+}
+
+.quad .q-a .git button{
+    cursor: pointer;
+    border: none;
+    background-color: transparent;
+    color: #fff;
+}
+
+.quad .q-a .acc button{
+    cursor: pointer;
+    border: none;
+    background-color: transparent;
+    color: rgb(0, 0, 0);
+}
+
+
+/* page projects */
+
+.p-init{
+    width: 100%;
+    height: 20vh;
+    margin-bottom: 20px;
+
+    display: flex;
+    justify-content: center;
+}
+
+.p-init h2{
+    width: 50%;
+    height: 100%;
+    color: #fff;
+    position: relative;
+    display: flex;
+    align-items:flex-end;
+    justify-content: center;
+
+    font-family: Lexend;
+    font-weight: 500;
+    line-height: 100px;
+
+    border-bottom: #00ff66 1px solid;
+}
+
+#projetos-p h2{
+    color: #fff;
+    font-weight: 500;
+    font-family: Lexend;
+    text-align: center;
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+
+#projetos-p .more-pp{
+    width: 100%;
+    height: fit-content;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#projetos-p .more-pp a{
+    background: linear-gradient(transparent,#000000);
+    border: #00ff66 1px solid;
+
+    border-radius: 0px;
+    width: 200px;
+    height: 60px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    text-decoration: none;
+    cursor: pointer;
+
+    transition: 0.7s;
+}
+
+#projetos-p .more-pp a:hover{
+    transition: 0.7s;
+    transform: scale(1.04);
+
+    background: linear-gradient(rgba(255, 255, 255, 0.03),#000000ae);
+
+}
+
+
+#projetos-p .more-pp a button{
+background-color: transparent;
+border: none;
+color: #00ff66;
+
+cursor: pointer;
+
+font-family: Lexend;
+font-size: 15px;
+}
+
+
+/* subpagina projetos */
 
