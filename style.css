@@ -93,7 +93,7 @@ body{
     user-select: none;
 }
 
-.title h3{
+.title h2{
     line-height: 50px;
     font-weight: 100;
     font-size: 13px;
@@ -434,7 +434,7 @@ body{
 .line{
     height: 1px;
     width: 80%;
-    border-bottom:  1px solid #909194;
+    border-bottom:  1px solid #212223;
     z-index: 10;
     position: relative;
     margin-left: auto;
@@ -593,11 +593,11 @@ body{
     height: 250px;
 
     margin: 20px;
-    box-shadow: 0 0 13px black;
+    box-shadow: 0 4px 10px black;
 
     position: relative;
 
-    border-radius: 3px;
+    border-radius: 5px;
 
     overflow: hidden;
 
@@ -610,8 +610,7 @@ body{
 }
 
 .quad .q-a:hover .content, .quad .q-a:hover img{   
-    filter: blur(3px) brightness(0.2);
-
+    filter: brightness(0.4) blur(2px);
 }
 
 .quad .q-a .content{
@@ -625,11 +624,26 @@ body{
     transition: 0.3s;
     left: 0;
 
+    height: fit-content;
+    width: fit-content;
+
+}
+
+.quad .q-a:hover .content p{
+    opacity: 0%;
+    transition: 0.3s;
+}
+
+.quad .q-a:hover .content h2{
+    border-bottom: none;
+    transition: 0.3s;
+    opacity: 0%;
+
 }
 
 .quad .q-a:hover .content{
     transition: 0.3s;
-    left: 500px;
+    top: 0;
 }
 
 .quad .q-a h2{
@@ -640,17 +654,24 @@ body{
     border-bottom: 1px solid #00ff66;
     padding-bottom: 5px;
     margin-bottom: 10px;
+    float: left;
+    transition: 0.3s;
+
 }
 
 .quad .q-a p{
-    position: relative;
-    width: 180px;
+    position: absolute;
+    width: fit-content;
+    min-width: 200px;
     color: rgb(120, 120, 120);
     font-size: 13px;
     z-index: 10;
     font-family: Arial;
-
+    top: 60px;
     line-height: 1.5;
+    opacity: 100%;
+    transition: 0.3s;
+
 }
 
 .quad .q-a img{
@@ -658,7 +679,7 @@ body{
     width: 100%;
     height: 100%;
 
-    filter: brightness(0.3);
+    filter: brightness(0.1) sepia(1) saturate(1) hue-rotate(200deg);
 
     position: relative;
     object-fit: cover;
@@ -681,11 +702,21 @@ body{
     opacity: 0%;
 
     transition: 0.3s;
+
 }
 
 .quad .q-a:hover .btn-h{
     opacity: 100%;
     transition: 0.3s;
+}
+
+.quad .q-a .btn-h a:hover{
+    width: 100px;
+    height: 30px;
+}
+
+.quad .q-a .btn-h a:hover img{
+    opacity: 0%;
 }
 
 .quad .q-a .btn-h a{
@@ -701,8 +732,8 @@ body{
     background-color: #ffffffe4;
     border: none;
     border-radius: 40px;
-    width: 120px;
-    height: 30px;
+    width: 35px;
+    height: 35px;
 
     margin: 10px;
 
@@ -710,6 +741,8 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+
+    overflow: hidden;
 }
 
 
@@ -730,8 +763,17 @@ body{
     transition: 0.2s;
 }
 
+.quad .q-a .btn-h a button{
+    color: #fff;
+    font-size: 14px;
+    opacity: 0%;
+}
+
+
 .quad .q-a .btn-h a:hover button{
     color: #fff;
+    font-size: 14px;
+    opacity: 100%;
 }
 
 .quad .q-a .git button{
@@ -746,6 +788,20 @@ body{
     border: none;
     background-color: transparent;
     color: rgb(0, 0, 0);
+}
+
+.quad .q-a .btn-h .git img{
+    filter: invert(1);
+    position: absolute;
+    width: 23px;
+    height: 23px;
+}
+
+.quad .q-a .btn-h .acc img{
+    filter: invert(0);
+    position: absolute;
+    width: 23px;
+    height: 23px;
 }
 
 
@@ -787,6 +843,16 @@ body{
     margin-bottom: 20px;
 }
 
+#projetos-p h2 span{
+    color: #00ff66;
+    font-weight: 500;
+    font-family: Lexend;
+    text-align: center;
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+
+
 #projetos-p .more-pp{
     width: 100%;
     height: fit-content;
@@ -794,6 +860,8 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
+
+    margin-top: 35px;
 }
 
 #projetos-p .more-pp a{
@@ -933,5 +1001,51 @@ font-size: 15px;
 }
 
 
+#artes{
+    width: 100%;
+    height: fit-content;
+    background-color: #000000;
+    margin-top: 100px;
+}
 
 
+#artes h1::first-letter{
+    color: #00ff66;
+}
+
+#artes h1{
+    color: #fff;
+    font-family: Lexend;
+    font-weight: 600;
+    font-size: 35px;
+    text-align: center;
+}
+
+#artes .art-g{
+    width: 100%;
+    height: 100vh;
+    background-color: #16161a;
+    border: #00ff66 2px solid;
+
+}
+
+footer{
+    position: relative;
+    width: 100%;
+    height: 80px;
+    background-color: #00ff66;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin-top: 20px;
+}
+
+footer p{
+    text-align: center;
+    font-family: Lexend;
+    font-weight: 500;
+    color: #16161a;
+    font-size: 15px;
+}

@@ -144,6 +144,10 @@
 
     }
 
+    .left h1, .right h1{
+        text-align: center;
+    }
+
   }
 
 
