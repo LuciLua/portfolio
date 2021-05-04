@@ -58,7 +58,7 @@ body{
 .gradient{
     width: 100%;
     height: 100px;
-    background: linear-gradient(rgba(205, 196, 196, 0) 60%,var(--background));
+    background: linear-gradient(rgba(213, 17, 17, 0) 60%,var(--background));
     bottom: 0;
     position: absolute;
     object-fit: cover;
@@ -288,7 +288,7 @@ body{
     border: none;
 
 
-    background: radial-gradient(var(--green-1) -50%,rgba(255, 255, 255, 0) 50%);
+    background: radial-gradient(var(--green-1) -30%,rgba(255, 255, 255, 0) 50%);
     background-size: 8px;
 
     z-index: 3;
@@ -297,7 +297,7 @@ body{
 
 .cards{
     width: 45%;
-    min-width: 250px;
+    min-width: 300px;
     max-width: 400px;
 /* 
     max-height: 40vh; */
@@ -323,6 +323,49 @@ body{
 
 }
 
+.cards .icons{
+    width: 70%;
+    height: 40px;
+    margin-top: 25px;
+    margin-bottom: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cards .icons .ico{
+    width: 25px;
+    height: 25px;
+    margin: 10px;
+}
+
+.cards .icons .ico a img{
+    width: 25px;
+    height: 25px;
+    filter: invert(0.6);
+    transition: 0.5s;
+
+}
+
+.cards .icons .ico:hover:first-of-type a img{
+    filter: invert(0.9);
+    transform: scale(1.06) rotateZ(360deg);
+    transition: 0.5s;
+}
+
+.cards .icons .ico:hover a img{
+    filter: invert(0.9);
+    transform: scale(1.06);
+    transition: 0.5s;
+}
+
+.cards .icons .ico:hover:last-of-type a img{
+    filter: invert(0.9);
+    transform: scale(1.06) rotateY(180deg);
+    transition: 0.5s;
+}
+
+
 .cards .img{
     width: 130px;
     max-width: 130px;
@@ -344,6 +387,7 @@ body{
     height: 100%;
     object-fit: cover;
 }
+
 
 /* .cards h2{
     color: rgb(255, 255, 255);
@@ -383,6 +427,8 @@ body{
     outline: none;
     cursor: pointer;
     margin-bottom: 25px;
+    margin-top: 15px;
+    box-shadow:  0 2px 13px black;
 }
 
 .cards button:hover{
@@ -421,7 +467,7 @@ body{
     height: fit-content;
     padding: 20px;
 
-    margin-top: 60px;
+    margin-top: 100px;
 
 
 }
@@ -473,11 +519,52 @@ body{
 .right{
     width: 50%;
     height: fit-content;
+    min-height: 330px;
     margin-left: auto;
-    min-width:300px;
+    min-width: 300px;
+
 }
 
-.right h1, .right p{
+.right .p{
+    position: relative;
+    width: 100%;
+    height: fit-content;
+    min-height: 310px;
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+}
+
+.right h1, .right .p{
+    position: relative;
+}
+
+.right .p .item{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+
+    margin-left: auto;
+    margin-right: auto;
+    width: 90px;
+    height: 90px;
+}
+
+.right .item span{
+    position: relative;
+
+    color: #00ff66;
+    font-family: Lexend;
+    font-weight: 500;
+}
+
+
+.right .item img{
+    width: 50px;
+    height: 50px;
+    filter: invert(1);
+    margin: 10px;
     position: relative;
 }
 

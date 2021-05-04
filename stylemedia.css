@@ -105,7 +105,7 @@
         margin-left: auto;
         margin-right: auto;
     }
-    .left p, .right p{
+    .left p{
         width: 100%;
         margin-left: auto;
         margin-right: auto;
@@ -114,9 +114,26 @@
         justify-content: center;
         flex-direction: column;
     }
+
    
     #about-subpagina  .content-about  h1{  
         right: -20px;
+    }
+
+    .right .p{
+        width: 100%;
+        height: 100%;
+    }
+
+    .right .p .item{
+
+        position: relative;
+    
+        width: 90px;
+        height: 90px;
+
+        margin:20px;
+
     }
 
   }
