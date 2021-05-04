@@ -5,9 +5,9 @@
         height: 620px;
     }
 
-    .quad-1{
+    /* .quad-1{
         display: none;
-    }
+    } */
 
 
     .escrito{
@@ -19,80 +19,93 @@
     }
 
     #memul{
-        display: none;
+        margin-right: auto;
+        position:relative;
+        width: 100%;
+
     }
 
     .memul ul li{
-        margin: 10px;
+        margin: 0px;
         list-style: none;
-        background-color: red!important;
-        border-radius: 50px;
         padding: 0px;
     }
     
     .menu ul li a{
         font-family: Arial;
-        color: rgb(0, 0, 0);
+        color: rgb(255, 255, 255);
         text-decoration: none;
         font-weight: 600;
+        position: fixed;
     }
     
     .memul ul li a:hover{
         color: rgb(38, 38, 38);
     }
 
-    #memul .burg{
-        display: none;
-    }
-
     .sticky{
+        position: fixed;
         display: flex;
         flex-direction: column;
-        position: relative;
-        top: 70px!important;
-        right: 140px!important;
 
+        width: 100%!important;
+        height: 50px!important;
+
+        backdrop-filter: none;
+        -webkit-backdrop-filter: none;
+        background-color: transparent!important;
+        text-align: center!important;     
+        border-radius: 0!important;
     }
-    .sticky li{
-        margin: 5px!important;
+
+    .sticky .m{
+        top: 50px;
         position: relative;
+        background-color: #0f0f12f7!important;
+        height: 30px!important;
+        width: 100px!important;
+        margin: 0px!important;
+        padding: 12vh 100vh!important;
+
+        display: block!important;
+        z-index: 1000!important;
+
+        border-radius: 0!important;
+        text-align: center!important;
+        display: flex!important;
+        align-items: center!important;
+        justify-content: center!important;
+
     }
 
     .sticky button{
-        width: 20px;
-        height: 20px;
         padding: 0;
-        margin: 0;
-        background-color: transparent;
         color: rgb(169, 169, 169);
         font-weight: 100;
         position: relative;
+        margin: 0!;
+        left: 0;
+        top: 0;
     }
 
-    .sticky {
+    .sticky #but, #memul #but{
         
-        background-color: transparent!important;
-        text-align: center!important;
-        
-        
-    }
-
-    .sticky .burg button{
-        color: rgb(255, 255, 255)!important;
-    }
-
-    .sticky #but {
-        
-        width: 50px!important;
-        height: 50px!important;
-       background-color: #f98100db!important;
-       text-align: center!important;
-       font-size: 13px;
+        padding: 0!important;
+        border: #00ff66 1px solid!important;
+        background-color: rgba(26, 77, 36, 0.315)!important;
+        color: #fff!important;
+        width: 50px;
+        height: 25px;
+        top: 0;
+        left: 0;
     }
 
     .sticky .burg {
         display: flex!important;
         background-color: transparent!important;
+        right: 0;
+        margin: 0!important;
+        position: absolute;
     }
 
 
@@ -100,11 +113,15 @@
         display: none!important;
     }
 
+    .burg #but{
 
+    }
    
     #about-subpagina  .content-about  h1{  
         right: -20px;
     }
+
+
 
 }
 
