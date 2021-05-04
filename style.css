@@ -388,15 +388,6 @@ body{
     object-fit: cover;
 }
 
-
-/* .cards h2{
-    color: rgb(255, 255, 255);
-    font-size: 25px;
-    font-family: 'Lexend';
-    font-weight: 800;
-    z-index: 1;
-} */
-
 .cards p{
     color: rgb(137, 137, 137);
     font-size: 15px;
@@ -469,7 +460,8 @@ body{
 
     margin-top: 100px;
 
-
+    justify-content: center;
+    align-items: center;
 }
 
 .contact-align h1{
@@ -478,27 +470,14 @@ body{
     color: #fff;
     margin-bottom: 20px;
 }
+
 .contact-align h1::first-letter{
     font-family: Lexend;
     color: var(--green-1)
 }
 
 .contact-align p{
-    font-family: Lexend;
-    font-size: 13px;
-    font-weight: 300;
-    width: 100%;
-    color: #bdbdbd;
-    width: 90%;
-    line-height: 1.9;
-    text-align: justify;
     padding: 20px;
-
-
-    min-width: 300px;
-    display: flex;
-    align-items: center;    
-
 }
 
 
@@ -508,7 +487,22 @@ body{
     height: fit-content;
     min-width:300px;
     margin-right: auto;
+    margin-left: auto;
+    padding: 20px;
+    max-width: 750px;
+    
 
+}
+
+.left p{
+    font-weight: 500;
+    font-family: Lexend;
+    font-size: 13px;
+    font-weight: 500;
+    text-align: justify;
+    width: 100%;
+    color: #bdbdbd;
+    line-height: 2;
 }
 
 .left h1, .left p{
@@ -516,12 +510,16 @@ body{
  
 }
 
+
 .right{
     width: 50%;
-    height: fit-content;
     min-height: 330px;
-    margin-left: auto;
     min-width: 300px;
+
+    padding: 20px;
+    max-width: 750px;
+    margin-left: auto;
+    margin-right: auto;
 
 }
 
@@ -529,9 +527,10 @@ body{
     position: relative;
     width: 100%;
     height: fit-content;
-    min-height: 310px;
+    min-height: 300px;
     display: flex; 
     align-items: center;
+
     justify-content: center;
 }
 
@@ -547,8 +546,8 @@ body{
 
     margin-left: auto;
     margin-right: auto;
-    width: 90px;
-    height: 90px;
+    width: 100px;
+    height: 100px;
 }
 
 .right .item span{
@@ -557,6 +556,7 @@ body{
     color: #00ff66;
     font-family: Lexend;
     font-weight: 500;
+    margin-top: 10px;
 }
 
 
