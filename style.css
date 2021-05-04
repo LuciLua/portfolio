@@ -439,8 +439,8 @@ body{
     position: relative;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 90px;
-    margin-bottom: 90px;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
 }
 
 
@@ -458,7 +458,7 @@ body{
     height: fit-content;
     padding: 20px;
 
-    margin-top: 100px;
+    margin-top: 10vh;
 
     justify-content: center;
     align-items: center;
@@ -1000,20 +1000,17 @@ font-size: 15px;
     line-height: 1.5;
 }
 
+.title-art{
+    margin: 0;
+    margin-top: 10vh;
 
-#artes{
-    width: 100%;
-    height: fit-content;
-    background-color: #000000;
-    margin-top: 100px;
 }
 
-
-#artes h1::first-letter{
+.title-art h1::first-letter{
     color: #00ff66;
 }
 
-#artes h1{
+.title-art  h1{
     color: #fff;
     font-family: Lexend;
     font-weight: 600;
@@ -1021,12 +1018,89 @@ font-size: 15px;
     text-align: center;
 }
 
-#artes .art-g{
+#artes{
     width: 100%;
-    height: 100vh;
-    background-color: #16161a;
-    border: #00ff66 2px solid;
+    height: fit-content;
+    margin-top: 5vh;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
 
+
+
+#artes .art-g{
+    width: fit-content;
+    max-width: 1250px;
+    height: fit-content;
+    margin: auto;
+    padding: 0;
+    
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+
+#artes .art-g .o{
+    width: 300px;
+    height: 300px;
+    overflow: hidden;
+    transition: 0.2s;
+    position: relative;
+
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+
+}
+
+#artes .art-g .o a{
+    position: absolute;
+    width: fit-content;
+    height: fit-content;
+    margin: 0px;
+    bottom: 0;
+
+    transition: 0.2s;
+    z-index: 100;
+    text-decoration: none;
+}
+
+#artes .art-g .o a img{
+    filter: invert(1);
+    opacity: 20%;
+    width: 20px;
+    height: 20px;
+    transition: 0.3s;
+}
+
+#artes .art-g .o:hover a img{
+    width: 30px;
+    height: 30px;
+    opacity: 100%;
+    filter: invert(1);
+    transition: 0.3s;
+}
+
+#artes .art-g .o img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(0.8)saturate(0.2);
+}
+
+#artes .art-g .o:hover{
+    box-shadow: 0 0 15px 10px rgba(0, 0, 0, 0.411);
+    z-index: 100;
+}
+
+
+#artes .art-g .o:hover img{
+
+    filter: brightness(1);
 }
 
 footer{
@@ -1039,7 +1113,7 @@ footer{
     justify-content: center;
     align-items: center;
 
-    margin-top: 20px;
+    margin-top: 15vh;
 }
 
 footer p{
