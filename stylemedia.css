@@ -152,10 +152,20 @@
         right: -20px;
     }
 
+    #artes .art-g .o{
+        width: 100px;
+        height: 100px;   
+    }
+
 }
 
 @media only screen and (max-width: 770px) {
     
+
+    .content-align{
+    padding: 5px;
+    }
+
     .left, .right{
         width: 100%;
         margin-left: auto;
@@ -172,6 +182,7 @@
     width: 100%;
     color: #bdbdbd;
     line-height: 2;
+    padding: 0px;
 }
     .right .p{
         width: 100%;

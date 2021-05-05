@@ -1003,6 +1003,7 @@ font-size: 15px;
 .title-art{
     margin: 0;
     margin-top: 10vh;
+    margin-bottom: 10vh;
 
 }
 
@@ -1065,7 +1066,7 @@ font-size: 15px;
     bottom: 0;
 
     transition: 0.2s;
-    z-index: 100;
+    z-index: 50;
     text-decoration: none;
 }
 
@@ -1075,6 +1076,8 @@ font-size: 15px;
     width: 20px;
     height: 20px;
     transition: 0.3s;
+    user-select: none;
+    pointer-events: none;
 }
 
 #artes .art-g .o:hover .eye{
@@ -1131,30 +1134,154 @@ font-size: 15px;
     margin:auto;
     display:block;
 
-    top: 0;
     position: relative;
-
-    height: 100px;
-    width: 100px;
 
     max-width: 800px;
 
-    z-index: 200;
+    z-index: 250;
 }
 
 .fechar{
     position:absolute;
     
-    color:#fff;
+    color:rgba(255, 255, 255, 0.749);
 
-    font-size:40px;
-    font-weight:bold;
+    font-size:30px;
+    line-height: 1.15;
+    font-weight:lighter;
     cursor:pointer;
+    font-family: Lexend;
     z-index: 400;
 
+    margin: 5px;
+
+    border-radius: 60%;
+    background-color: #0000007e;
+    width: 40px;
+    height: 40px;
+
+    text-align: center;
 
 
 }
+
+
+.t-a{
+    display: flex;
+
+    flex-wrap: wrap;
+    width: 100%;
+    height: 200px;
+    align-items: center;
+    justify-content: center;
+
+    background: radial-gradient(#00fc4c20 5%, transparent 70%);
+    background-position: center;
+    
+}
+
+.i-ca{
+    width: 500px;
+    margin: 2px;
+    position: relative;
+    padding: 0;
+    display: flex;
+    align-items: center;
+
+}
+.c-a{
+    border-radius: 60%;
+    position: relative;
+
+    border: #fff 2px dashed;
+    width: 150px;
+    height: 150px;
+    min-width: 150px;
+    min-height: 150px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    overflow: hidden;
+
+    margin: 10px;   
+    transition: 0.3s; 
+    cursor: pointer;  
+    background-color: rgba(0, 0, 0, 0.434);  
+}
+
+.i-ca p{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    color: #ffffffaf;
+    float: right;
+    font-family: Lexend;
+    font-weight: 300;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.c-a:hover{
+    background-color: #ffffff1a;
+}
+
+
+.a2d, .a3d{
+    padding: 0;
+    width: 80px;
+    min-height: 80px;
+    min-width: 80px;
+    height: 80px;
+
+    position: absolute;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin: 0px;
+
+    overflow: hidden;
+    filter: invert(1) sepia(10) saturate(25) hue-rotate(59deg);
+}
+
+
+.a2d img, .a3d img{
+    margin: 0;
+}
+
+.a2d{
+    animation: a3d 30s infinite linear;
+}
+
+.a3d{
+    animation: a2d 10s infinite linear;
+}
+
+@keyframes a3d{
+    0%,100%{
+        transform: rotate(360deg);
+    }
+
+    50%{
+        transform: rotate(-360deg);
+
+    }
+}
+
+@keyframes a2d{
+    0%,100%{
+        transform:scale(0.8) rotate(0deg);
+    }
+
+    50%{
+        transform: scale(1) rotate(20deg);
+
+    }
+}
+
 
 footer{
     position: relative;
@@ -1166,7 +1293,7 @@ footer{
     justify-content: center;
     align-items: center;
 
-    margin-top: 15vh;
+    margin-top: 20vh;
 }
 
 footer p{
@@ -1175,4 +1302,14 @@ footer p{
     font-weight: 500;
     color: #16161a;
     font-size: 15px;
+}
+
+
+#b3d, #b2d{
+    color: #00ff66;
+    text-align: center;
+    margin-top: 10vh;
+    margin-bottom: 10vh;
+    width: 100%;
+    position: relative;
 }
