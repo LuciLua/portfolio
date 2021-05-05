@@ -1,21 +1,22 @@
-// var text = document.getElementById('text');
-// var word = text.getElementsByTagName('span');
-// var i = 0;
-
-// function rotator (){
-//     word[i].style.display = 'none';
-//     i = (i + 1) % word.length;
-//     word[i].style.display = 'initial';
-// }
-
-// setInterval(rotator, 1500);
-
 window.addEventListener('scroll', function(){
     const header = document.getElementById('memul')
     header.classList.toggle("sticky", window.scrollY > 0);
 });
 
-function abreMenu(){
-    var menuA = document.getElementById('memul')
-    menuA.classList.toggle("viraisso")
+var modal = document.getElementById('janelaModal');
+
+var btnClose = document.getElementsByClassName("fechar")[0];
+
+
+function clique(img){
+    var modal = document.getElementById('janelaModal');
+    var modalImg = document.getElementById("imgModal");
+
+    modal.style.display="flex";
+    modalImg.src=img.src;
+    modalImg.alt=img.alt;
+}
+
+btnClose.onclick=function(){
+    modal.style.display="none";
 }
