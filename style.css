@@ -1322,6 +1322,8 @@ font-size: 15px;
 
 .a2d img, .a3d img{
     margin: 0;
+    width: 100%;
+    height: 100%;
 }
 
 .a2d{
