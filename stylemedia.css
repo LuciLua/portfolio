@@ -1,5 +1,5 @@
 @media only screen and (max-width:400px) {
-    .quad .q-a{
+    .quad .q-a, .quad-pag .q-a{
         width: 300px!important;
         max-width: 300px!important;
         min-width: 300px!important;
@@ -156,6 +156,12 @@
         width: 100px;
         height: 100px;   
     }
+
+#about-subpagina .content-about p{
+    margin-top: 10vh;
+    padding: 10px;
+    line-height: 1.9;
+}
 
 }
 

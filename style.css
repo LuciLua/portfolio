@@ -550,6 +550,15 @@ body{
     height: 100px;
 }
 
+.right .p .item:hover{
+    transform: scale(1.05);
+}
+
+.right .p .item:hover img{
+    transform: scale(1.2);
+    filter:invert(1) sepia(10) saturate(65) hue-rotate(59deg);
+}
+
 .right .item span{
     position: relative;
 
@@ -557,6 +566,8 @@ body{
     font-family: Lexend;
     font-weight: 500;
     margin-top: 10px;
+
+    user-select: none;
 }
 
 
@@ -574,17 +585,29 @@ body{
     max-width: 100%;
     position: relative;
 
-    padding: 40px;
-
     display: flex;
     /* flex-wrap: wrap; */
     align-items: center;
     justify-content:start;
     transition: 0.4s;
     overflow-x: scroll;
+
 }
 
-.quad .q-a{
+
+.quad-pag{
+    width: 100%;
+    max-width: 100%;
+    position: relative;
+
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    transition: 0.4s;
+}
+
+.quad .q-a, .quad-pag .q-a{
     width: 350px;
     max-width: 350px;
     min-width: 350px;
@@ -593,7 +616,7 @@ body{
     max-height: 250px;
     height: 250px;
 
-    margin: 20px;
+    margin: 40px;
     box-shadow: 0 4px 10px black;
 
     position: relative;
@@ -610,12 +633,14 @@ body{
 
 }
 
+.quad .q-a:hover .content, .quad .q-a:hover img,
 
-.quad .q-a:hover .content, .quad .q-a:hover img{   
+.quad-pag .q-a:hover .content, .quad-pag .q-a:hover img{
+
     filter: brightness(0.4) blur(2px);
 }
 
-.quad .q-a .content{
+.quad .q-a .content, .quad-pag .q-a .content{
     position: absolute;
     font-size: 20px;
     z-index: 10;
@@ -631,24 +656,24 @@ body{
 
 }
 
-.quad .q-a:hover .content p{
+.quad .q-a:hover .content p, .quad-pag .q-a:hover .content p{
     opacity: 0%;
     transition: 0.3s;
 }
 
-.quad .q-a:hover .content h2{
+.quad .q-a:hover .content h2, .quad-pag .q-a:hover .content h2{
     border-bottom: none;
     transition: 0.3s;
     opacity: 0%;
 
 }
 
-.quad .q-a:hover .content{
+.quad .q-a:hover .content , .quad-pag .q-a:hover .content{
     transition: 0.3s;
     top: 0;
 }
 
-.quad .q-a h2{
+.quad .q-a h2, .quad-pag .q-a h2{
     color: rgb(255, 255, 255);
     font-family: Lexend;
     font-weight: 300;
@@ -661,7 +686,7 @@ body{
 
 }
 
-.quad .q-a p{
+.quad .q-a p, .quad-pag .q-a p{
     position: absolute;
     width: fit-content;
     min-width: 200px;
@@ -676,7 +701,7 @@ body{
 
 }
 
-.quad .q-a img{
+.quad .q-a img, .quad-pag .q-a img{
     max-width: 100%;
     width: 100%;
     height: 100%;
@@ -690,7 +715,7 @@ body{
 /* botoes dos cards projects */
 
 
-.quad .q-a .btn-h{
+.quad .q-a .btn-h, .quad-pag .q-a .btn-h{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -707,21 +732,21 @@ body{
 
 }
 
-.quad .q-a:hover .btn-h{
+.quad .q-a:hover .btn-h, .quad-pag .q-a:hover .btn-h{
     opacity: 100%;
     transition: 0.3s;
 }
 
-.quad .q-a .btn-h a:hover{
+.quad .q-a .btn-h a:hover, .quad-pag .q-a .btn-h a:hover{
     width: 100px;
     height: 30px;
 }
 
-.quad .q-a .btn-h a:hover img{
+.quad .q-a .btn-h a:hover img, .quad-pag .q-a .btn-h a:hover img{
     opacity: 0%;
 }
 
-.quad .q-a .btn-h a{
+.quad .q-a .btn-h a, .quad-pag .q-a .btn-h a{
     outline: none;
     cursor: pointer;
     
@@ -748,58 +773,60 @@ body{
 }
 
 
-.quad .q-a .btn-h .acc{
+.quad .q-a .btn-h .acc, .quad-pag .btn-h .acc{
     background-color: #ffffff!important;
     border:  #ffffff 1.5px solid;
 }
 
-.quad .q-a .btn-h .git{
+.quad .q-a .btn-h .git, .quad-pag .q-a .btn-h .git{
     background-color: #00000083!important;
     border:  #ffffff 1.5px solid;
 }
 
-.quad .q-a .btn-h .acc:hover, .quad .q-a .btn-h .git:hover{
+.quad .q-a .btn-h .acc:hover, .quad .q-a .btn-h .git:hover, 
+
+.quad-pag .q-a .btn-h .acc:hover, .quad-pag .q-a .btn-h .git:hover{
     background-color: #16161a!important;
     border: rgb(0, 255, 102) 1.5px solid;
 
     transition: 0.2s;
 }
 
-.quad .q-a .btn-h a button{
+.quad .q-a .btn-h a button, .quad-pag .q-a .btn-h a button{
     color: #fff;
     font-size: 14px;
     opacity: 0%;
 }
 
 
-.quad .q-a .btn-h a:hover button{
+.quad .q-a .btn-h a:hover button, .quad-pag .q-a .btn-h a:hover button{
     color: #fff;
     font-size: 14px;
     opacity: 100%;
 }
 
-.quad .q-a .git button{
+.quad .q-a .git button, .quad-pag .q-a .git button{
     cursor: pointer;
     border: none;
     background-color: transparent;
     color: #fff;
 }
 
-.quad .q-a .acc button{
+.quad .q-a .acc button, .quad-pag .q-a .acc button{
     cursor: pointer;
     border: none;
     background-color: transparent;
     color: rgb(0, 0, 0);
 }
 
-.quad .q-a .btn-h .git img{
+.quad .q-a .btn-h .git img, .quad-pag .q-a .btn-h .git img{
     filter: invert(1);
     position: absolute;
     width: 23px;
     height: 23px;
 }
 
-.quad .q-a .btn-h .acc img{
+.quad .q-a .btn-h .acc img, .quad-pag .q-a .btn-h .acc img{
     filter: invert(0);
     position: absolute;
     width: 23px;
@@ -825,24 +852,26 @@ body{
     font-weight: 800;
     font-family: Lexend;
     z-index: 100;
+    position: absolute;
+    top: 32%;
+    
+}
+
+.btn-np button:hover{
+    filter: sepia(1) saturate(10) hue-rotate(60deg);
 }
 
 .btn-np button:last-of-type{
-    position: absolute;
-    color: red;
     right: 0;
 }
 
 .btn-np button:first-of-type{
-    color: #00ff66;
-    position: absolute;
     left: 0;
 }
 
 .quad::-webkit-scrollbar{
     display: none;
 }
-
 
 /* page projects */
 
@@ -871,6 +900,8 @@ body{
     line-height: 100px;
 
     border-bottom: #00ff66 1px solid;
+
+    margin-top: 30px;
 }
 
 #projetos-p h2{
@@ -919,6 +950,8 @@ body{
     cursor: pointer;
 
     transition: 0.7s;
+
+    z-index: 30;
 }
 
 #projetos-p .more-pp a:hover{
@@ -951,13 +984,21 @@ font-size: 15px;
     flex-wrap: wrap;
 }
 
-#about-subpagina .photo, #about-subpagina .photo img{
+#about-subpagina .content-about .photo img{
     max-width: 100%;
     position: relative;
+
+        width: 100%;
+        min-width: 100%;
+        height: 100%;
+        min-height: 100%;
+        object-fit: cover;
+        filter: brightness(0.8) contrast(1.3);    
 }
 
-#about-subpagina .photo{
+#about-subpagina .content-about .photo{
     overflow: hidden;
+
     border-radius: 60%;
     width: 300px;
     max-width: 300px;
@@ -969,16 +1010,6 @@ font-size: 15px;
 
     box-shadow: 0 0 15px black;
     position:relative;
-}
-
-
-#about-subpagina .photo img{
-    width: 190%;
-    min-width: 190%;
-    height: 100%;
-    min-height: 100%;
-    object-fit: cover;
-    filter: hue-rotate(60deg);
 }
 
 #about-subpagina .content-about .ball-name{
@@ -1207,16 +1238,19 @@ font-size: 15px;
 
 .t-a{
     display: flex;
-
     flex-wrap: wrap;
-    width: 100%;
-    height: 200px;
     align-items: center;
     justify-content: center;
 
+    width: 100%;
+    height: 200px;
+    
+
     background: radial-gradient(#00fc4c20 5%, transparent 70%);
     background-position: center;
-    
+
+    position: relative;   
+    margin-bottom: 200px;
 }
 
 .i-ca{
@@ -1226,7 +1260,6 @@ font-size: 15px;
     padding: 0;
     display: flex;
     align-items: center;
-
 }
 .c-a{
     border-radius: 60%;
@@ -1325,8 +1358,9 @@ font-size: 15px;
 footer{
     position: relative;
     width: 100%;
-    height: 80px;
-    background-color: #00ff66;
+    height: 200px;
+    background-color:#1b1e1bae;
+    border-top: #00ff66 1px solid;
     bottom: 0;
     display: flex;
     justify-content: center;
@@ -1338,9 +1372,31 @@ footer{
 footer p{
     text-align: center;
     font-family: Lexend;
-    font-weight: 500;
-    color: #16161a;
+    font-weight: 300;
+    color: #97a59b;
     font-size: 15px;
+}
+
+footer ul{
+    list-style: none;
+    position: absolute;
+    
+    left: 0;
+    margin-left: 50px;
+}
+
+footer ul li{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+footer ul li a{
+    color: #97a59b;
+    text-decoration: none;
+    line-height: 2;
+    font-weight: 300;
+    font-family: Arial;
 }
 
 
