@@ -1405,8 +1405,28 @@ footer ul li a{
 #b3d, #b2d{
     color: #00ff66;
     text-align: center;
-    margin-top: 10vh;
-    margin-bottom: 10vh;
+    margin-top: 3vh;
+    margin-bottom: 3vh;
     width: 100%;
     position: relative;
+}
+
+.b3d, .b2d{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.b3d p, .b2d p{
+    color: rgb(108, 108, 108);
+    font-family: Arial;
+    font-size: 14px;
+    width: 80%;
+    text-align: center;
+    font-weight: 300;
+    margin: 20px 0 60px 0;
+    line-height: 2;
 }
