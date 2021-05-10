@@ -243,6 +243,7 @@ body{
 .pages{
     width: 100%;
     max-width: 100%;
+    position: relative;
 }
 
 #cardme, #paragraph, #projetos-p{
@@ -980,8 +981,15 @@ font-size: 15px;
 .content-about{
     display: flex;
     justify-content: center;
-
     flex-wrap: wrap;
+
+    position: relative;
+    
+}
+
+#about-subpagina{
+    height: 100%;
+    position: relative;
 }
 
 #about-subpagina .content-about .photo img{
@@ -1068,6 +1076,7 @@ font-size: 15px;
     padding: 50px;
 
     line-height: 1.5;
+    
 }
 
 .title-art{
@@ -1360,9 +1369,9 @@ font-size: 15px;
 footer{
     position: relative;
     width: 100%;
-    height: 200px;
-    background-color:#1b1e1bae;
-    border-top: #00ff66 1px solid;
+    height: 80px;
+    background-color:#0e0e0eae;
+    border-top: #00ff66 1px dashed;
     bottom: 0;
     display: flex;
     justify-content: center;
@@ -1377,28 +1386,6 @@ footer p{
     font-weight: 300;
     color: #97a59b;
     font-size: 15px;
-}
-
-footer ul{
-    list-style: none;
-    position: absolute;
-    
-    left: 0;
-    margin-left: 50px;
-}
-
-footer ul li{
-    display: flex;
-    flex-direction: column;
-    
-}
-
-footer ul li a{
-    color: #97a59b;
-    text-decoration: none;
-    line-height: 2;
-    font-weight: 300;
-    font-family: Arial;
 }
 
 
