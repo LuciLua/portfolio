@@ -11,28 +11,34 @@
 
 @font-face {
     font-family: Lexend-700;
+    font-display: Swap;
     src: url(fonts/Lexend-Bold.ttf);
 }
 
 @font-face {
     font-family: Lexend-300;
+    font-display: Swap;
     src: url(/fonts/Lexend-Light.ttf);
 }
 @font-face {
     font-family: Lexend-500;
+    font-display: Swap;
     src: url(/fonts/Lexend-Medium.ttf);
 }
 @font-face {
     font-family: Lexend-400;
+    font-display: Swap;
     src: url(/fonts/Lexend-Regular.ttf);
 }
 @font-face {
     font-family: Lexend-600;
+    font-display: Swap;
     src: url(/fonts/Lexend-SemiBold.ttf);
 }
 
 @font-face {
     font-family: Lexend-100;
+    font-display: Swap;
     src: url(/fonts/Lexend-Thin.ttf);
 }
 
