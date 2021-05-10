@@ -13,10 +13,7 @@
     font-family: Lexend-700;
     src: url(fonts/Lexend-Bold.ttf);
 }
-@font-face {
-    font-family: Lexend-800;
-    src: url(/fonts/Lexend-ExtraBold.ttf);
-}
+
 @font-face {
     font-family: Lexend-300;
     src: url(/fonts/Lexend-Light.ttf);
@@ -898,7 +895,7 @@ body{
     color: #fff;
     cursor: pointer;
 
-    font-family: Lexend-800;
+    font-family: Lexend-700;
     font-display: swap;
 
     z-index: 100;
