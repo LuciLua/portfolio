@@ -9,7 +9,37 @@
     --background: rgb(22, 22, 27);
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100;300;500;800&display=swap');
+@font-face {
+    font-family: Lexend-700;
+    src: url(fonts/Lexend-Bold.ttf);
+}
+@font-face {
+    font-family: Lexend-800;
+    src: url(/fonts/Lexend-ExtraBold.ttf);
+}
+@font-face {
+    font-family: Lexend-300;
+    src: url(/fonts/Lexend-Light.ttf);
+}
+@font-face {
+    font-family: Lexend-500;
+    src: url(/fonts/Lexend-Medium.ttf);
+}
+@font-face {
+    font-family: Lexend-400;
+    src: url(/fonts/Lexend-Regular.ttf);
+}
+@font-face {
+    font-family: Lexend-600;
+    src: url(/fonts/Lexend-SemiBold.ttf);
+}
+
+@font-face {
+    font-family: Lexend-100;
+    src: url(/fonts/Lexend-Thin.ttf);
+}
+
+
 
 *::-webkit-scrollbar { 
     width: 6px;
@@ -392,8 +422,7 @@ body{
 .cards p{
     color: rgb(137, 137, 137);
     font-size: 15px;
-    font-family: 'Lexend';
-    font-weight: 500;
+    font-family: Lexend-500;
     z-index: 1;
     margin-top: 20px;
     margin-bottom: 20px;
@@ -410,8 +439,7 @@ body{
     width: fit-content;
     height: fit-content;
     padding: 5px 20px;
-    font-family: Lexend;
-    font-weight: 500;
+    font-family: Lexend-500;
     font-size: 15px;
     border: #00ff6600 1px solid;
     transition: 0.1s;
@@ -465,16 +493,13 @@ body{
     align-items: center;
 }
 
+.contact-align h1::first-letter{
+    color: var(--green-1)
+}
 .contact-align h1{
-    font-family: Lexend;
-    font-size: 30px;
+    font-family: Lexend-500;
     color: #fff;
     margin-bottom: 20px;
-}
-
-.contact-align h1::first-letter{
-    font-family: Lexend;
-    color: var(--green-1)
 }
 
 .contact-align p{
@@ -497,7 +522,7 @@ body{
 
 .left p{
     font-weight: 500;
-    font-family: Lexend;
+    font-family: Lexend-300;
     font-size: 13px;
     font-weight: 500;
     text-align: justify;
@@ -564,7 +589,7 @@ body{
     position: relative;
 
     color: #00ff66;
-    font-family: Lexend;
+    font-family: Lexend-500;
     font-weight: 500;
     margin-top: 10px;
 
@@ -908,7 +933,7 @@ body{
 #projetos-p h2{
     color: #fff;
     font-weight: 500;
-    font-family: Lexend;
+    font-family: Lexend-500;
     text-align: center;
     font-size: 25px;
     margin-bottom: 20px;
@@ -916,8 +941,7 @@ body{
 
 #projetos-p h2 span{
     color: #00ff66;
-    font-weight: 500;
-    font-family: Lexend;
+    font-family: Lexend-500;
     text-align: center;
     font-size: 25px;
     margin-bottom: 20px;
@@ -971,7 +995,7 @@ color: #00ff66;
 
 cursor: pointer;
 
-font-family: Lexend;
+font-family: Lexend-500;
 font-size: 15px;
 }
 
@@ -1043,8 +1067,7 @@ font-size: 15px;
     justify-content: center;
     position: relative;
 
-    font-family: Lexend;
-    font-weight: 500;
+    font-family: Lexend-500;
 
     right: 50px;
 
@@ -1064,7 +1087,6 @@ font-size: 15px;
     color: rgb(142, 142, 142);
     font-size: 15px;
     display: flex;
-    /* background-color: rgba(44, 49, 63, 0.194); */
     margin: 20px;
 
     text-align: justify;
@@ -1076,7 +1098,8 @@ font-size: 15px;
     padding: 50px;
 
     line-height: 1.5;
-    
+
+    font-family: Lexend-300;
 }
 
 .title-art{
@@ -1092,8 +1115,7 @@ font-size: 15px;
 
 .title-art  h1{
     color: #fff;
-    font-family: Lexend;
-    font-weight: 600;
+    font-family: Lexend-500;
     font-size: 35px;
     text-align: center;
 }
@@ -1229,7 +1251,7 @@ font-size: 15px;
     line-height: 1.15;
     font-weight:lighter;
     cursor:pointer;
-    font-family: Lexend;
+    font-family: Lexend-300;
     z-index: 400;
 
     margin: 5px;
@@ -1298,7 +1320,7 @@ font-size: 15px;
     height: 100%;
     color: #ffffffaf;
     float: right;
-    font-family: Lexend;
+    font-family: Lexend-300;
     font-weight: 300;
     margin-left: 15px;
     margin-right: 15px;
@@ -1382,7 +1404,7 @@ footer{
 
 footer p{
     text-align: center;
-    font-family: Lexend;
+    font-family: Lexend-300;
     font-weight: 300;
     color: #97a59b;
     font-size: 15px;

@@ -4,9 +4,9 @@ window.addEventListener('scroll', function(){
 });
 
 function next(){
-    document.getElementById('quad').scrollLeft += 340;
+    document.getElementById('quad').scrollLeft += 390;
 };
 
 function prev(){
-    document.getElementById('quad').scrollLeft -= 340;
+    document.getElementById('quad').scrollLeft -= 390;
 };
