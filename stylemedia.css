@@ -86,16 +86,17 @@
     }
     
     .menu ul li a{
-        font-family: Arial;
-        color: rgb(255, 255, 255);
-        text-decoration: none;
-        font-weight: 600;
-        position: fixed;
-        padding: 0;
-        margin: 0;
         width: 100%;
         height: 100%;
+        position: fixed;
         
+        font-family: Arial;
+        font-weight: 600;
+        text-decoration: none;
+
+        color: rgb(255, 255, 255);
+        padding: 0;
+        margin: 0;
     }
     
     .memul ul li a:hover{
@@ -175,19 +176,18 @@
     }
 
     .left p{
-    font-weight: 500;
     font-family: Lexend-300;
     font-size: 13px;
-    font-weight: 500;
     text-align: justify;
     width: 100%;
     color: #bdbdbd;
     line-height: 2;
     padding: 0px;
-}
+    }
     .right .p{
         width: 100%;
         height: 100%;
+
         flex-wrap: wrap;
     }
 

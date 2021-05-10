@@ -423,6 +423,7 @@ body{
     color: rgb(137, 137, 137);
     font-size: 15px;
     font-family: Lexend-500;
+    font-display: swap;
     z-index: 1;
     margin-top: 20px;
     margin-bottom: 20px;
@@ -440,6 +441,7 @@ body{
     height: fit-content;
     padding: 5px 20px;
     font-family: Lexend-500;
+    font-display: swap;
     font-size: 15px;
     border: #00ff6600 1px solid;
     transition: 0.1s;
@@ -498,6 +500,7 @@ body{
 }
 .contact-align h1{
     font-family: Lexend-500;
+    font-display: swap;
     color: #fff;
     margin-bottom: 20px;
 }
@@ -523,6 +526,7 @@ body{
 .left p{
     font-weight: 500;
     font-family: Lexend-300;
+    font-display: swap;
     font-size: 13px;
     font-weight: 500;
     text-align: justify;
@@ -590,6 +594,7 @@ body{
 
     color: #00ff66;
     font-family: Lexend-500;
+    font-display: swap;
     font-weight: 500;
     margin-top: 10px;
 
@@ -668,9 +673,7 @@ body{
 
 .quad .q-a .content, .quad-pag .q-a .content{
     position: absolute;
-    font-size: 20px;
     z-index: 10;
-    font-family: Lexend;
 
     margin-left: 20px;
     top: 140px;
@@ -679,7 +682,6 @@ body{
 
     height: fit-content;
     width: fit-content;
-
 }
 
 .quad .q-a:hover .content p, .quad-pag .q-a:hover .content p{
@@ -700,9 +702,11 @@ body{
 }
 
 .quad .q-a h2, .quad-pag .q-a h2{
+
     color: rgb(255, 255, 255);
-    font-family: Lexend;
-    font-weight: 300;
+    font-family: Lexend-300;
+    font-display: swap;
+
     background-color: #00ff6600;
     border-bottom: 1px solid #00ff66;
     padding-bottom: 5px;
@@ -712,14 +716,17 @@ body{
 
 }
 
-.quad .q-a p, .quad-pag .q-a p{
+.quad .q-a .content p, .quad-pag .q-a p{
+
+    font-family: Arial;
+    font-display: swap;
+
     position: absolute;
     width: fit-content;
     min-width: 200px;
     color: rgb(120, 120, 120);
     font-size: 13px;
     z-index: 10;
-    font-family: Arial;
     top: 60px;
     line-height: 1.5;
     opacity: 100%;
@@ -775,13 +782,15 @@ body{
 .quad .q-a .btn-h a, .quad-pag .q-a .btn-h a{
     outline: none;
     cursor: pointer;
-    
-    font-family: Lexend;
+
     z-index: 10;
 
     transition: 0.2s;
 
     text-decoration: none;
+    font-display: swap;
+    font-family: Arial;
+
     background-color: #ffffffe4;
     border: none;
     border-radius: 40px;
@@ -875,8 +884,10 @@ body{
     height: 50px;
     color: #fff;
     cursor: pointer;
-    font-weight: 800;
-    font-family: Lexend;
+
+    font-family: Lexend-800;
+    font-display: swap;
+
     z-index: 100;
     position: absolute;
     top: 32%;
@@ -921,8 +932,8 @@ body{
     align-items:flex-end;
     justify-content: center;
 
-    font-family: Lexend;
-    font-weight: 500;
+    font-family: Lexend-500;
+    font-display: swap;
     line-height: 100px;
 
     border-bottom: #00ff66 1px solid;
@@ -932,7 +943,6 @@ body{
 
 #projetos-p h2{
     color: #fff;
-    font-weight: 500;
     font-family: Lexend-500;
     text-align: center;
     font-size: 25px;
@@ -1243,27 +1253,24 @@ font-size: 15px;
 }
 
 .fechar{
-    position:absolute;
+    position: absolute;
+    text-align: center;
     
     color:rgba(255, 255, 255, 0.749);
+    background-color: #0000007e;
 
     font-size:30px;
-    line-height: 1.15;
-    font-weight:lighter;
     cursor:pointer;
+    
+    line-height: 1.15;
     font-family: Lexend-300;
     z-index: 400;
 
     margin: 5px;
 
     border-radius: 60%;
-    background-color: #0000007e;
     width: 40px;
     height: 40px;
-
-    text-align: center;
-
-
 }
 
 
@@ -1316,14 +1323,16 @@ font-size: 15px;
 
 .i-ca p{
     position: relative;
-    width: 100%;
-    height: 100%;
-    color: #ffffffaf;
     float: right;
-    font-family: Lexend-300;
-    font-weight: 300;
     margin-left: 15px;
     margin-right: 15px;
+    
+    width: 100%;
+    height: 100%;
+
+    color: #ffffffaf;
+
+    font-family: Lexend-300;
 }
 
 .c-a:hover{
@@ -1403,10 +1412,10 @@ footer{
 }
 
 footer p{
+    color: #97a59b;
+    
     text-align: center;
     font-family: Lexend-300;
-    font-weight: 300;
-    color: #97a59b;
     font-size: 15px;
 }
 
@@ -1430,12 +1439,14 @@ footer p{
 
 
 .b3d p, .b2d p{
-    color: rgb(108, 108, 108);
+    color: rgb(128, 128, 128);
+    
     font-family: Arial;
-    font-size: 14px;
-    width: 80%;
-    text-align: center;
     font-weight: 300;
-    margin: 20px 0 60px 0;
+    font-size: 14px;
+    text-align: center;
     line-height: 2;
+
+    width: 80%;
+    margin: 20px 0 60px 0;
 }
