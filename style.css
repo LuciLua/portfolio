@@ -58,8 +58,10 @@
     box-sizing:border-box;
     margin: 0;
     padding:0;
-    scroll-behavior:smooth;
+    scroll-behavior: smooth;
     font-family: Arial;
+    font-display: swap;
+
     }
 
 body{
@@ -119,6 +121,8 @@ body{
     font-weight: 800;
     font-size: 30px;
     font-family: Helvetica;
+    font-display: swap;
+
     color: rgb(255, 255, 255);
     user-select: none;
 }
@@ -128,6 +132,8 @@ body{
     font-weight: 100;
     font-size: 13px;
     font-family: Helvetica;
+    font-display: swap;
+
     color: rgb(109, 109, 109);
     user-select: none;
 }
@@ -255,9 +261,11 @@ body{
 
 .menu ul li a{
     font-family: Arial;
+    font-display: swap;
+    font-weight: 600;
+
     color: rgb(255, 255, 255);
     text-decoration: none;
-    font-weight: 600;
 }
 
 .menu ul li a:hover{
@@ -424,6 +432,7 @@ body{
     font-size: 15px;
     font-family: Lexend-500;
     font-display: swap;
+
     z-index: 1;
     margin-top: 20px;
     margin-bottom: 20px;
@@ -440,9 +449,11 @@ body{
     width: fit-content;
     height: fit-content;
     padding: 5px 20px;
+
     font-family: Lexend-500;
     font-display: swap;
     font-size: 15px;
+
     border: #00ff6600 1px solid;
     transition: 0.1s;
     border-radius: 60px;
@@ -501,6 +512,7 @@ body{
 .contact-align h1{
     font-family: Lexend-500;
     font-display: swap;
+
     color: #fff;
     margin-bottom: 20px;
 }
@@ -952,8 +964,10 @@ body{
 #projetos-p h2 span{
     color: #00ff66;
     font-family: Lexend-500;
-    text-align: center;
+    font-display: swap;
     font-size: 25px;
+
+    text-align: center;
     margin-bottom: 20px;
 }
 
@@ -1007,6 +1021,8 @@ cursor: pointer;
 
 font-family: Lexend-500;
 font-size: 15px;
+font-display: swap;
+
 }
 
 
@@ -1078,6 +1094,7 @@ font-size: 15px;
     position: relative;
 
     font-family: Lexend-500;
+    font-display: swap;
 
     right: 50px;
 
@@ -1110,6 +1127,8 @@ font-size: 15px;
     line-height: 1.5;
 
     font-family: Lexend-300;
+    font-display: swap;
+
 }
 
 .title-art{
@@ -1127,6 +1146,8 @@ font-size: 15px;
     color: #fff;
     font-family: Lexend-500;
     font-size: 35px;
+    font-display: swap;
+
     text-align: center;
 }
 
@@ -1259,11 +1280,13 @@ font-size: 15px;
     color:rgba(255, 255, 255, 0.749);
     background-color: #0000007e;
 
-    font-size:30px;
     cursor:pointer;
     
     line-height: 1.15;
+    font-size:30px;
     font-family: Lexend-300;
+    font-display: swap;
+
     z-index: 400;
 
     margin: 5px;
@@ -1333,6 +1356,8 @@ font-size: 15px;
     color: #ffffffaf;
 
     font-family: Lexend-300;
+    font-display: swap;
+
 }
 
 .c-a:hover{
@@ -1416,6 +1441,7 @@ footer p{
     
     text-align: center;
     font-family: Lexend-300;
+    font-display: swap;
     font-size: 15px;
 }
 
@@ -1442,8 +1468,10 @@ footer p{
     color: rgb(128, 128, 128);
     
     font-family: Arial;
+    font-display: swap;
     font-weight: 300;
     font-size: 14px;
+
     text-align: center;
     line-height: 2;
 

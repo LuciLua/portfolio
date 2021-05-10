@@ -92,6 +92,7 @@
         
         font-family: Arial;
         font-weight: 600;
+        font-display: swap;
         text-decoration: none;
 
         color: rgb(255, 255, 255);
@@ -178,6 +179,8 @@
     .left p{
     font-family: Lexend-300;
     font-size: 13px;
+    font-display: swap;
+
     text-align: justify;
     width: 100%;
     color: #bdbdbd;
