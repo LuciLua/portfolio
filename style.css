@@ -1472,6 +1472,9 @@ footer p{
     justify-content: center;
 }
 
+.b3d .line{
+    margin-top: 9vh;
+}
 
 .b3d p, .b2d p{
     color: rgb(128, 128, 128);
@@ -1486,4 +1489,6 @@ footer p{
 
     width: 80%;
     margin: 20px 0 60px 0;
+
+    max-width: 900px;
 }
