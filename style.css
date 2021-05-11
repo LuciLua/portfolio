@@ -130,6 +130,7 @@ body{
     user-select: none;
 }
 
+
 .title h2{
     line-height: 50px;
     font-weight: 100;
@@ -137,13 +138,12 @@ body{
     font-family: Helvetica;
     font-display: swap;
 
-    color: rgb(109, 109, 109);
+    color: rgb(140, 140, 140);
     user-select: none;
 }
 
 .title h1 span{
     color: rgb(0, 255, 102);
-    font-weight: 800;
 }
 
 /* botao init */
@@ -157,7 +157,7 @@ body{
     border: none;
 
     font-weight: 600;
-    font-size: 16px;
+    font-size: 15px;
 
     outline: none;
     cursor: pointer;
@@ -165,8 +165,8 @@ body{
     letter-spacing: 5px;
     transition: 0.3s;
     background-color: #31333b;
-    color: #ffffff;
-    box-shadow: 0 10px 13px rgba(0, 0, 0, 0.427);
+    color: #ffffff89;
+    box-shadow: 0 10px 14px rgba(0, 0, 0, 0.194);
 
     width: 140px;
     height: 30px;
@@ -594,10 +594,13 @@ body{
     margin-right: auto;
     width: 100px;
     height: 100px;
+
+    transition: 0.1s;
 }
 
 .right .p .item:hover{
     transform: scale(1.05);
+    transition: 0.1s;
 }
 
 .right .p .item:hover img{
@@ -611,8 +614,10 @@ body{
     color: #00ff66;
     font-family: Lexend-500;
     font-display: swap;
-    font-weight: 500;
+
     margin-top: 10px;
+
+    text-shadow: 0 0 12px #16161a;
 
     user-select: none;
 }
@@ -626,19 +631,16 @@ body{
     position: relative;
 }
 
-
 .quad{
     width: 100%;
     max-width: 100%;
     position: relative;
 
     display: flex;
-    /* flex-wrap: wrap; */
     align-items: center;
     justify-content:start;
     transition: 0.4s;
     overflow-x: scroll;
-
 }
 
 
@@ -664,7 +666,7 @@ body{
     height: 250px;
 
     margin: 40px;
-    box-shadow: 0 4px 10px black;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.242);
 
     position: relative;
 
@@ -677,6 +679,7 @@ body{
     display: flex;
     align-items: center;
     justify-content: left;
+
 
 }
 
@@ -959,7 +962,7 @@ body{
 
 #projetos-p h2{
     color: #fff;
-    font-family: Lexend-500;
+    font-family: Lexend-300;
     text-align: center;
     font-size: 25px;
     margin-bottom: 20px;
@@ -967,12 +970,6 @@ body{
 
 #projetos-p h2 span{
     color: #00ff66;
-    font-family: Lexend-500;
-    font-display: swap;
-    font-size: 25px;
-
-    text-align: center;
-    margin-bottom: 20px;
 }
 
 
@@ -1112,6 +1109,9 @@ font-display: swap;
     background-color: rgba(35, 38, 43, 0.413);
     border: #00ff66 1px dashed;
     border-radius: 60%;
+
+    user-select: none;
+    pointer-events: none;
 }
 
 #about-subpagina .content-about p{
@@ -1192,6 +1192,8 @@ font-display: swap;
     align-items: flex-end;
     justify-content: center;
 
+    user-select: none;
+    cursor: pointer;
 }
 
 #artes .art-g .o .eye{
@@ -1427,17 +1429,19 @@ font-display: swap;
 
 
 footer{
-    position: relative;
     width: 100%;
     height: 80px;
+    margin-top: 25vh;
+    
     background-color:#0e0e0eae;
     border-top: #00ff66 1px dashed;
     bottom: 0;
+    
+    position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
 
-    margin-top: 25vh;
 }
 
 footer p{
