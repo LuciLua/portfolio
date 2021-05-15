@@ -1452,6 +1452,8 @@ footer p{
     font-family: Lexend-300;
     font-display: swap;
     font-size: 15px;
+    margin: auto;
+    position: absolute;
 }
 
 
@@ -1491,4 +1493,40 @@ footer p{
     margin: 20px 0 60px 0;
 
     max-width: 900px;
+}
+
+/* footer icons */
+
+.icos-footer{
+    display: inline;
+    width: fit-content;
+    margin-left: auto;
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.icos-footer .ico{
+    width: fit-content;
+    height: fit-content;
+    display: inline;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+   
+}
+
+.icos-footer .ico a img{
+    width: 25px;
+    height: 25px;
+    filter: invert(0.3);
+    transition: 0.2s;
+}
+
+.icos-footer .ico:hover a img{
+    width: 25px;
+    height: 25px;
+    filter: invert(0.9);
+    transition: 0.2s;
 }

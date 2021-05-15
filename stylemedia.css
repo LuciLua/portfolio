@@ -210,6 +210,31 @@
         text-align: center;
     }
 
+    
+/* footer icons */
+
+.footer{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    align-items: center;
+    flex-wrap: wrap;
+    height: fit-content;
+}
+
+.icos-footer{
+    width: fit-content;
+    margin-left: auto;
+}
+
+.icos-footer .ico{
+    position: relative;
+}
+
+footer p {
+    position: relative;
+}
+
   }
 
 
