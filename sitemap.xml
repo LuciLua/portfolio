@@ -1,12 +1,29 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
-	http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
-
-	<url>
-		<loc>https://www.luci-lua.tk/</loc>
-		<changefreq>daily</changefreq>
-		<priority>1</priority>
-	</url>
+﻿<?xml version="1.0" encoding="UTF-8"?>
+		<!--	created with www.mysitemapgenerator.com	-->
+		<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<url>
+	<loc>https://www.luci-lua.tk/</loc>
+	<lastmod>2021-05-26T20:33:23+01:00</lastmod>
+	<priority>1.0</priority>
+</url>
+<url>
+	<loc>https://www.luci-lua.tk/pages/projects.html</loc>
+	<lastmod>2021-05-26T20:33:23+01:00</lastmod>
+	<priority>0.8</priority>
+</url>
+<url>
+	<loc>https://www.luci-lua.tk/pages/about.html</loc>
+	<lastmod>2021-05-26T20:33:26+01:00</lastmod>
+	<priority>0.8</priority>
+</url>
+<url>
+	<loc>https://www.luci-lua.tk/pages/arts.html</loc>
+	<lastmod>2021-05-26T20:33:26+01:00</lastmod>
+	<priority>0.8</priority>
+</url>
+<url>
+	<loc>https://www.luci-lua.tk/index.html</loc>
+	<lastmod>2021-05-26T20:33:27+01:00</lastmod>
+	<priority>1.0</priority>
+</url>
 </urlset>
