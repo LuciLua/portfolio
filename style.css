@@ -1027,6 +1027,26 @@ font-display: swap;
 
 }
 
+/* contect about page */
+
+
+.content-contact{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    position: relative;
+}
+
+.content-contact p{
+    font-family: Lexend-300;
+    color: #9a9a9a;
+}
+
+#contact-subpagina{
+    width: 100%;
+    height: 66.3vh;
+}
 
 /* subpagina about */
 
