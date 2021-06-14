@@ -1231,6 +1231,11 @@ font-display: swap;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+    user-select: none;
     
 }
 
