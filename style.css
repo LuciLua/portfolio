@@ -443,12 +443,15 @@ body{
 
 }
 
+.cards .aboutContact{
+    display: inline;
+    margin: 0;
+    padding: 0;
+}
 
-.cards button{
+.cards .aboutContact button{
     position: relative;
     z-index: 1;
-    background-color: rgb(0, 255, 102);
-    color: black;
     width: fit-content;
     height: fit-content;
     padding: 5px 20px;
@@ -457,21 +460,51 @@ body{
     font-display: swap;
     font-size: 15px;
 
-    border: #00ff6600 1px solid;
     transition: 0.1s;
     border-radius: 60px;
     outline: none;
     cursor: pointer;
-    margin-bottom: 25px;
-    margin-top: 15px;
+
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+
+.cards .aboutContact #cardAbout{
+    background-color: rgb(0, 255, 102);
+    color: black;
+    
+    border: #00ff6600 1px solid;
+    
     box-shadow:  0 2px 13px black;
 }
 
-.cards button:hover{
+.cards .aboutContact #cardContact{
+    background-color: rgb(24, 24, 24);
+    color: rgb(234, 234, 234);
+    
+    border: #00ff6600 1px solid;
+    
+    box-shadow:  0 2px 13px rgba(0, 0, 0, 0.288);
+    
+}
+.cards .aboutContact #cardAbout:hover{
     background-color: rgba(0, 255, 102, 0.098);
     color: rgb(255, 255, 255);
     border: #00ff66 1px solid;
+    
+    transform: scale(1.06);
+    transition: 0.1s;
+}
 
+.cards .aboutContact #cardContact:hover{
+    background-color: rgba(0, 255, 102, 0.098);
+    color: rgb(255, 255, 255);
+    border: #00ff66 1px solid;
+    
     transform: scale(1.06);
     transition: 0.1s;
 }
