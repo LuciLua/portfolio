@@ -1087,7 +1087,7 @@ font-display: swap;
     flex-direction: column;
 
     width: 50%;
-    min-width: 50vh;
+    min-width: 250px;
     max-width: 50vh;
 }
 
