@@ -10,3 +10,12 @@ function next(){
 function prev(){
     document.getElementById('quad').scrollLeft -= 390;
 };
+
+function send(){
+    var btn = document.getElementById('btn-send')
+    const inputs = document.querySelectorAll('.inpForm')
+    setTimeout(function(){
+        inputs.forEach(e=>{e.style.pointerEvents='none'; e.style.userSelect='none'; e.style.backgroundColor='#9a9a9a29'})
+        btn.style.pointerEvents='none'; btn.style.backgroundColor='#00ff62'; btn.style.color='#000'; btn.style.fontWeight='800'; btn.textContent='Enviado'; btn.style.userSelect='none'}, 500)
+
+}
