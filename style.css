@@ -1066,9 +1066,89 @@ font-display: swap;
 .content-contact{
     display: flex;
     justify-content: center;
+    align-items: center;
     flex-wrap: wrap;
 
     position: relative;
+    flex-direction: column;
+}
+
+.content-contact form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    width: 100%;
+}
+
+.content-contact input{
+    width: 40%;
+
+    background-color: rgba(255, 255, 255, 0.049);
+    color: rgba(255, 255, 255, 0.501);
+
+    border: 1px solid rgba(255, 255, 255, 0.097);
+    border-radius: 4px;
+    
+    padding: 10px 15px 10px 15px;
+
+    margin: 10px;
+
+
+    position: relative;
+
+}
+
+.content-contact form textarea{
+    width: 40%;
+
+    background-color: rgba(255, 255, 255, 0.049);
+
+    border: 1px solid rgba(255, 255, 255, 0.097);
+
+    border-radius: 4px;
+
+    padding: 10px 15px 10px 15px;
+
+    margin: 10px;
+
+    resize: none;
+
+    color: rgba(255, 255, 255, 0.501);
+
+}
+
+.content-contact form input:focus, 
+.content-contact form textarea:focus{
+    outline: 1px solid rgb(68, 242, 0);
+} 
+
+.content-contact form button{
+    
+    background-color: rgba(58, 97, 63, 0.254);
+
+    border: 1px solid rgba(255, 255, 255, 0.097);
+
+    border-radius: 4px;
+
+    padding: 10px 15px 10px 15px;
+
+    width: 40%;
+
+    color: #00ff66;
+
+    cursor: pointer;
+
+    margin: 10px;
+}
+
+
+.content-contact form button:hover{
+    background-color: #1d442c46;
+}
+.content-contact form button:active{
+    background-color: #07220365;
 }
 
 .content-contact p{
