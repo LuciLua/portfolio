@@ -1,0 +1,106 @@
+
+.left{
+    flex-direction: column;
+    width: 50%;
+    height: fit-content;
+    min-width:300px;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 20px;
+    max-width: 750px;
+    
+
+}
+
+.left p{
+    font-weight: 500;
+    font-family: Lexend-300;
+    font-display: swap;
+
+    font-size: 13px;
+    font-weight: 500;
+    text-align: justify;
+    width: 100%;
+    color: #bdbdbd;
+    line-height: 2;
+}
+
+.left h1, .left p{
+    position: relative;
+ 
+}
+
+
+.right{
+    width: 50%;
+    min-height: 330px;
+    min-width: 300px;
+
+    padding: 20px;
+    max-width: 750px;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+.right .p{
+    position: relative;
+    width: 100%;
+    height: fit-content;
+    min-height: 300px;
+    display: flex; 
+    align-items: center;
+
+    justify-content: center;
+}
+
+.right h1, .right .p{
+    position: relative;
+}
+
+.right .p .item{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+
+    margin-left: auto;
+    margin-right: auto;
+    width: 100px;
+    height: 100px;
+
+    transition: 0.1s;
+}
+
+.right .p .item:hover{
+    transform: scale(1.05);
+    transition: 0.1s;
+}
+
+.right .p .item:hover img{
+    transform: scale(1.2);
+    filter:invert(1) sepia(10) saturate(65) hue-rotate(59deg);
+}
+
+.right .item span{
+    position: relative;
+
+    color: #00ff66;
+    font-family: Lexend-500;
+    font-display: swap;
+
+    margin-top: 10px;
+
+    text-shadow: 0 0 12px #16161a;
+
+    user-select: none;
+}
+
+
+.right .item img{
+    width: 50px;
+    height: 50px;
+    filter: invert(1);
+    margin: 10px;
+    position: relative;
+}

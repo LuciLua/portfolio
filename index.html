@@ -5,8 +5,8 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="css/estiloMedia.min.css" type="text/css" />
-  <link rel="stylesheet" href="css/estilo.min.css" type="text/css" />
+  <link rel="stylesheet" href="src/css/estiloMedia.min.css" type="text/css" />
+  <link rel="stylesheet" href="src/css/estilo.min.css" type="text/css" />
 
   <meta http-equiv="content-language" content="pt-br, en-US, fr" />
   <meta name="rating" content="general" />
@@ -14,14 +14,15 @@
   <meta property="og:title" content="Portfólio de LuciLua.">
   <meta property="og:site_name" content="LuciLua portfólio">
 
-  <meta property="og:url"                content="https://www.luci-lua.tk/" />
-  <meta property="og:type"               content="website" />
-  <meta property="og:title"              content="Portfólio de LuciLua" />
-  <meta property="og:description"        content="Nesta página você encontra meus projetos pessoais, artes, trabalhos realizados e muito mais!!" />
+  <meta property="og:url" content="https://www.luci-lua.tk/" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Portfólio de LuciLua" />
+  <meta property="og:description"
+    content="Nesta página você encontra meus projetos pessoais, artes, trabalhos realizados e muito mais!!" />
 
   <meta property="og:image" content="https://www.luci-lua.tk/img/ogimg.jpg" />
-  <meta property="og:image:secure_url" content="https://www.luci-lua.tk/img/ogimg.jpg" /> 
-  <meta property="og:image:type" content="image/jpeg" /> 
+  <meta property="og:image:secure_url" content="https://www.luci-lua.tk/img/ogimg.jpg" />
+  <meta property="og:image:type" content="image/jpeg" />
   <!-- <meta property="og:image:width" content="1200" /> 
   <meta property="og:image:height" content="627" /> -->
 
@@ -34,7 +35,8 @@
   <meta name="apple-mobile-web-app-capable" content="yes" />
 
   <title>LuciLua | Portfólio</title>
-  <meta name="description" content="Nesta página você encontra meus projetos pessoais, artes, trabalhos realizados e muito mais!" />
+  <meta name="description"
+    content="Nesta página você encontra meus projetos pessoais, artes, trabalhos realizados e muito mais!" />
   <meta name="keywords" content="portfolio, arte, design, art, develop, desenvolvedora, front end, site,
     home, lucilua, LuciLua81, Luci Lua, LuciLua, Lúcia Maria Rosa Guelber, Lúcia Guelber,
     meu portfólio, portfólio de artes, audiovisual, artes e design, luci lua portfólio, luci lua, luci lua81" />
@@ -55,6 +57,8 @@
 
     gtag("config", "G-SKCXMJ02HX");
   </script>
+
+  <script defer src="src/js/app.js"></script>
 </head>
 
 <body>
@@ -86,13 +90,16 @@
         </div>
         <div class="icons">
           <div class="ico">
-            <a target="_blank" rel="noopener" href="https://github.com/LuciLua"><img src="./img/github.svg" alt="GitHub" title="GitHub"></a>
+            <a target="_blank" rel="noopener" href="https://github.com/LuciLua"><img src="./img/github.svg" alt="GitHub"
+                title="GitHub"></a>
           </div>
           <div class="ico">
-            <a target="_blank" rel="noopener" href="https://www.linkedin.com/in/l%C3%BAcia-guelber-837a50185/"><img src="./img/linkedin.svg" alt="Linkedin" title="Linkedin"></a>
+            <a target="_blank" rel="noopener" href="https://www.linkedin.com/in/l%C3%BAcia-guelber-837a50185/"><img
+                src="./img/linkedin.svg" alt="Linkedin" title="Linkedin"></a>
           </div>
           <div class="ico">
-            <a target="_blank" rel="noopener" href="https://br.pinterest.com/lucilua81"><img src="./img/pinterest.svg" alt="Pinterest" title="Pinterest"></a>
+            <a target="_blank" rel="noopener" href="https://br.pinterest.com/lucilua81"><img src="./img/pinterest.svg"
+                alt="Pinterest" title="Pinterest"></a>
           </div>
         </div>
         <p>Artista e Programadora</p>
@@ -111,16 +118,17 @@
         <p>
           Comecei a programar mesmo em 2020, quando tive a
           oportunidade de estar fazendo a matéria Multimídia Instrumental
-          dentro do curso de artes  da  UFJF, onde estudo até hoje.
-          Logo após me apaixonar por isso, voltei a estudar  python , minha primeira linguaguem
+          dentro do curso de artes da UFJF, onde estudo até hoje.
+          Logo após me apaixonar por isso, voltei a estudar python , minha primeira linguaguem
           de programação, além de continuar me aprofundando em desenvolvimento web, aprendendo
-          NodeJS,  NextJS entre outros. Uma das tecnologias que mais gostei e uso sempre que posso é o site da Vercel, onde faço deploy dos meus projetos para acesso público.
+          NodeJS, NextJS entre outros. Uma das tecnologias que mais gostei e uso sempre que posso é o site da Vercel,
+          onde faço deploy dos meus projetos para acesso público.
 
         </p>
       </div>
       <div class="right">
         <h1>Skills</h1>
-          <div class="p">          
+        <div class="p">
           <div class="item">
             <img src="img/html.svg" alt="HTML" title="HTML">
             <span>HTML</span>
@@ -146,122 +154,133 @@
     <h2>Projetos em <span>destaque</span></h2>
     <div class="btn-np">
       <button alt="Anterior" title="Anterior" onclick="prev()"><</button>
-      <button alt="Próxima"  title="Próxima"  onclick="next()">></button>
+          <button alt="Próxima" title="Próxima" onclick="next()">></button>
     </div>
     <div class="quad" id="quad">
       <div class="q-a">
         <div class="content">
-            <h2>Podcastr</h2>
-            <p>Aplicação desenvolvida com o framework Next.js</p>
+          <h2>Podcastr</h2>
+          <p>Aplicação desenvolvida com o framework Next.js</p>
         </div>
         <div class="btn-h">
-            <a target="_blank" rel="noopener" href="https://github.com/LuciLua/NLW5-Podcastr" class="git"><img src="/img/gitgo.svg" title="Github" alt="Github"><button>GitHub</button></a>
-            <a target="_blank" rel="noopener" href="https://www.podcastr.ga/" class="acc"><img src="/img/go.svg" alt="Acessar" title="Acessar"><button >Acessar</button></a>
+          <a target="_blank" rel="noopener" href="https://github.com/LuciLua/NLW5-Podcastr" class="git"><img
+              src="/img/gitgo.svg" title="Github" alt="Github"><button>GitHub</button></a>
+          <a target="_blank" rel="noopener" href="https://www.podcastr.ga/" class="acc"><img src="/img/go.svg"
+              alt="Acessar" title="Acessar"><button>Acessar</button></a>
         </div>
-        <img src="/img/proj/podcastr.webp" alt="Projeto"/>
-    </div>
-    <div class="q-a">
+        <img src="/img/proj/podcastr.webp" alt="Projeto" />
+      </div>
+      <div class="q-a">
         <div class="content">
-            <h2>Audiovisual | Neutrum</h2>
-            <p>Cenários e Edição da animação Neutrum</p>
+          <h2>Audiovisual | Neutrum</h2>
+          <p>Cenários e Edição da animação Neutrum</p>
         </div>
         <div class="btn-h">
-            <a target="_blank" rel="noopener" href="https://www.youtube.com/watch?v=VrI2ILQvzAw" class="acc"><img src="/img/go.svg" alt="Acessar" title="Acessar"><button >Acessar</button></a>
+          <a target="_blank" rel="noopener" href="https://www.youtube.com/watch?v=VrI2ILQvzAw" class="acc"><img
+              src="/img/go.svg" alt="Acessar" title="Acessar"><button>Acessar</button></a>
         </div>
         <img src="/img/proj/neutrum.webp" alt="Projeto">
-    </div>
-    <div class="q-a">
+      </div>
+      <div class="q-a">
         <div class="content">
-            <h2>Snake Game</h2>
-            <p>Jogo para navegador utilizando Javascript</p>
+          <h2>Snake Game</h2>
+          <p>Jogo para navegador utilizando Javascript</p>
         </div>
         <div class="btn-h">
-            <a target="_blank" rel="noopener" href="https://github.com/LuciLua/snakegame" class="git"><img src="/img/gitgo.svg" title="Github" alt="Github"><button >GitHub</button></a>
-            <a target="_blank" rel="noopener" href="https://www.gamesnake.tk/" class="acc"><img src="/img/go.svg" alt="Acessar" title="Acessar"><button>Acessar</button></a>
+          <a target="_blank" rel="noopener" href="https://github.com/LuciLua/snakegame" class="git"><img
+              src="/img/gitgo.svg" title="Github" alt="Github"><button>GitHub</button></a>
+          <a target="_blank" rel="noopener" href="https://www.gamesnake.tk/" class="acc"><img src="/img/go.svg"
+              alt="Acessar" title="Acessar"><button>Acessar</button></a>
         </div>
         <img src="/img/proj/snake.webp" alt="Projeto">
-    </div>
-    <div class="q-a">
+      </div>
+      <div class="q-a">
         <div class="content">
-            <h2>Editor Rich Text</h2>
-            <p>Editor de texto Rich Text para navegador</p>
+          <h2>Editor Rich Text</h2>
+          <p>Editor de texto Rich Text para navegador</p>
         </div>
         <div class="btn-h">
-            <a target="_blank" rel="noopener" href="https://github.com/LuciLua/RichTextEditor" class="git"><img src="/img/gitgo.svg" title="Github" alt="Github"><button >GitHub</button></a>
-            <a target="_blank" rel="noopener" href="https://rich-text-editor.vercel.app/" class="acc"><img src="/img/go.svg" alt="Acessar" title="Acessar"><button >Acessar</button></a>
+          <a target="_blank" rel="noopener" href="https://github.com/LuciLua/RichTextEditor" class="git"><img
+              src="/img/gitgo.svg" title="Github" alt="Github"><button>GitHub</button></a>
+          <a target="_blank" rel="noopener" href="https://rich-text-editor.vercel.app/" class="acc"><img
+              src="/img/go.svg" alt="Acessar" title="Acessar"><button>Acessar</button></a>
         </div>
         <img src="/img/proj/rick.webp" alt="Projeto">
-    </div>  
-    <div class="q-a">
+      </div>
+      <div class="q-a">
         <div class="content">
-            <h2>Calendário</h2>
-            <p>Aplicação em desenvolvimento utilizando o framework Next.js</p>
+          <h2>Calendário</h2>
+          <p>Aplicação em desenvolvimento utilizando o framework Next.js</p>
         </div>
         <div class="btn-h">
-            <a target="_blank" rel="noopener" href="https://github.com/LuciLua/calendar" class="git"><img src="/img/gitgo.svg" title="Github" alt="Github"><button >GitHub</button></a>
-            <a target="_blank" rel="noopener" href="http://calendar-blond.vercel.app/" class="acc"><img src="/img/go.svg" alt="Acessar" title="Acessar"><button >Acessar</button></a>
+          <a target="_blank" rel="noopener" href="https://github.com/LuciLua/calendar" class="git"><img
+              src="/img/gitgo.svg" title="Github" alt="Github"><button>GitHub</button></a>
+          <a target="_blank" rel="noopener" href="http://calendar-blond.vercel.app/" class="acc"><img src="/img/go.svg"
+              alt="Acessar" title="Acessar"><button>Acessar</button></a>
         </div>
         <img src="/img/proj/calender.webp" alt="Projeto">
-    </div>
-    <div class="q-a">
+      </div>
+      <div class="q-a">
         <div class="content">
-            <h2>Audiovisual | Moda</h2>
-            <p>Produção audiovisual de moda e ensaio fotográfico</p>
+          <h2>Audiovisual | Moda</h2>
+          <p>Produção audiovisual de moda e ensaio fotográfico</p>
         </div>
         <div class="btn-h">
-            <a target="_blank" rel="noopener" href="https://dialogosfuturismo1.wixsite.com/futurismo/video" class="acc"><img src="/img/go.svg" alt="Acessar" title="Acessar"><button>Acessar</button></a>
+          <a target="_blank" rel="noopener" href="https://dialogosfuturismo1.wixsite.com/futurismo/video"
+            class="acc"><img src="/img/go.svg" alt="Acessar" title="Acessar"><button>Acessar</button></a>
         </div>
         <img src="/img/proj/dialogo.webp" alt="Projeto">
-    </div>
+      </div>
     </div>
     <div class="more-pp">
       <a href="/pages/projects.html"><button alt="Mais projetos" title="Mais projetos">Mais projetos</button></a>
     </div>
   </div>
-<br>
+  <br>
   <div class="line"></div>
   <div class="title-art">
-      <h1>Arts.</h1>
+    <h1>Arts.</h1>
   </div>
 
   <div class="t-a">
     <div class="i-ca">
       <a href="/pages/arts.html#b3d" alt="Artes em 3D" title="Artes em 3D">
-      <div class="c-a">
-        <div class="a2d">
-          <img src="/img/cube.svg" alt="Artes em 3D" title="Artes em 3D">
+        <div class="c-a">
+          <div class="a2d">
+            <img src="/img/cube.svg" alt="Artes em 3D" title="Artes em 3D">
+          </div>
         </div>
-      </div>
-    </a>
+      </a>
       <p>3D Artes | Personagens, cenários, animações</p>
     </div>
     <div class="i-ca">
       <a href="/pages/arts.html#b2d" alt="Artes em 2D" title="Artes em 2D">
-    <div class="c-a">
-      <div class="a3d">
-        <img src="/img/galery.svg" alt="Artes em 2D" title="Artes em 2D">
+        <div class="c-a">
+          <div class="a3d">
+            <img src="/img/galery.svg" alt="Artes em 2D" title="Artes em 2D">
+          </div>
+        </div>
+      </a>
+      <p>2D Artes | Pinturas, Desenhos, Personagens</p>
+    </div>
+  </div>
+  <footer>
+    <p>LuciLua@2021</p>
+    <br>
+    <div class="icos-footer">
+      <div class="ico">
+        <a target="_blank" rel="noopener" href="https://github.com/LuciLua"><img src="./img/github.svg" alt="GitHub"
+            title="GitHub"></a>
+      </div>
+      <div class="ico">
+        <a target="_blank" rel="noopener" href="https://www.linkedin.com/in/l%C3%BAcia-guelber-837a50185/"><img
+            src="./img/linkedin.svg" alt="Linkedin" title="Linkedin"></a>
+      </div>
+      <div class="ico">
+        <a target="_blank" rel="noopener" href="https://br.pinterest.com/lucilua81"><img src="./img/pinterest.svg"
+            alt="Pinterest" title="Pinterest"></a>
       </div>
     </div>
-  </a>
-    <p>2D Artes | Pinturas, Desenhos, Personagens</p>
-  </div>
-  </div>
-<footer>
-  <p>LuciLua@2021</p>
-  <br>
-  <div class="icos-footer">
-    <div class="ico">
-      <a target="_blank" rel="noopener" href="https://github.com/LuciLua"><img src="./img/github.svg" alt="GitHub" title="GitHub"></a>
-    </div>
-    <div class="ico">
-      <a target="_blank" rel="noopener" href="https://www.linkedin.com/in/l%C3%BAcia-guelber-837a50185/"><img src="./img/linkedin.svg" alt="Linkedin" title="Linkedin"></a>
-    </div>
-    <div class="ico">
-      <a target="_blank" rel="noopener" href="https://br.pinterest.com/lucilua81"><img src="./img/pinterest.svg" alt="Pinterest" title="Pinterest"></a>
-    </div>
-  </div>
-</footer>
+  </footer>
 </body>
-<script src="app.js"></script>
-
 </html>

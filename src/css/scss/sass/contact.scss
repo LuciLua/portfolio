@@ -1,0 +1,146 @@
+
+.contact-align{
+    display: flex;
+    flex-wrap: wrap;
+
+    width: 100%;
+    height: fit-content;
+    padding: 20px;
+
+    margin-top: 10vh;
+
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-align h1::first-letter{
+    color: var(--green-1)
+}
+.contact-align h1{
+    font-family: Lexend-500;
+    font-display: swap;
+
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.contact-align p{
+    padding: 20px;
+}
+
+
+/* contect about page */
+
+
+.content-contact{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+
+    align-items: center;
+
+    position: relative;
+    
+    min-height: fit-content;
+
+    padding: 20px;
+}
+
+.content-contact form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    width: 50%;
+    min-width: 250px;
+    max-width: 50vh;
+}
+
+.content-contact form input{
+    width: 100%;
+
+    background-color: rgba(255, 255, 255, 0.049);
+    color: rgba(255, 255, 255, 0.501);
+
+    border: 1px solid rgba(255, 255, 255, 0.097);
+    border-radius: 4px;
+    
+    padding: 10px 15px 10px 15px;
+
+    margin: 10px;
+
+
+    position: relative;
+
+}
+
+.content-contact form textarea{
+    width: 100%;
+
+    background-color: rgba(255, 255, 255, 0.049);
+
+    border: 1px solid rgba(255, 255, 255, 0.097);
+
+    border-radius: 4px;
+
+    padding: 10px 15px 10px 15px;
+
+    margin: 10px;
+
+    resize: none;
+
+    color: rgba(255, 255, 255, 0.501);
+
+}
+
+.content-contact form input:focus, 
+.content-contact form textarea:focus{
+    outline: 1px solid rgb(68, 242, 0);
+} 
+
+.content-contact form button{
+    
+    background-color: rgba(58, 97, 63, 0.254);
+
+    border: 1px solid rgba(255, 255, 255, 0.097);
+
+    border-radius: 4px;
+
+    padding: 10px 15px 10px 15px;
+
+    width: 100%;
+
+    color: #00ff66;
+
+    cursor: pointer;
+
+    margin: 10px;
+}
+
+
+.content-contact form button:hover{
+    background-color: #00ff6246;
+}
+.content-contact form button:active{
+    background-color: #07220365;
+}
+
+.content-contact p{
+    font-family: Lexend-300;
+    color: #9a9a9a;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+
+    position: relative;
+}
+
+#contact-subpagina{
+    width: 100%;
+    min-height: 100vh;
+}
+

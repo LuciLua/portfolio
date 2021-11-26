@@ -1,0 +1,260 @@
+
+.quad{
+    width: 100%;
+    max-width: 100%;
+    position: relative;
+
+    display: flex;
+    align-items: center;
+    justify-content:start;
+    transition: 0.4s;
+    overflow-x: scroll;
+}
+
+
+.quad-pag{
+    width: 100%;
+    max-width: 100%;
+    position: relative;
+
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    transition: 0.4s;
+}
+
+.quad .q-a, .quad-pag .q-a{
+    width: 350px;
+    max-width: 350px;
+    min-width: 350px;
+
+    min-height: 250px;
+    max-height: 250px;
+    height: 250px;
+
+    margin: 40px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.242);
+
+    position: relative;
+
+    border-radius: 5px;
+
+    overflow: hidden;
+
+    z-index: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: left;
+
+
+}
+
+.quad .q-a:hover .content, .quad .q-a:hover img,
+
+.quad-pag .q-a:hover .content, .quad-pag .q-a:hover img{
+
+    filter: brightness(0.4) blur(2px);
+}
+
+.quad .q-a .content, .quad-pag .q-a .content{
+    position: absolute;
+    z-index: 10;
+
+    margin-left: 20px;
+    top: 140px;
+    transition: 0.3s;
+    left: 0;
+
+    height: fit-content;
+    width: fit-content;
+}
+
+.quad .q-a:hover .content p, .quad-pag .q-a:hover .content p{
+    opacity: 0%;
+    transition: 0.3s;
+}
+
+.quad .q-a:hover .content h2, .quad-pag .q-a:hover .content h2{
+    border-bottom: none;
+    transition: 0.3s;
+    opacity: 0%;
+
+}
+
+.quad .q-a:hover .content , .quad-pag .q-a:hover .content{
+    transition: 0.3s;
+    top: 0;
+}
+
+.quad .q-a h2, .quad-pag .q-a h2{
+
+    color: rgb(255, 255, 255);
+    font-family: Lexend-300;
+    font-display: swap;
+
+    background-color: #00ff6600;
+    border-bottom: 1px solid #00ff66;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+    float: left;
+    transition: 0.3s;
+
+}
+
+.quad .q-a .content p, .quad-pag .q-a p{
+
+    font-family: Arial;
+    font-display: swap;
+
+    position: absolute;
+    width: fit-content;
+    min-width: 200px;
+    color: rgb(120, 120, 120);
+    font-size: 13px;
+    z-index: 10;
+    top: 60px;
+    line-height: 1.5;
+    opacity: 100%;
+    transition: 0.3s;
+
+}
+
+.quad .q-a img, .quad-pag .q-a img{
+    max-width: 100%;
+    width: 100%;
+    height: 100%;
+
+    filter: brightness(0.1) sepia(1) saturate(1) hue-rotate(200deg);
+
+    position: relative;
+    object-fit: cover;
+}
+
+/* botoes dos cards projects */
+
+
+.quad .q-a .btn-h, .quad-pag .q-a .btn-h{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+
+    position: absolute;
+    opacity: 0%;
+
+    transition: 0.3s;
+
+}
+
+.quad .q-a:hover .btn-h, .quad-pag .q-a:hover .btn-h{
+    opacity: 100%;
+    transition: 0.3s;
+}
+
+.quad .q-a .btn-h a:hover, .quad-pag .q-a .btn-h a:hover{
+    width: 100px;
+    height: 30px;
+}
+
+.quad .q-a .btn-h a:hover img, .quad-pag .q-a .btn-h a:hover img{
+    opacity: 0%;
+}
+
+.quad .q-a .btn-h a, .quad-pag .q-a .btn-h a{
+    outline: none;
+    cursor: pointer;
+
+    z-index: 10;
+
+    transition: 0.2s;
+
+    text-decoration: none;
+    font-display: swap;
+    font-family: Arial;
+
+    background-color: #ffffffe4;
+    border: none;
+    border-radius: 40px;
+    width: 35px;
+    height: 35px;
+
+    margin: 10px;
+
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    overflow: hidden;
+}
+
+
+.quad .q-a .btn-h .acc, .quad-pag .btn-h .acc{
+    background-color: #ffffff!important;
+    border:  #ffffff 1.5px solid;
+}
+
+.quad .q-a .btn-h .git, .quad-pag .q-a .btn-h .git{
+    background-color: #00000083!important;
+    border:  #ffffff 1.5px solid;
+}
+
+.quad .q-a .btn-h .acc:hover, .quad .q-a .btn-h .git:hover, 
+
+.quad-pag .q-a .btn-h .acc:hover, .quad-pag .q-a .btn-h .git:hover{
+    background-color: #16161a!important;
+    border: rgb(0, 255, 102) 1.5px solid;
+
+    transition: 0.2s;
+}
+
+.quad .q-a .btn-h a button, .quad-pag .q-a .btn-h a button{
+    color: #fff;
+    font-size: 14px;
+    opacity: 0%;
+}
+
+
+.quad .q-a .btn-h a:hover button, .quad-pag .q-a .btn-h a:hover button{
+    color: #fff;
+    font-size: 14px;
+    opacity: 100%;
+}
+
+.quad .q-a .git button, .quad-pag .q-a .git button{
+    cursor: pointer;
+    border: none;
+    background-color: transparent;
+    color: #fff;
+}
+
+.quad .q-a .acc button, .quad-pag .q-a .acc button{
+    cursor: pointer;
+    border: none;
+    background-color: transparent;
+    color: rgb(0, 0, 0);
+}
+
+.quad .q-a .btn-h .git img, .quad-pag .q-a .btn-h .git img{
+    filter: invert(1);
+    position: absolute;
+    width: 23px;
+    height: 23px;
+}
+
+.quad .q-a .btn-h .acc img, .quad-pag .q-a .btn-h .acc img{
+    filter: invert(0);
+    position: absolute;
+    width: 23px;
+    height: 23px;
+}
+
+.quad::-webkit-scrollbar{
+    display: none;
+}
