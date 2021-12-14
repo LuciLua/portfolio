@@ -56,18 +56,26 @@
 
 .right h1, .right .p{
     position: relative;
+
 }
 
 .right .p .item{
     display: flex;
     align-items: center;
     flex-direction: column;
-
+    justify-content: center;
 
     margin-left: auto;
     margin-right: auto;
+
+    min-width: 100px;
+    max-width: 120px;
+
     width: 100px;
-    height: 100px;
+    height: 120px;
+
+    max-height: 100px;
+    min-height: 120px;
 
     transition: 0.1s;
 }
@@ -78,7 +86,6 @@
 }
 
 .right .p .item:hover img{
-    transform: scale(1.2);
     filter:invert(1) sepia(10) saturate(65) hue-rotate(59deg);
 }
 

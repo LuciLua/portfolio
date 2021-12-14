@@ -186,7 +186,7 @@
 }
 
 
-.cards .aboutContact #cardAbout{
+.cards .aboutContact .cardAbout{
     background-color: rgb(0, 255, 102);
     color: black;
     
@@ -195,7 +195,7 @@
     box-shadow:  0 2px 13px black;
 }
 
-.cards .aboutContact #cardContact{
+.cards .aboutContact .cardContact{
     background-color: rgb(24, 24, 24);
     color: rgb(234, 234, 234);
     
@@ -204,7 +204,7 @@
     box-shadow:  0 2px 13px rgba(0, 0, 0, 0.288);
     
 }
-.cards .aboutContact #cardAbout:hover{
+.cards .aboutContact .cardAbout:hover{
     background-color: rgba(0, 255, 102, 0.098);
     color: rgb(255, 255, 255);
     border: #00ff66 1px solid;
@@ -213,7 +213,7 @@
     transition: 0.1s;
 }
 
-.cards .aboutContact #cardContact:hover{
+.cards .aboutContact .cardContact:hover{
     background-color: rgba(0, 255, 102, 0.098);
     color: rgb(255, 255, 255);
     border: #00ff66 1px solid;

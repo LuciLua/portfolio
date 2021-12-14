@@ -12,7 +12,7 @@ function About() {
 
       <div className={styles.contentAbout}>
         <div className={styles.photo} alt="Luci" title="Luci">
-          <Image src="/l.jpg" alt="Luci" layout='fill' quality={50} priority/>
+          <Image src="/l.jpg" alt="Luci" layout='fill' quality={50} priority />
         </div>
         <div className={styles.ballName}>
           <h1>Luci.</h1>

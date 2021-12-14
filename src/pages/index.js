@@ -1,9 +1,10 @@
 import Image from 'next/image'
 import styles from '../styles/home/index.module.scss'
 import classNames from 'classnames'
+import Head from 'next/head';
 
 function Home() {
-  
+
 function next(){
     document.getElementById('quad').scrollLeft += 390;
 };
@@ -14,6 +15,9 @@ function prev(){
 
   return (
     <>
+    <Head>
+      <title>Luci Lua | Portfólio</title>
+    </Head>
       <div className={classNames(styles.pages, styles.init)} id="init" spellCheck="false">
         <div className={styles.title}>
           <h1><span>Portfólio</span>.Luci</h1>
@@ -31,22 +35,22 @@ function prev(){
             </div>
             <div className={styles.icons}>
               <div className={styles.ico}>
-                <a target="_blank" rel="noopener" href="https://github.com/LuciLua"><img src="./github.svg" alt="GitHub"
+                <a target="_blank" rel="noopener noreferrer" href="https://github.com/LuciLua"><img src="./github.svg" alt="GitHub"
                   title="GitHub" /></a>
               </div>
               <div className={styles.ico}>
-                <a target="_blank" rel="noopener" href="https://www.linkedin.com/in/l%C3%BAcia-guelber-837a50185/"><img
+                <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/l%C3%BAcia-guelber-837a50185/"><img
                   src="./linkedin.svg" alt="Linkedin" title="Linkedin" /></a>
               </div>
               <div className={styles.ico}>
-                <a target="_blank" rel="noopener" href="https://br.pinterest.com/lucilua81"><img src="./pinterest.svg"
+                <a target="_blank" rel="noopener noreferrer" href="https://br.pinterest.com/lucilua81"><img src="./pinterest.svg"
                   alt="Pinterest" title="Pinterest" /></a>
               </div>
             </div>
             <p>Artista e Programadora</p>
             <div className={styles.aboutContact}>
-              <a href="./about.html"><button id="cardAbout" title="About Me">About me</button></a>
-              <a href="./contact.html"><button id="cardContact" title="Contact Me">Contact me</button></a>
+              <a href="./about.html"><button id="cardAbout" className={styles.cardAbout} title="About Me">About me</button></a>
+              <a href="./contact.html"><button id="cardContact" className={styles.cardContact} title="Contact Me">Contact me</button></a>
             </div>
           </div>
         </div>
@@ -103,9 +107,9 @@ function prev(){
               <p>Aplicação desenvolvida com o framework Next.js</p>
             </div>
             <div className={styles.btnH}>
-              <a target="_blank" rel="noopener" href="https://github.com/LuciLua/NLW5-Podcastr" className={styles.git}><img
+              <a target="_blank" rel="noopener noreferrer" href="https://github.com/LuciLua/NLW5-Podcastr" className={styles.git}><img
                 src="./gitgo.svg" title="Github" alt="Github" /><button>GitHub</button></a>
-              <a target="_blank" rel="noopener" href="https://www.podcastr.ga/" className={styles.acc}><img src="./go.svg"
+              <a target="_blank" rel="noopener noreferrer" href="https://www.podcastr.ga/" className={styles.acc}><img src="./go.svg"
                 alt="Acessar" title="Acessar" /><button>Acessar</button></a>
             </div>
             <img src="./proj/podcastr.webp" alt="Projeto" />
@@ -116,7 +120,7 @@ function prev(){
               <p>Cenários e Edição da animação Neutrum</p>
             </div>
             <div className={styles.btnH}>
-              <a target="_blank" rel="noopener" href="https://www.youtube.com/watch?v=VrI2ILQvzAw" className={styles.acc}><img
+              <a target="_blank" rel="noopener noreferrer" href="https://www.youtube.com/watch?v=VrI2ILQvzAw" className={styles.acc}><img
                 src="./go.svg" alt="Acessar" title="Acessar" /><button>Acessar</button></a>
             </div>
             <img src="./proj/neutrum.webp" alt="Projeto" />
@@ -127,9 +131,9 @@ function prev(){
               <p>Jogo para navegador utilizando Javascript</p>
             </div>
             <div className={styles.btnH}>
-              <a target="_blank" rel="noopener" href="https://github.com/LuciLua/snakegame" className={styles.git}><img
+              <a target="_blank" rel="noopener noreferrer" href="https://github.com/LuciLua/snakegame" className={styles.git}><img
                 src="./gitgo.svg" title="Github" alt="Github" /><button>GitHub</button></a>
-              <a target="_blank" rel="noopener" href="https://www.gamesnake.tk/" className={styles.acc}><img src="./go.svg"
+              <a target="_blank" rel="noopener noreferrer" href="https://www.gamesnake.tk/" className={styles.acc}><img src="./go.svg"
                 alt="Acessar" title="Acessar" /><button>Acessar</button></a>
             </div>
             <img src="./proj/snake.webp" alt="Projeto" />
@@ -140,9 +144,9 @@ function prev(){
               <p>Editor de texto Rich Text para navegador</p>
             </div>
             <div className={styles.btnH}>
-              <a target="_blank" rel="noopener" href="https://github.com/LuciLua/RichTextEditor" className={styles.git}><img
+              <a target="_blank" rel="noopener noreferrer" href="https://github.com/LuciLua/RichTextEditor" className={styles.git}><img
                 src="./gitgo.svg" title="Github" alt="Github" /><button>GitHub</button></a>
-              <a target="_blank" rel="noopener" href="https://rich-text-editor.vercel.app/" className={styles.acc}><img
+              <a target="_blank" rel="noopener noreferrer" href="https://rich-text-editor.vercel.app/" className={styles.acc}><img
                 src="./go.svg" alt="Acessar" title="Acessar" /><button>Acessar</button></a>
             </div>
             <img src="./proj/rick.webp" alt="Projeto" />
@@ -153,9 +157,9 @@ function prev(){
               <p>Aplicação em desenvolvimento utilizando o framework Next.js</p>
             </div>
             <div className={styles.btnH}>
-              <a target="_blank" rel="noopener" href="https://github.com/LuciLua/calendar" className={styles.git}><img
+              <a target="_blank" rel="noopener noreferrer" href="https://github.com/LuciLua/calendar" className={styles.git}><img
                 src="./gitgo.svg" title="Github" alt="Github" /><button>GitHub</button></a>
-              <a target="_blank" rel="noopener" href="http://calendar-blond.vercel.app/" className={styles.acc}><img src="./go.svg"
+              <a target="_blank" rel="noopener noreferrer" href="http://calendar-blond.vercel.app/" className={styles.acc}><img src="./go.svg"
                 alt="Acessar" title="Acessar" /><button>Acessar</button></a>
             </div>
             <img src="./proj/calender.webp" alt="Projeto" />
@@ -166,7 +170,7 @@ function prev(){
               <p>Produção audiovisual de moda e ensaio fotográfico</p>
             </div>
             <div className={styles.btnH}>
-              <a target="_blank" rel="noopener" href="https://dialogosfuturismo1.wixsite.com/futurismo/video"
+              <a target="_blank" rel="noopener noreferrer" href="https://dialogosfuturismo1.wixsite.com/futurismo/video"
                 className={styles.acc}><img src="./go.svg" alt="Acessar" title="Acessar" /><button>Acessar</button></a>
             </div>
             <img src="./proj/dialogo.webp" alt="Projeto" />
