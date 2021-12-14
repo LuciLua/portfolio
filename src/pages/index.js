@@ -31,19 +31,22 @@ function prev(){
           <div className={styles.cards}>
             <br />
             <div className={styles.img}>
-              <img src="./luci.webp" alt="myface" />
+              <Image width={100} height={100} layout='responsive' src="/luci.webp" alt="myface" />
             </div>
             <div className={styles.icons}>
               <div className={styles.ico}>
-                <a target="_blank" rel="noopener noreferrer" href="https://github.com/LuciLua"><img src="./github.svg" alt="GitHub"
+                <a target="_blank" rel="noopener noreferrer" href="https://github.com/LuciLua">
+                  <Image height={60} width={60} layout='responsive' src="/github.svg" alt="GitHub"
                   title="GitHub" /></a>
               </div>
               <div className={styles.ico}>
-                <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/l%C3%BAcia-guelber-837a50185/"><img
-                  src="./linkedin.svg" alt="Linkedin" title="Linkedin" /></a>
+                <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/l%C3%BAcia-guelber-837a50185/"><Image
+                  src="/linkedin.svg" alt="Linkedi
+                  n" height={60} width={60} title="Linkedin" /></a>
               </div>
               <div className={styles.ico}>
-                <a target="_blank" rel="noopener noreferrer" href="https://br.pinterest.com/lucilua81"><img src="./pinterest.svg"
+                <a target="_blank" rel="noopener noreferrer" href="https://br.pinterest.com/lucilua81">
+                  <Image height={60} width={60} src="/pinterest.svg"
                   alt="Pinterest" title="Pinterest" /></a>
               </div>
             </div>
@@ -74,19 +77,19 @@ function prev(){
             <h1>Skills</h1>
             <div className={styles.p}>
               <div className={styles.item}>
-                <img src="./html.svg" alt="HTML" title="HTML" />
+                <Image width={60} height={60} src="/html.svg" alt="HTML" title="HTML" />
                 <span>HTML</span>
               </div>
               <div className={styles.item}>
-                <img src="./css.svg" alt="CSS" title="CSS" />
+                <Image width={60} height={60} src="/css.svg" alt="CSS" title="CSS" />
                 <span>CSS</span>
               </div>
               <div className={styles.item}>
-                <img src="./javascript.svg" alt="JavaScrip" title="JavaScrip" />
+                <Image width={60} height={60} src="/javascript.svg" alt="JavaScrip" title="JavaScrip" />
                 <span>JavaScript</span>
               </div>
               <div className={styles.item}>
-                <img src="./python.svg" alt="Python" title="Python" />
+                <Image width={60} height={60} src="/python.svg" alt="Python" title="Python" />
                 <span>Python</span>
               </div>
             </div>
@@ -107,12 +110,16 @@ function prev(){
               <p>Aplicação desenvolvida com o framework Next.js</p>
             </div>
             <div className={styles.btnH}>
-              <a target="_blank" rel="noopener noreferrer" href="https://github.com/LuciLua/NLW5-Podcastr" className={styles.git}><img
-                src="./gitgo.svg" title="Github" alt="Github" /><button>GitHub</button></a>
-              <a target="_blank" rel="noopener noreferrer" href="https://www.podcastr.ga/" className={styles.acc}><img src="./go.svg"
-                alt="Acessar" title="Acessar" /><button>Acessar</button></a>
+              <a target="_blank" rel="noopener noreferrer" href="https://github.com/LuciLua/NLW5-Podcastr" className={styles.git}>
+                <Image layout='fill' src="/gitgo.svg" title="Github" alt="Github" />
+                <button>GitHub</button>
+                </a>
+              <a target="_blank" rel="noopener noreferrer" href="https://www.podcastr.ga/" className={styles.acc}>
+                <Image layout='fill' src="/go.svg" alt="Acessar" title="Acessar" />
+                <button>Acessar</button>
+                </a>
             </div>
-            <img src="./proj/podcastr.webp" alt="Projeto" />
+            <Image layout='fill' src="/proj/podcastr.webp" alt="Projeto" />
           </div>
           <div className={styles.qA}>
             <div className={styles.content}>
@@ -120,10 +127,10 @@ function prev(){
               <p>Cenários e Edição da animação Neutrum</p>
             </div>
             <div className={styles.btnH}>
-              <a target="_blank" rel="noopener noreferrer" href="https://www.youtube.com/watch?v=VrI2ILQvzAw" className={styles.acc}><img
-                src="./go.svg" alt="Acessar" title="Acessar" /><button>Acessar</button></a>
+              <a target="_blank" rel="noopener noreferrer" href="https://www.youtube.com/watch?v=VrI2ILQvzAw" className={styles.acc}><Image layout='fill'
+              src="/go.svg" alt="Acessar" title="Acessar" /><button>Acessar</button></a>
             </div>
-            <img src="./proj/neutrum.webp" alt="Projeto" />
+            <Image layout='fill' src="/proj/neutrum.webp" alt="Projeto" />
           </div>
           <div className={styles.qA}>
             <div className={styles.content}>
@@ -131,12 +138,12 @@ function prev(){
               <p>Jogo para navegador utilizando Javascript</p>
             </div>
             <div className={styles.btnH}>
-              <a target="_blank" rel="noopener noreferrer" href="https://github.com/LuciLua/snakegame" className={styles.git}><img
-                src="./gitgo.svg" title="Github" alt="Github" /><button>GitHub</button></a>
-              <a target="_blank" rel="noopener noreferrer" href="https://www.gamesnake.tk/" className={styles.acc}><img src="./go.svg"
+              <a target="_blank" rel="noopener noreferrer" href="https://github.com/LuciLua/snakegame" className={styles.git}><Image layout='fill'
+              src="/gitgo.svg" title="Github" alt="Github" /><button>GitHub</button></a>
+              <a target="_blank" rel="noopener noreferrer" href="https://www.gamesnake.tk/" className={styles.acc}><Image layout='fill' src="/go.svg"
                 alt="Acessar" title="Acessar" /><button>Acessar</button></a>
             </div>
-            <img src="./proj/snake.webp" alt="Projeto" />
+            <Image layout='fill' src="/proj/snake.webp" alt="Projeto" />
           </div>
           <div className={styles.qA}>
             <div className={styles.content}>
@@ -144,12 +151,12 @@ function prev(){
               <p>Editor de texto Rich Text para navegador</p>
             </div>
             <div className={styles.btnH}>
-              <a target="_blank" rel="noopener noreferrer" href="https://github.com/LuciLua/RichTextEditor" className={styles.git}><img
-                src="./gitgo.svg" title="Github" alt="Github" /><button>GitHub</button></a>
-              <a target="_blank" rel="noopener noreferrer" href="https://rich-text-editor.vercel.app/" className={styles.acc}><img
-                src="./go.svg" alt="Acessar" title="Acessar" /><button>Acessar</button></a>
+              <a target="_blank" rel="noopener noreferrer" href="https://github.com/LuciLua/RichTextEditor" className={styles.git}><Image layout='fill'
+              src="/gitgo.svg" title="Github" alt="Github" /><button>GitHub</button></a>
+              <a target="_blank" rel="noopener noreferrer" href="https://rich-text-editor.vercel.app/" className={styles.acc}><Image layout='fill'
+              src="/go.svg" alt="Acessar" title="Acessar" /><button>Acessar</button></a>
             </div>
-            <img src="./proj/rick.webp" alt="Projeto" />
+            <Image layout='fill' src="/proj/rick.webp" alt="Projeto" />
           </div>
           <div className={styles.qA}>
             <div className={styles.content}>
@@ -157,12 +164,12 @@ function prev(){
               <p>Aplicação em desenvolvimento utilizando o framework Next.js</p>
             </div>
             <div className={styles.btnH}>
-              <a target="_blank" rel="noopener noreferrer" href="https://github.com/LuciLua/calendar" className={styles.git}><img
-                src="./gitgo.svg" title="Github" alt="Github" /><button>GitHub</button></a>
-              <a target="_blank" rel="noopener noreferrer" href="http://calendar-blond.vercel.app/" className={styles.acc}><img src="./go.svg"
+              <a target="_blank" rel="noopener noreferrer" href="https://github.com/LuciLua/calendar" className={styles.git}><Image layout='fill'
+              src="/gitgo.svg" title="Github" alt="Github" /><button>GitHub</button></a>
+              <a target="_blank" rel="noopener noreferrer" href="http://calendar-blond.vercel.app/" className={styles.acc}><Image layout='fill' src="/go.svg"
                 alt="Acessar" title="Acessar" /><button>Acessar</button></a>
             </div>
-            <img src="./proj/calender.webp" alt="Projeto" />
+            <Image layout='fill' src="/proj/calender.webp" alt="Projeto" />
           </div>
           <div className={styles.qA}>
             <div className={styles.content}>
@@ -171,9 +178,9 @@ function prev(){
             </div>
             <div className={styles.btnH}>
               <a target="_blank" rel="noopener noreferrer" href="https://dialogosfuturismo1.wixsite.com/futurismo/video"
-                className={styles.acc}><img src="./go.svg" alt="Acessar" title="Acessar" /><button>Acessar</button></a>
+                className={styles.acc}><Image layout='fill' src="/go.svg" alt="Acessar" title="Acessar" /><button>Acessar</button></a>
             </div>
-            <img src="./proj/dialogo.webp" alt="Projeto" />
+            <Image layout='fill' src="/proj/dialogo.webp" alt="Projeto" />
           </div>
         </div>
         <div className={styles.morePp}>
@@ -191,7 +198,7 @@ function prev(){
           <a href="./arts.html#b3d" alt="Artes em 3D" title="Artes em 3D">
             <div className={styles.cA}>
               <div className={styles.a2d}>
-                <img src="./cube.svg" alt="Artes em 3D" title="Artes em 3D" />
+                <Image layout='fill' src="/cube.svg" alt="Artes em 3D" title="Artes em 3D" />
               </div>
             </div>
           </a>
@@ -201,7 +208,7 @@ function prev(){
           <a href="./arts.html#b2d" alt="Artes em 2D" title="Artes em 2D">
             <div className={styles.cA}>
               <div className={styles.a3d}>
-                <img src="./galery.svg" alt="Artes em 2D" title="Artes em 2D" />
+                <Image layout='fill' src="/galery.svg" alt="Artes em 2D" title="Artes em 2D" />
               </div>
             </div>
           </a>
