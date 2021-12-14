@@ -21,7 +21,7 @@ function prev(){
       <div className={classNames(styles.pages, styles.init)} id="init" spellCheck="false">
         <div className={styles.title}>
           <h1><span>Portfólio</span>.Luci</h1>
-          <h2>I'm developer. I'm Designer</h2>
+          <h2>Im developer. Im Designer</h2>
           <div className={styles.gradient}></div>
           <a href="#cardme"><button id="start">Explore</button></a>
         </div>

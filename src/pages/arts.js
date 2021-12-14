@@ -211,7 +211,7 @@ function Arts() {
         <div className={styles.line}></div>
 
         <h1 id="b2d" className={styles.b2d}>2D</h1>
-        <p>Minha história com a arte 2D começou de uma forma engraçada e um pouco triste. Bem, estava eu em uma das aulas de Imagem Digital 3D, o professor se aproximnou e ao ver a forma com que eu lidava com a Arte 3D me falou sobre um projeto de Animação, bem, fiquei interessada, porém ele fez a seguinte pergunta: "Lúcia, você sabe desenhar?". E depois disso, quis aprender, senti que fazer um curso de Artes e não saber desenhar era algo que me deixava com um sentimento estranho e de não pertencimento, por mais que eu mesma discorde disso, acabei aprendendo a desenhar.</p>
+        <p>Minha história com a arte 2D começou de uma forma engraçada e um pouco triste. Bem, estava eu em uma das aulas de Imagem Digital 3D, o professor se aproximnou e ao ver a forma com que eu lidava com a Arte 3D me falou sobre um projeto de Animação, bem, fiquei interessada, porém ele fez a seguinte pergunta: Lúcia, você sabe desenhar?. E depois disso, quis aprender, senti que fazer um curso de Artes e não saber desenhar era algo que me deixava com um sentimento estranho e de não pertencimento, por mais que eu mesma discorde disso, acabei aprendendo a desenhar.</p>
       </div>
 
       <div className={styles.o}>
