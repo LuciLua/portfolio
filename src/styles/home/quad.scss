@@ -6,13 +6,13 @@
 
     display: flex;
     align-items: center;
-    justify-content:start;
+    justify-content:flex-start;
     transition: 0.4s;
     overflow-x: scroll;
 }
 
 
-.quad-pag{
+.quadPag{
     width: 100%;
     max-width: 100%;
     position: relative;
@@ -24,7 +24,7 @@
     transition: 0.4s;
 }
 
-.quad .q-a, .quad-pag .q-a{
+.quad .qA, .quadPag .qA{
     width: 350px;
     max-width: 350px;
     min-width: 350px;
@@ -51,14 +51,14 @@
 
 }
 
-.quad .q-a:hover .content, .quad .q-a:hover img,
+.quad .qA:hover .content, .quad .qA:hover img,
 
-.quad-pag .q-a:hover .content, .quad-pag .q-a:hover img{
+.quadPag .qA:hover .content, .quadPag .qA:hover img{
 
     filter: brightness(0.4) blur(2px);
 }
 
-.quad .q-a .content, .quad-pag .q-a .content{
+.quad .qA .content, .quadPag .qA .content{
     position: absolute;
     z-index: 10;
 
@@ -71,24 +71,24 @@
     width: fit-content;
 }
 
-.quad .q-a:hover .content p, .quad-pag .q-a:hover .content p{
+.quad .qA:hover .content p, .quadPag .qA:hover .content p{
     opacity: 0%;
     transition: 0.3s;
 }
 
-.quad .q-a:hover .content h2, .quad-pag .q-a:hover .content h2{
+.quad .qA:hover .content h2, .quadPag .qA:hover .content h2{
     border-bottom: none;
     transition: 0.3s;
     opacity: 0%;
 
 }
 
-.quad .q-a:hover .content , .quad-pag .q-a:hover .content{
+.quad .qA:hover .content , .quadPag .qA:hover .content{
     transition: 0.3s;
     top: 0;
 }
 
-.quad .q-a h2, .quad-pag .q-a h2{
+.quad .qA h2, .quadPag .qA h2{
 
     color: rgb(255, 255, 255);
     font-family: Lexend-300;
@@ -103,7 +103,7 @@
 
 }
 
-.quad .q-a .content p, .quad-pag .q-a p{
+.quad .qA .content p, .quadPag .qA p{
 
     font-family: Arial;
     font-display: swap;
@@ -121,7 +121,7 @@
 
 }
 
-.quad .q-a img, .quad-pag .q-a img{
+.quad .qA img, .quadPag .qA img{
     max-width: 100%;
     width: 100%;
     height: 100%;
@@ -135,7 +135,7 @@
 /* botoes dos cards projects */
 
 
-.quad .q-a .btn-h, .quad-pag .q-a .btn-h{
+.quad .qA .btnH, .quadPag .qA .btnH{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -152,21 +152,21 @@
 
 }
 
-.quad .q-a:hover .btn-h, .quad-pag .q-a:hover .btn-h{
+.quad .qA:hover .btnH, .quadPag .qA:hover .btnH{
     opacity: 100%;
     transition: 0.3s;
 }
 
-.quad .q-a .btn-h a:hover, .quad-pag .q-a .btn-h a:hover{
+.quad .qA .btnH a:hover, .quadPag .qA .btnH a:hover{
     width: 100px;
     height: 30px;
 }
 
-.quad .q-a .btn-h a:hover img, .quad-pag .q-a .btn-h a:hover img{
+.quad .qA .btnH a:hover img, .quadPag .qA .btnH a:hover img{
     opacity: 0%;
 }
 
-.quad .q-a .btn-h a, .quad-pag .q-a .btn-h a{
+.quad .qA .btnH a, .quadPag .qA .btnH a{
     outline: none;
     cursor: pointer;
 
@@ -195,60 +195,60 @@
 }
 
 
-.quad .q-a .btn-h .acc, .quad-pag .btn-h .acc{
+.quad .qA .btnH .acc, .quadPag .btnH .acc{
     background-color: #ffffff!important;
     border:  #ffffff 1.5px solid;
 }
 
-.quad .q-a .btn-h .git, .quad-pag .q-a .btn-h .git{
+.quad .qA .btnH .git, .quadPag .qA .btnH .git{
     background-color: #00000083!important;
     border:  #ffffff 1.5px solid;
 }
 
-.quad .q-a .btn-h .acc:hover, .quad .q-a .btn-h .git:hover, 
+.quad .qA .btnH .acc:hover, .quad .qA .btnH .git:hover, 
 
-.quad-pag .q-a .btn-h .acc:hover, .quad-pag .q-a .btn-h .git:hover{
+.quadPag .qA .btnH .acc:hover, .quadPag .qA .btnH .git:hover{
     background-color: #16161a!important;
     border: rgb(0, 255, 102) 1.5px solid;
 
     transition: 0.2s;
 }
 
-.quad .q-a .btn-h a button, .quad-pag .q-a .btn-h a button{
+.quad .qA .btnH a button, .quadPag .qA .btnH a button{
     color: #fff;
     font-size: 14px;
     opacity: 0%;
 }
 
 
-.quad .q-a .btn-h a:hover button, .quad-pag .q-a .btn-h a:hover button{
+.quad .qA .btnH a:hover button, .quadPag .qA .btnH a:hover button{
     color: #fff;
     font-size: 14px;
     opacity: 100%;
 }
 
-.quad .q-a .git button, .quad-pag .q-a .git button{
+.quad .qA .git button, .quadPag .qA .git button{
     cursor: pointer;
     border: none;
     background-color: transparent;
     color: #fff;
 }
 
-.quad .q-a .acc button, .quad-pag .q-a .acc button{
+.quad .qA .acc button, .quadPag .qA .acc button{
     cursor: pointer;
     border: none;
     background-color: transparent;
     color: rgb(0, 0, 0);
 }
 
-.quad .q-a .btn-h .git img, .quad-pag .q-a .btn-h .git img{
+.quad .qA .btnH .git img, .quadPag .qA .btnH .git img{
     filter: invert(1);
     position: absolute;
     width: 23px;
     height: 23px;
 }
 
-.quad .q-a .btn-h .acc img, .quad-pag .q-a .btn-h .acc img{
+.quad .qA .btnH .acc img, .quadPag .qA .btnH .acc img{
     filter: invert(0);
     position: absolute;
     width: 23px;

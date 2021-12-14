@@ -1,7 +1,7 @@
 
 /* page projects */
 
-.p-init{
+.pInit{
     width: 100%;
     height: 20vh;
     margin-bottom: 50px;
@@ -10,7 +10,8 @@
     justify-content: center;
 }
 
-.p-init h2{
+
+.pInit h2{
     width: 50%;
     height: 100%;
     color: #fff;
@@ -28,7 +29,7 @@
     margin-top: 30px;
 }
 
-#projetos-p h2{
+.projetosP h2{
     color: #fff;
     font-family: Lexend-300;
     text-align: center;
@@ -36,13 +37,13 @@
     margin-bottom: 20px;
 }
 
-#projetos-p h2 span{
+.projetosP h2 span{
     color: #00ff66;
     font-family: Lexend-400;
 }
 
 
-#projetos-p .more-pp{
+.projetosP .morePp{
     width: 100%;
     height: fit-content;
 
@@ -53,7 +54,7 @@
     margin-top: 35px;
 }
 
-#projetos-p .more-pp a{
+.projetosP .morePp a{
     background: linear-gradient(transparent,#000000);
     border: #00ff66 1px solid;
 
@@ -73,7 +74,7 @@
     z-index: 30;
 }
 
-#projetos-p .more-pp a:hover{
+.projetosP .morePp a:hover{
     transition: 0.7s;
     transform: scale(1.04);
 
@@ -82,7 +83,7 @@
 }
 
 
-#projetos-p .more-pp a button{
+.projetosP .morePp a button{
 background-color: transparent;
 border: none;
 color: #00ff66;

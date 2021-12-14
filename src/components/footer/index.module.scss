@@ -1,0 +1,59 @@
+.icosFooter{
+    display: inline;
+    width: fit-content;
+    margin-left: auto;
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.icosFooter .ico{
+    width: fit-content;
+    height: fit-content;
+    display: inline;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+   
+}
+
+.icosFooter .ico a img{
+    width: 25px;
+    height: 25px;
+    filter: invert(0.3);
+    transition: 0.2s;
+}
+
+.icosFooter .ico:hover a img{
+    width: 25px;
+    height: 25px;
+    filter: invert(0.9);
+    transition: 0.2s;
+}
+
+.footer{
+    width: 100%;
+    height: 80px;
+    
+    background-color:#0e0e0eae;
+    border-top: #00ff66 1px dashed;
+    bottom: 0;
+    
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.footer p{
+    color: #97a59b;
+    
+    text-align: center;
+    font-family: Lexend-300;
+    font-display: swap;
+    font-size: 15px;
+    margin: auto;
+    position: absolute;
+}

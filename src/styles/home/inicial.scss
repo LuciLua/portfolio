@@ -1,11 +1,8 @@
-
-/* inicial */
-
-#init{
+.init{
     background: linear-gradient(rgb(10, 11, 11),var(--background)40%);
 }
 
-#init img{
+.init img{
     position: absolute;
     max-width: 100%;
     min-width: 100%;
@@ -19,7 +16,7 @@
 .gradient{
     width: 100%;
     height: 100px;
-    background: linear-gradient(rgba(213, 17, 17, 0) 60%,var(--background));
+    background: linear-gradient(rgba(255, 0, 0, 0) 60%,var(--background));
     bottom: 0;
     position: absolute;
     object-fit: cover;

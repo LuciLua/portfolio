@@ -1,5 +1,5 @@
 
-.contact-align{
+.contactAlign{
     display: flex;
     flex-wrap: wrap;
 
@@ -13,10 +13,10 @@
     align-items: center;
 }
 
-.contact-align h1::first-letter{
+.contactAlign h1::first-letter{
     color: var(--green-1)
 }
-.contact-align h1{
+.contactAlign h1{
     font-family: Lexend-500;
     font-display: swap;
 
@@ -24,7 +24,7 @@
     margin-bottom: 20px;
 }
 
-.contact-align p{
+.contactAlign p{
     padding: 20px;
 }
 
@@ -32,7 +32,7 @@
 /* contect about page */
 
 
-.content-contact{
+.contentContact{
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
@@ -46,7 +46,7 @@
     padding: 20px;
 }
 
-.content-contact form{
+.contentContact form{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -57,7 +57,7 @@
     max-width: 50vh;
 }
 
-.content-contact form input{
+.contentContact form input{
     width: 100%;
 
     background-color: rgba(255, 255, 255, 0.049);
@@ -75,7 +75,7 @@
 
 }
 
-.content-contact form textarea{
+.contentContact form textarea{
     width: 100%;
 
     background-color: rgba(255, 255, 255, 0.049);
@@ -94,12 +94,12 @@
 
 }
 
-.content-contact form input:focus, 
-.content-contact form textarea:focus{
+.contentContact form input:focus, 
+.contentContact form textarea:focus{
     outline: 1px solid rgb(68, 242, 0);
 } 
 
-.content-contact form button{
+.contentContact form button{
     
     background-color: rgba(58, 97, 63, 0.254);
 
@@ -119,14 +119,14 @@
 }
 
 
-.content-contact form button:hover{
+.contentContact form button:hover{
     background-color: #00ff6246;
 }
-.content-contact form button:active{
+.contentContact form button:active{
     background-color: #07220365;
 }
 
-.content-contact p{
+.contentContact p{
     font-family: Lexend-300;
     color: #9a9a9a;
 
@@ -139,7 +139,7 @@
     position: relative;
 }
 
-#contact-subpagina{
+.contactSubpagina{
     width: 100%;
     min-height: 100vh;
 }
