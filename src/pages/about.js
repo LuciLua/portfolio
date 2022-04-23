@@ -1,11 +1,10 @@
 import styles from '../styles/home/index.module.scss'
-import classNames from 'classnames'
 import Image from 'next/image'
 
 function About() {
   return (
 
-    <div className={classNames(styles.pages), styles.aboutSubpagina} id="about-subpagina">
+    <div className={`${styles.pages} ${styles.aboutSubpagina}`} id="about-subpagina">
       <div className={styles.pInit}>
         <h2>About me</h2>
       </div>

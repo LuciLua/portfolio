@@ -5,19 +5,19 @@ import Head from 'next/head';
 
 function Home() {
 
-function next(){
+  function next() {
     document.getElementById('quad').scrollLeft += 390;
-};
+  };
 
-function prev(){
+  function prev() {
     document.getElementById('quad').scrollLeft -= 390;
-};
+  };
 
   return (
     <>
-    <Head>
-      <title>Luci Lua | Portfólio</title>
-    </Head>
+      <Head>
+        <title>Luci Lua | Portfólio</title>
+      </Head>
       <div className={classNames(styles.pages, styles.init)} id="init" spellCheck="false">
         <div className={styles.title}>
           <h1><span>Portfólio</span>.Luci</h1>
@@ -37,7 +37,7 @@ function prev(){
               <div className={styles.ico}>
                 <a target="_blank" rel="noreferrer" href="https://github.com/LuciLua">
                   <Image height={60} width={60} layout='responsive' src="/github.svg" alt="GitHub"
-                  title="GitHub" /></a>
+                    title="GitHub" /></a>
               </div>
               <div className={styles.ico}>
                 <a target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/l%C3%BAcia-guelber-837a50185/"><Image
@@ -47,7 +47,7 @@ function prev(){
               <div className={styles.ico}>
                 <a target="_blank" rel="noreferrer" href="https://br.pinterest.com/lucilua81">
                   <Image height={60} width={60} src="/pinterest.svg"
-                  alt="Pinterest" title="Pinterest" /></a>
+                    alt="Pinterest" title="Pinterest" /></a>
               </div>
             </div>
             <p>Artista e Programadora</p>
@@ -113,11 +113,11 @@ function prev(){
               <a target="_blank" rel="noreferrer" href="https://github.com/LuciLua/NLW5-Podcastr" className={styles.git}>
                 <Image layout='fill' src="/gitgo.svg" title="Github" alt="Github" />
                 <button>GitHub</button>
-                </a>
+              </a>
               <a target="_blank" rel="noreferrer" href="https://www.podcastr.ga/" className={styles.acc}>
                 <Image layout='fill' src="/go.svg" alt="Acessar" title="Acessar" />
                 <button>Acessar</button>
-                </a>
+              </a>
             </div>
             <Image layout='fill' src="/proj/podcastr.webp" alt="Projeto" />
           </div>
@@ -128,7 +128,7 @@ function prev(){
             </div>
             <div className={styles.btnH}>
               <a target="_blank" rel="noreferrer" href="https://www.youtube.com/watch?v=VrI2ILQvzAw" className={styles.acc}><Image layout='fill'
-              src="/go.svg" alt="Acessar" title="Acessar" /><button>Acessar</button></a>
+                src="/go.svg" alt="Acessar" title="Acessar" /><button>Acessar</button></a>
             </div>
             <Image layout='fill' src="/proj/neutrum.webp" alt="Projeto" />
           </div>
@@ -139,7 +139,7 @@ function prev(){
             </div>
             <div className={styles.btnH}>
               <a target="_blank" rel="noreferrer" href="https://github.com/LuciLua/snakegame" className={styles.git}><Image layout='fill'
-              src="/gitgo.svg" title="Github" alt="Github" /><button>GitHub</button></a>
+                src="/gitgo.svg" title="Github" alt="Github" /><button>GitHub</button></a>
               <a target="_blank" rel="noreferrer" href="https://www.gamesnake.tk/" className={styles.acc}><Image layout='fill' src="/go.svg"
                 alt="Acessar" title="Acessar" /><button>Acessar</button></a>
             </div>
@@ -152,9 +152,9 @@ function prev(){
             </div>
             <div className={styles.btnH}>
               <a target="_blank" rel="noreferrer" href="https://github.com/LuciLua/RichTextEditor" className={styles.git}><Image layout='fill'
-              src="/gitgo.svg" title="Github" alt="Github" /><button>GitHub</button></a>
+                src="/gitgo.svg" title="Github" alt="Github" /><button>GitHub</button></a>
               <a target="_blank" rel="noreferrer" href="https://rich-text-editor.vercel.app/" className={styles.acc}><Image layout='fill'
-              src="/go.svg" alt="Acessar" title="Acessar" /><button>Acessar</button></a>
+                src="/go.svg" alt="Acessar" title="Acessar" /><button>Acessar</button></a>
             </div>
             <Image layout='fill' src="/proj/rick.webp" alt="Projeto" />
           </div>
@@ -165,7 +165,7 @@ function prev(){
             </div>
             <div className={styles.btnH}>
               <a target="_blank" rel="noreferrer" href="https://github.com/LuciLua/calendar" className={styles.git}><Image layout='fill'
-              src="/gitgo.svg" title="Github" alt="Github" /><button>GitHub</button></a>
+                src="/gitgo.svg" title="Github" alt="Github" /><button>GitHub</button></a>
               <a target="_blank" rel="noreferrer" href="http://calendar-blond.vercel.app/" className={styles.acc}><Image layout='fill' src="/go.svg"
                 alt="Acessar" title="Acessar" /><button>Acessar</button></a>
             </div>

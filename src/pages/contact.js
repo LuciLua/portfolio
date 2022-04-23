@@ -25,7 +25,7 @@ function Contact() {
 
   return (
 
-    <div className={styles.pages, styles.contactSubpagina} id="contact-subpagina">
+    <div className={`${styles.pages} ${styles.contactSubpagina}`} id="contact-subpagina">
       <div className={styles.pInit}>
         <h2>Contact me</h2>
       </div>

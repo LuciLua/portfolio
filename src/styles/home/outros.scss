@@ -45,37 +45,6 @@
     user-select: none;
     cursor: pointer;
 }
-
-.artes .artG .o .eye{
-    position: absolute;
-    width: fit-content;
-    height: fit-content;
-    margin: 0px;
-    bottom: 0;
-
-    transition: 0.2s;
-    z-index: 50;
-    text-decoration: none;
-}
-
-.artes .artG .o .eye{
-    filter: invert(1);
-    opacity: 20%;
-    width: 20px;
-    height: 20px;
-    transition: 0.3s;
-    user-select: none;
-    pointer-events: none;
-}
-
-.artes .artG .o:hover .eye{
-    width: 30px;
-    height: 30px;
-    opacity: 100%;
-    filter: invert(1);
-    transition: 0.3s;
-}
-
 .artes .artG .o img{
     width: 100%;
     height: 100%;
