@@ -21,7 +21,7 @@
   },
   "homepage": "https://github.com/LuciLua/portfolio#readme",
   "dependencies": {
-    "next": "^12.0.7",
+    "next": "12",
     "nodemon": "^2.0.15",
     "npm-check-updates": "^12.5.9",
     "react": "^18.0.0",
