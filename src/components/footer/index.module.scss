@@ -1,33 +1,30 @@
 .icosFooter{
-    display: inline;
-    width: fit-content;
     margin-left: auto;
-    height: fit-content;
     display: flex;
     align-items: center;
     position: relative;
+
 }
 
 .icosFooter .ico{
-    width: fit-content;
-    height: fit-content;
-    display: inline;
+    width: 30px;
+    height: 30px;
+
+    display: flex;
     justify-content: center;
     align-items: center;
-    margin: 10px;
-   
+    
+    margin: 15px;
 }
 
-.icosFooter .ico a img{
-    width: 25px;
-    height: 25px;
+.icosFooter .ico a{
     filter: invert(0.3);
+    width: 100%;
+    height: 100%;
     transition: 0.2s;
 }
 
 .icosFooter .ico:hover a img{
-    width: 25px;
-    height: 25px;
     filter: invert(0.9);
     transition: 0.2s;
 }

@@ -1,4 +1,5 @@
 import styles from './index.module.scss'
+import Image from "next/image"
 
 function Footer() {
     return (
@@ -7,16 +8,34 @@ function Footer() {
             <br />
             <div className={styles.icosFooter}>
                 <div className={styles.ico}>
-                    <a target="_blank" rel="noreferrer" href="https://github.com/LuciLua"><img src="./github.svg" alt="GitHub"
-                        title="GitHub" /></a>
+                    <a target="_blank" rel="noreferrer" href="https://github.com/LuciLua">
+                        <Image
+                            src="/github.svg"
+                            alt="GitHub"
+                            title="GitHub"
+                            layout='fill'
+                        />
+                    </a>
                 </div>
                 <div className={styles.ico}>
-                    <a target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/l%C3%BAcia-guelber-837a50185/"><img
-                        src="./linkedin.svg" alt="Linkedin" title="Linkedin" /></a>
+                    <a target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/l%C3%BAcia-guelber-837a50185/">
+                        <Image
+                            src="/linkedin.svg"
+                            alt="Linkedin"
+                            title="Linkedin"
+                            layout='fill'
+                        />
+                    </a>
                 </div>
                 <div className={styles.ico}>
-                    <a target="_blank" rel="noreferrer" href="https://br.pinterest.com/lucilua81"><img src="./pinterest.svg"
-                        alt="Pinterest" title="Pinterest" /></a>
+                    <a target="_blank" rel="noreferrer" href="https://br.pinterest.com/lucilua81">
+                        <Image
+                            src="/pinterest.svg"
+                            alt="Pinterest"
+                            title="Pinterest"
+                            layout='fill'
+                        />
+                    </a>
                 </div>
             </div>
         </footer>
