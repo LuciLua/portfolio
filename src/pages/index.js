@@ -1,15 +1,16 @@
 import Image from 'next/image'
 import styles from '../styles/home/index.module.scss'
 import Head from 'next/head';
+import ProjectCard from '../components/projectcards/cards';
 
 function Home() {
 
   function next() {
-    document.getElementById('quad').scrollLeft += 390;
+    document.getElementById('sectionProjects').scrollLeft += 390;
   };
 
   function prev() {
-    document.getElementById('quad').scrollLeft -= 390;
+    document.getElementById('sectionProjects').scrollLeft -= 390;
   };
 
   return (
@@ -102,84 +103,24 @@ function Home() {
           <button alt="Anterior" title="Anterior" onClick={prev}>left</button>
           <button alt="Próxima" title="Próxima" onClick={next}>right</button>
         </div>
-        <div className={styles.quad} id="quad">
-          <div className={styles.qA}>
-            <div className={styles.content}>
-              <h2>Podcastr</h2>
-              <p>Aplicação desenvolvida com o framework Next.js</p>
-            </div>
-            <div className={styles.btnH}>
-              <a target="_blank" rel="noreferrer" href="https://github.com/LuciLua/NLW5-Podcastr" className={styles.git}>
-                <Image layout='fill' src="/gitgo.svg" title="Github" alt="Github" />
-                <button>GitHub</button>
-              </a>
-              <a target="_blank" rel="noreferrer" href="https://www.podcastr.ga/" className={styles.acc}>
-                <Image layout='fill' src="/go.svg" alt="Acessar" title="Acessar" />
-                <button>Acessar</button>
-              </a>
-            </div>
-            <Image layout='fill' src="/proj/podcastr.webp" alt="Projeto" />
+        <div className={styles.sectionProjects} id="sectionProjects">
+          <div className={styles.projectCard}>
+            <ProjectCard titleApp="Podcastr" descriptionApp="Aplicação desenvolvida com o framework Next.js" githubHref="https://github.com/LuciLua/NLW5-Podcastr" directLinkHrefApp="https://www.podcastr.ga/" shortTitle="Projeto Podcast" mainImgSrc="/proj/podcastr.webp" />
           </div>
-          <div className={styles.qA}>
-            <div className={styles.content}>
-              <h2>Audiovisual | Neutrum</h2>
-              <p>Cenários e Edição da animação Neutrum</p>
-            </div>
-            <div className={styles.btnH}>
-              <a target="_blank" rel="noreferrer" href="https://www.youtube.com/watch?v=VrI2ILQvzAw" className={styles.acc}><Image layout='fill'
-                src="/go.svg" alt="Acessar" title="Acessar" /><button>Acessar</button></a>
-            </div>
-            <Image layout='fill' src="/proj/neutrum.webp" alt="Projeto" />
+          <div className={styles.projectCard}>
+            <ProjectCard titleApp="Audiovisual | Neutrum" descriptionApp="Cenários e Edição da animação Neutrum" githubHref="/" directLinkHrefApp="https://www.youtube.com/watch?v=VrI2ILQvzAw" shortTitle="Projeto Neutrum" mainImgSrc="/proj/neutrum.webp" />
           </div>
-          <div className={styles.qA}>
-            <div className={styles.content}>
-              <h2>Snake Game</h2>
-              <p>Jogo para navegador utilizando Javascript</p>
-            </div>
-            <div className={styles.btnH}>
-              <a target="_blank" rel="noreferrer" href="https://github.com/LuciLua/snakegame" className={styles.git}><Image layout='fill'
-                src="/gitgo.svg" title="Github" alt="Github" /><button>GitHub</button></a>
-              <a target="_blank" rel="noreferrer" href="https://www.gamesnake.tk/" className={styles.acc}><Image layout='fill' src="/go.svg"
-                alt="Acessar" title="Acessar" /><button>Acessar</button></a>
-            </div>
-            <Image layout='fill' src="/proj/snake.webp" alt="Projeto" />
+          <div className={styles.projectCard}>
+            <ProjectCard titleApp="Snake Game" descriptionApp="Jogo para navegador utilizando Javascript" githubHref="https://github.com/LuciLua/snakegame" directLinkHrefApp="https://www.gamesnake.tk/" shortTitle="Projeto Snake Game" mainImgSrc="/proj/snake.webp" />
           </div>
-          <div className={styles.qA}>
-            <div className={styles.content}>
-              <h2>Editor Rich Text</h2>
-              <p>Editor de texto Rich Text para navegador</p>
-            </div>
-            <div className={styles.btnH}>
-              <a target="_blank" rel="noreferrer" href="https://github.com/LuciLua/RichTextEditor" className={styles.git}><Image layout='fill'
-                src="/gitgo.svg" title="Github" alt="Github" /><button>GitHub</button></a>
-              <a target="_blank" rel="noreferrer" href="https://rich-text-editor.vercel.app/" className={styles.acc}><Image layout='fill'
-                src="/go.svg" alt="Acessar" title="Acessar" /><button>Acessar</button></a>
-            </div>
-            <Image layout='fill' src="/proj/rick.webp" alt="Projeto" />
+          <div className={styles.projectCard}>
+            <ProjectCard titleApp="Editor Rich Text" descriptionApp="Editor de texto Rich Text para navegador" githubHref="https://github.com/LuciLua/RichTextEditor" directLinkHrefApp="https://rich-text-editor.vercel.app/" shortTitle="Projeto RichText Editor" mainImgSrc="/proj/rick.webp" />
           </div>
-          <div className={styles.qA}>
-            <div className={styles.content}>
-              <h2>Calendário</h2>
-              <p>Aplicação em desenvolvimento utilizando o framework Next.js</p>
-            </div>
-            <div className={styles.btnH}>
-              <a target="_blank" rel="noreferrer" href="https://github.com/LuciLua/calendar" className={styles.git}><Image layout='fill'
-                src="/gitgo.svg" title="Github" alt="Github" /><button>GitHub</button></a>
-              <a target="_blank" rel="noreferrer" href="http://calendar-blond.vercel.app/" className={styles.acc}><Image layout='fill' src="/go.svg"
-                alt="Acessar" title="Acessar" /><button>Acessar</button></a>
-            </div>
-            <Image layout='fill' src="/proj/calender.webp" alt="Projeto" />
+          <div className={styles.projectCard}>
+            <ProjectCard titleApp="Calendário" descriptionApp="Aplicação em desenvolvimento utilizando o framework Next.js" githubHref="https://github.com/LuciLua/calendar" directLinkHrefApp="http://calendar-blond.vercel.app/" shortTitle="Projeto Calender" mainImgSrc="/proj/calender.webp" />
           </div>
-          <div className={styles.qA}>
-            <div className={styles.content}>
-              <h2>Audiovisual | Moda</h2>
-              <p>Produção audiovisual de moda e ensaio fotográfico</p>
-            </div>
-            <div className={styles.btnH}>
-              <a target="_blank" rel="noreferrer" href="https://dialogosfuturismo1.wixsite.com/futurismo/video"
-                className={styles.acc}><Image layout='fill' src="/go.svg" alt="Acessar" title="Acessar" /><button>Acessar</button></a>
-            </div>
-            <Image layout='fill' src="/proj/dialogo.webp" alt="Projeto" />
+          <div className={styles.projectCard}>
+            <ProjectCard titleApp="Audiovisual | Moda" descriptionApp="Produção audiovisual de moda e ensaio fotográfico" githubHref={false} directLinkHrefApp="https://dialogosfuturismo1.wixsite.com/futurismo/video" shortTitle="Projeto Dialogos Entre Moda e Arte" mainImgSrc="/proj/dialogo.webp" />
           </div>
         </div>
         <div className={styles.morePp}>

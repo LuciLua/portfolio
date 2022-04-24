@@ -1,4 +1,5 @@
 import styles from '../styles/home/index.module.scss'
+import ProjectCard from '../components/projectcards/cards'
 
 function Projects() {
     return (
@@ -7,102 +8,33 @@ function Projects() {
             <div className={styles.pInit}>
                 <h2>Projetos</h2>
             </div>
-            <div className={styles.quadPag}>
-                <div className={styles.qA}>
-                    <div className={styles.content}>
-                        <h2>Podcastr</h2>
-                        <p>Aplicação desenvolvida com o framework Next.js</p>
-                    </div>
-                    <div className={styles.btnH}>
-                        <a target="_blank" rel="noreferrer" href="https://github.com/LuciLua/NLW5-Podcastr" className={styles.git}><img src="./gitgo.svg" title="Github" alt="Github"/><button>GitHub</button></a>
-                        <a target="_blank" rel="noreferrer" href="https://www.podcastr.ga/" className={styles.acc}><img src="./go.svg" alt="Acessar" title="Acessar"/><button >Acessar</button></a>
-                    </div>
-                    <img src="./proj/podcastr.webp" alt="Projeto" />
+            <div className={styles.sectionProjectsOtherPage}>
+                <div className={styles.projectCard}>
+                    <ProjectCard titleApp="Podcastr" descriptionApp="Aplicação desenvolvida com o framework Next.js" githubHref="https://github.com/LuciLua/NLW5-Podcastr" directLinkHrefApp="https://www.podcastr.ga/" shortTitle="Projeto Podcast" mainImgSrc="/proj/podcastr.webp" />
                 </div>
-                <div className={styles.qA}>
-                    <div className={styles.content}>
-                        <h2>Audiovisual | Neutrum</h2>
-                        <p>Cenários e Edição da animação Neutrum</p>
-                    </div>
-                    <div className={styles.btnH}>
-                        <a target="_blank" rel="noreferrer" href="https://www.youtube.com/watch?v=VrI2ILQvzAw" className={styles.acc}><img src="./go.svg" alt="Acessar" title="Acessar"/><button >Acessar</button></a>
-                    </div>
-                    <img src="./proj/neutrum.webp" alt="Projeto"/>
+                <div className={styles.projectCard}>
+                    <ProjectCard titleApp="Audiovisual | Neutrum" descriptionApp="Cenários e Edição da animação Neutrum" githubHref={false} directLinkHrefApp="https://www.youtube.com/watch?v=VrI2ILQvzAw" shortTitle="Projeto Neutrum" mainImgSrc="/proj/neutrum.webp" />
                 </div>
-                <div className={styles.qA}>
-                    <div className={styles.content}>
-                        <h2>Snake Game</h2>
-                        <p>Jogo para navegador utilizando Javascript</p>
-                    </div>
-                    <div className={styles.btnH}>
-                        <a target="_blank" rel="noreferrer" href="https://github.com/LuciLua/snakegame" className={styles.git}><img src="./gitgo.svg" title="Github" alt="Github"/><button >GitHub</button></a>
-                        <a target="_blank" rel="noreferrer" href="https://www.gamesnake.tk/" className={styles.acc}><img src="./go.svg" alt="Acessar" title="Acessar"/><button>Acessar</button></a>
-                    </div>
-                    <img src="./proj/snake.webp" alt="Projeto"/>
+                <div className={styles.projectCard}>
+                    <ProjectCard titleApp="Snake Game" descriptionApp="Jogo para navegador utilizando Javascript" githubHref="https://github.com/LuciLua/snakegame" directLinkHrefApp="https://www.gamesnake.tk/" shortTitle="Projeto Snake Game" mainImgSrc="/proj/snake.webp" />
                 </div>
-                <div className={styles.qA}>
-                    <div className={styles.content}>
-                        <h2>Editor Rich Text</h2>
-                        <p>Editor de texto Rich Text para navegador</p>
-                    </div>
-                    <div className={styles.btnH}>
-                        <a target="_blank" rel="noreferrer" href="https://github.com/LuciLua/RichTextEditor" className={styles.git}><img src="./gitgo.svg" title="Github" alt="Github"/><button >GitHub</button></a>
-                        <a target="_blank" rel="noreferrer" href="https://rich-text-editor.vercel.app/" className={styles.acc}><img src="./go.svg" alt="Acessar" title="Acessar"/><button >Acessar</button></a>
-                    </div>
-                    <img src="./proj/rick.webp" alt="Projeto"/>
+                <div className={styles.projectCard}>
+                    <ProjectCard titleApp="Editor Rich Text" descriptionApp="Editor de texto Rich Text para navegador" githubHref="https://github.com/LuciLua/RichTextEditor" directLinkHrefApp="https://rich-text-editor.vercel.app/" shortTitle="Projeto RichText Editor" mainImgSrc="/proj/rick.webp" />
                 </div>
-                <div className={styles.qA}>
-                    <div className={styles.content}>
-                        <h2>Calendário</h2>
-                        <p>Aplicação em desenvolvimento utilizando o framework Next.js</p>
-                    </div>
-                    <div className={styles.btnH}>
-                        <a target="_blank" rel="noreferrer" href="https://github.com/LuciLua/calendar" className={styles.git}><img src="./gitgo.svg" title="Github" alt="Github"/><button >GitHub</button></a>
-                        <a target="_blank" rel="noreferrer" href="http://calendar-blond.vercel.app/" className={styles.acc}><img src="./go.svg" alt="Acessar" title="Acessar"/><button >Acessar</button></a>
-                    </div>
-                    <img src="./proj/calender.webp" alt="Projeto"/>
+                <div className={styles.projectCard}>
+                    <ProjectCard titleApp="Calendário" descriptionApp="Aplicação em desenvolvimento utilizando o framework Next.js" githubHref="https://github.com/LuciLua/calendar" directLinkHrefApp="http://calendar-blond.vercel.app/" shortTitle="Projeto Calender" mainImgSrc="/proj/calender.webp" />
                 </div>
-                <div className={styles.qA}>
-                    <div className={styles.content}>
-                        <h2>Audiovisual | Moda</h2>
-                        <p>Produção audiovisual de moda e ensaio fotográfico</p>
-                    </div>
-                    <div className={styles.btnH}>
-                        <a target="_blank" rel="noreferrer" href="https://dialogosfuturismo1.wixsite.com/futurismo/video" className={styles.acc}><img src="./go.svg" alt="Acessar" title="Acessar"/><button>Acessar</button></a>
-                    </div>
-                    <img src="./proj/dialogo.webp" alt="Projeto"/>
+                <div className={styles.projectCard}>
+                    <ProjectCard titleApp="Audiovisual | Moda" descriptionApp="Produção audiovisual de moda e ensaio fotográfico" githubHref={false} directLinkHrefApp="https://dialogosfuturismo1.wixsite.com/futurismo/video" shortTitle="Projeto Dialogos Entre Moda e Arte" mainImgSrc="/proj/dialogo.webp" />
                 </div>
-                <div className={styles.qA}>
-                    <div className={styles.content}>
-                        <h2>Calculadora</h2>
-                        <p>Protótipo de uma calculadora com JavaScript</p>
-                    </div>
-                    <div className={styles.btnH}>
-                        <a target="_blank" rel="noreferrer" href="https://github.com/LuciLua/calculadora" className={styles.git}><img src="./gitgo.svg" title="Github" alt="Github"/><button >GitHub</button></a>
-                        <a target="_blank" rel="noreferrer" href="https://www.jscalculadora.tk/" className={styles.acc}><img src="./go.svg" alt="Acessar" title="Acessar"/><button >Acessar</button></a>
-                    </div>
-                    <img src="./proj/calculadora.webp" alt="Projeto"/>
+                <div className={styles.projectCard}>
+                    <ProjectCard titleApp="Calculadora" descriptionApp="Protótipo de uma calculadora com JavaScript" githubHref="https://github.com/LuciLua/calculadora" directLinkHrefApp="https://www.jscalculadora.tk/" shortTitle="Projeto Calculator" mainImgSrc="/proj/calculadora.webp" />
                 </div>
-                <div className={styles.qA}>
-                    <div className={styles.content}>
-                        <h2>Rock-Papper-Scissors</h2>
-                        <p>Jogo pedra papel tesousa em JavaScript</p>
-                    </div>
-                    <div className={styles.btnH}>
-                        <a target="_blank" rel="noreferrer" href="https://github.com/LuciLua/Rock-paper-and-scissors" className={styles.git}><img src="./gitgo.svg" title="Github" alt="Github"/><button >GitHub</button></a>
-                        <a target="_blank" rel="noreferrer" href="https://www.gamejs-rps.tk/" className={styles.acc}><img src="./go.svg" alt="Acessar" title="Acessar"/><button >Acessar</button></a>
-                    </div>
-                    <img src="./proj/rock.webp" alt="Projeto"/>
+                <div className={styles.projectCard}>
+                    <ProjectCard titleApp="Rock-Papper-Scissors" descriptionApp="Jogo pedra papel tesousa em JavaScript" githubHref="https://github.com/LuciLua/Rock-paper-and-scissors" directLinkHrefApp="https://www.gamejs-rps.tk/" shortTitle="Projeto Rock and Scissors" mainImgSrc="/proj/rock.webp" />
                 </div>
-                <div className={styles.qA}>
-                    <div className={styles.content}>
-                        <h2>Audiovisual | 3D</h2>
-                        <p>Curta de animação em 3D feito no Blender</p>
-                    </div>
-                    <div className={styles.btnH}>
-                        <a target="_blank" rel="noreferrer" href="https://www.youtube.com/watch?v=d1iIKCi0Gvc" className={styles.acc}><img src="./go.svg" alt="Acessar" title="Acessar"/><button>Acessar</button></a>
-                    </div>
-                    <img src="./proj/pomba.webp" alt="Projeto"/>
+                <div className={styles.projectCard}>
+                    <ProjectCard titleApp="Audiovisual | 3D" descriptionApp="Curta de animação em 3D feito no Blender" githubHref={false} directLinkHrefApp="https://www.youtube.com/watch?v=d1iIKCi0Gvc" shortTitle="Projeto A Vingança da Pomba" mainImgSrc="/proj/pomba.webp" />
                 </div>
             </div>
         </div>

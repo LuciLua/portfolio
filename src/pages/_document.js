@@ -1,5 +1,4 @@
 import Document, { Html, Head, Main, NextScript } from "next/document";
-
 export default class MyDocumnent extends Document {
     render() {
         return (
@@ -41,7 +40,6 @@ export default class MyDocumnent extends Document {
                     <meta name="copyright" content="© 2021 LuciLua" />
 
                     <link rel="shortcut icon" href="./ico.ico" type="image/x-icon" />
-                    
                 </Head>
                 <body>
                     <Main />
