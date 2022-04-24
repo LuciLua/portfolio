@@ -1,14 +1,15 @@
 import styles from './menu.module.scss'
 
 function Menu() {
+
     if (typeof window !== "undefined") {
         // Client-side-only code
-        window.addEventListener('scroll', function(){
-            const header = document.querySelector('.memul')
+        window.addEventListener('scroll', function () {
+            const header = document.querySelector('#memul')
             header.classList.toggle(styles.sticky, window.scrollY > 0)
-            
-        });
+        })
     }
+    
     return (
         <div className={styles.menu} id="menu">
             <ul id="memul" className={`${styles.memul} memu`}>
@@ -21,5 +22,6 @@ function Menu() {
         </div>
     )
 }
+
 
 export default Menu
