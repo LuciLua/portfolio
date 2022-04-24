@@ -1,4 +1,3 @@
-import classNames from 'classnames'
 import styles from '../styles/home/index.module.scss'
 import ArtCard from '../components/artcards/Artcards'
 

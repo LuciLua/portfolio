@@ -1,5 +1,4 @@
 import styles from './menu.module.scss'
-import classNames from 'classnames'
 
 function Menu() {
     if (typeof window !== "undefined") {
@@ -12,7 +11,7 @@ function Menu() {
     }
     return (
         <div className={styles.menu} id="menu">
-            <ul id="memul" className={classNames(styles.memul, 'memul')}>
+            <ul id="memul" className={`${styles.memul} memu`}>
                 <li className={styles.m} id="in"><a href="./">Home</a></li>
                 <li className={styles.m}><a href="./projects">Projects</a></li>
                 <li className={styles.m}><a href="./about">About</a></li>
