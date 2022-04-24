@@ -1,5 +1,6 @@
 import styles from '../styles/home/index.module.scss'
 import ArtCard from '../components/artcards/Artcards'
+import Head from "next/head"
 
 function Arts() {
 
@@ -28,6 +29,9 @@ function Arts() {
 
   return (
     <>
+      <Head>
+        <title>Luci Lua | Arts</title>
+      </Head>
       <div className={styles.pages} id="projetos-subpagina">
         <div className={styles.pInit}>
           <h2>Artes</h2>
