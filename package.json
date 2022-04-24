@@ -23,13 +23,17 @@
   "dependencies": {
     "next": "^12.0.7",
     "nodemon": "^2.0.15",
-    "react": "^17.0.2",
-    "react-dom": "^17.0.2",
+    "npm-check-updates": "^12.5.9",
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0",
     "sass": "^1.45.0"
   },
   "devDependencies": {
     "eslint": "8.4.1",
     "eslint-config-next": "12.0.7",
     "json-schema": ">=0.4.0"
+  },
+  "resolutions": {
+    "minimist": "1.2.6"
   }
 }
