@@ -1,6 +1,5 @@
 import Image from 'next/image'
 import styles from '../styles/home/index.module.scss'
-import classNames from 'classnames'
 import Head from 'next/head';
 
 function Home() {
@@ -18,7 +17,7 @@ function Home() {
       <Head>
         <title>Luci Lua | Portfólio</title>
       </Head>
-      <div className={classNames(styles.pages, styles.init)} id="init" spellCheck="false">
+      <div className={`${styles.pages} ${styles.init}`} id="init" spellCheck="false">
         <div className={styles.title}>
           <h1><span>Portfólio</span>.Luci</h1>
           <h2>Im developer. Im Designer</h2>
@@ -52,8 +51,8 @@ function Home() {
             </div>
             <p>Artista e Programadora</p>
             <div className={styles.aboutContact}>
-              <a href="./about.html"><button id="cardAbout" className={styles.cardAbout} title="About Me">About me</button></a>
-              <a href="./contact.html"><button id="cardContact" className={styles.cardContact} title="Contact Me">Contact me</button></a>
+              <a href="./about"><button id="cardAbout" className={styles.cardAbout} title="About Me">About me</button></a>
+              <a href="./contact"><button id="cardContact" className={styles.cardContact} title="Contact Me">Contact me</button></a>
             </div>
           </div>
         </div>
@@ -97,7 +96,7 @@ function Home() {
         </div>
         <div className={styles.line}></div>
       </div>
-      <div className={classNames(styles.projetosP, styles.pages)} id="projetos-p">
+      <div className={`${styles.projetosP} ${styles.pages}`} id="projetos-p">
         <h2>Projetos em <span>destaque</span></h2>
         <div className={styles.btnNp}>
           <button alt="Anterior" title="Anterior" onClick={prev}>left</button>
@@ -195,7 +194,7 @@ function Home() {
 
       <div className={styles.tA}>
         <div className={styles.iCa}>
-          <a href="./arts.html#b3d" alt="Artes em 3D" title="Artes em 3D">
+          <a href="./arts#b3d" alt="Artes em 3D" title="Artes em 3D">
             <div className={styles.cA}>
               <div className={styles.a2d}>
                 <Image layout='fill' src="/cube.svg" alt="Artes em 3D" title="Artes em 3D" />
@@ -205,7 +204,7 @@ function Home() {
           <p>3D Artes | Personagens, cenários, animações</p>
         </div>
         <div className={styles.iCa}>
-          <a href="./arts.html#b2d" alt="Artes em 2D" title="Artes em 2D">
+          <a href="./arts#b2d" alt="Artes em 2D" title="Artes em 2D">
             <div className={styles.cA}>
               <div className={styles.a3d}>
                 <Image layout='fill' src="/galery.svg" alt="Artes em 2D" title="Artes em 2D" />
