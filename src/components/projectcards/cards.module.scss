@@ -26,7 +26,7 @@
 
       background-color: #00ff6600;
       border-bottom: 1px solid #00ff66;
-      
+
       padding-bottom: 5px;
       margin-bottom: 10px;
 
@@ -118,6 +118,15 @@
 
       overflow: hidden;
 
+      .imgBtn {
+        position: absolute;
+        width: 24px;
+        height: 24px;
+
+        opacity: 100%;
+        display: flex;
+      }
+
       // When hover in btns
       &:hover {
         width: 100px;
@@ -128,6 +137,9 @@
           opacity: 100%;
         }
         // Hidden img of button
+        .imgBtn{
+          display: none;
+        }
         img {
           opacity: 0%;
         }
@@ -138,7 +150,7 @@
         border: none;
         cursor: pointer;
         color: #fff;
-        font-size: 14px;
+        font-size: 13px;
         opacity: 0%;
       }
       &.git {

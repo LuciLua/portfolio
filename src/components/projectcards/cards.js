@@ -9,13 +9,15 @@ function ProjectCard(props) {
         if (githubHref) {
             return (
                 <a target="_blank" rel="noreferrer" href={githubHref} className={styles.git}>
-                    <Image
-                        src="/gitgo.svg"
-                        title="Github"
-                        alt="Github"
-                        layout="fill"
-                    />
                     <button>GitHub</button>
+                    <div className={styles.imgBtn}>
+                        <Image
+                            src="/gitgo.svg"
+                            title="Github"
+                            alt="Github"
+                            layout="fill"
+                        />
+                    </div>
                 </a>
             )
         }
@@ -24,13 +26,15 @@ function ProjectCard(props) {
         if (directLinkHrefApp) {
             return (
                 <a target="_blank" rel="noreferrer" href={directLinkHrefApp} className={styles.acc}>
-                    <Image
-                        src="/go.svg"
-                        title="Acessar"
-                        alt="Acessar"
-                        layout="fill"
-                    />
                     <button>Acessar</button>
+                    <div className={styles.imgBtn}>
+                        <Image
+                            src="/go.svg"
+                            title="Acessar"
+                            alt="Acessar"
+                            layout="fill"
+                        />
+                    </div>
                 </a>
             )
         }
