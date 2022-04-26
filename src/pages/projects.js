@@ -17,6 +17,24 @@ function Projects() {
                         <ProjectCard titleApp="Podcastr" descriptionApp="Aplicação desenvolvida com o framework Next.js" githubHref="https://github.com/LuciLua/NLW5-Podcastr" directLinkHrefApp="https://www.podcastr.ga/" shortTitle="Projeto Podcast" mainImgSrc="/proj/podcastr.webp" />
                     </div>
                     <div className={styles.projectCard}>
+                        <ProjectCard titleApp="Valorant Tricks" descriptionApp="Aplicação em desenvolvimento (React.js + Next.js)" githubHref="https://github.com/LuciLua/ValorantTricks" directLinkHrefApp="https://valorant-tricks.vercel.app/" shortTitle="Projeto Valorant Tricks" mainImgSrc="/proj/valorant.webp" />
+                    </div>
+                    <div className={styles.projectCard}>
+                        <ProjectCard titleApp="Log Sys: Local Storage" descriptionApp="Aplicação focada no uso do Local Storage" githubHref="https://github.com/LuciLua/localStorage" directLinkHrefApp="https://local-storage-azure.vercel.app/" shortTitle="Projeto Sistema Login com Local Storage" mainImgSrc="/proj/login.webp" />
+                    </div>
+                    <div className={styles.projectCard}>
+                        <ProjectCard titleApp="Social Music" descriptionApp="Rede social de música em desenvolvimento" githubHref="https://github.com/LuciLua/socialMusic" directLinkHrefApp="https://socialmusic.vercel.app/" shortTitle="Projeto Sistema Login com Local Storage" mainImgSrc="/proj/music.webp" />
+                    </div>
+                    <div className={styles.projectCard}>
+                        <ProjectCard titleApp="Galeria" descriptionApp="Projeto galeria desenvolvido durante o curso de web moderno" githubHref="https://github.com/LuciLua/ProjetoGaleria" directLinkHrefApp="https://projeto-galeria-weld.vercel.app/" shortTitle="Projeto Galeria" mainImgSrc="/proj/galeria.webp" />
+                    </div>
+                    <div className={styles.projectCard}>
+                        <ProjectCard titleApp="Monty Hall" descriptionApp="Monty Hall (Vue.js) desenvolvido durante o curso web moderno" githubHref="https://github.com/LuciLua/montyhall-vuejs" directLinkHrefApp="https://montyhall-vuejs.vercel.app/" shortTitle="Projeto Monty Hall" mainImgSrc="/proj/monty.webp" />
+                    </div>
+                    <div className={styles.projectCard}>
+                        <ProjectCard titleApp="Most Used Words" descriptionApp="Most Used Words (Electron + Vue.js)" githubHref="https://github.com/LuciLua/most-used-words" directLinkHrefApp={false} shortTitle="Projeto Most Used Words" mainImgSrc="/proj/most.webp" />
+                    </div>
+                    <div className={styles.projectCard}>
                         <ProjectCard titleApp="Audiovisual | Neutrum" descriptionApp="Cenários e Edição da animação Neutrum" githubHref={false} directLinkHrefApp="https://www.youtube.com/watch?v=VrI2ILQvzAw" shortTitle="Projeto Neutrum" mainImgSrc="/proj/neutrum.webp" />
                     </div>
                     <div className={styles.projectCard}>
