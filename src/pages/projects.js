@@ -17,6 +17,9 @@ function Projects() {
                         <ProjectCard titleApp="Podcastr" descriptionApp="Aplicação desenvolvida com o framework Next.js" githubHref="https://github.com/LuciLua/NLW5-Podcastr" directLinkHrefApp="https://www.podcastr.ga/" shortTitle="Projeto Podcast" mainImgSrc="/proj/podcastr.webp" />
                     </div>
                     <div className={styles.projectCard}>
+                        <ProjectCard titleApp="To Do List" descriptionApp="Lista ToDo" githubHref="https://github.com/LuciLua/todo" directLinkHrefApp="https://todo-lucilua.vercel.app/" shortTitle="To Do" mainImgSrc="/proj/todo.png" />
+                    </div>
+                    <div className={styles.projectCard}>
                         <ProjectCard titleApp="Valorant Tricks" descriptionApp="Aplicação em desenvolvimento (React.js + Next.js)" githubHref="https://github.com/LuciLua/ValorantTricks" directLinkHrefApp="https://valorant-tricks.vercel.app/" shortTitle="Projeto Valorant Tricks" mainImgSrc="/proj/valorant.webp" />
                     </div>
                     <div className={styles.projectCard}>
