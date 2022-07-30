@@ -123,7 +123,7 @@ function Home() {
             <ProjectCard titleApp="Audiovisual | Moda" descriptionApp="Produção audiovisual de moda e ensaio fotográfico" githubHref={false} directLinkHrefApp="https://dialogosfuturismo1.wixsite.com/futurismo/video" shortTitle="Projeto Dialogos Entre Moda e Arte" mainImgSrc="/proj/dialogo.webp" />
           </div>
           <div className={styles.projectCard}>
-          <ProjectCard titleApp="To Do List" descriptionApp="Lista ToDo" githubHref="https://github.com/LuciLua/todo"  directLinkHrefApp="https://todo-lucilua.vercel.app/" shortTitle="To Do" mainImgSrc="/proj/todo.png" />
+            <ProjectCard titleApp="To Do List" descriptionApp="Lista ToDo" githubHref="https://github.com/LuciLua/todo" directLinkHrefApp="https://todo-lucilua.vercel.app/" shortTitle="To Do" mainImgSrc="/proj/todo.png" />
           </div>
         </div>
         <div className={styles.morePp}>
