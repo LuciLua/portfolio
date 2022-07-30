@@ -14,7 +14,7 @@ function Menu() {
 
         if (largura <= 700) {
             console.log(memul)
-            memul.innerHTML += "<li><a href='#'>x</a></li>"
+            memul.innerHTML += "<li><a>x</a></li>"
         }
     }
 
@@ -29,7 +29,6 @@ function Menu() {
                 <li className={styles.m}><a href="./projects">Projects</a></li>
                 <li className={styles.m}><a href="./about">About</a></li>
                 <li className={styles.m}><a href="./contact">Contact</a></li>
-                { }
                 <li className={styles.m} id="dark-li"><a id="dark" href="./arts">Arts</a></li>
             </ul>
         </div>
