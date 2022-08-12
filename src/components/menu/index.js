@@ -1,5 +1,6 @@
-import { useEffect } from 'react';
 import styles from './menu.module.scss'
+
+import { AiOutlineMenu } from "react-icons/ai"
 
 function Menu() {
 
@@ -8,23 +9,12 @@ function Menu() {
         memul.classList.contains(`${styles.oppened}`) ? memul.classList.remove(`${styles.oppened}`) : memul.classList.add(`${styles.oppened}`)
     }
 
-    function generateExitMenu() {
-        const memul = document.querySelector(`.${styles.ulMenu}`)
-        var largura = window.screen.width;
-
-        if (largura <= 700) {
-            console.log(memul)
-            memul.innerHTML += "<li><a>x</a></li>"
-        }
-    }
-
-    useEffect(() => {
-        generateExitMenu()
-    })
-
     return (
         <div className={styles.menu} id="menu">
             <ul className={`${styles.ulMenu}`} onClick={() => openMenu()}>
+                <span>
+                    <AiOutlineMenu />
+                </span>
                 <li className={styles.m} id="in"><a href="./">Home</a></li>
                 <li className={styles.m}><a href="./projects">Projects</a></li>
                 <li className={styles.m}><a href="./about">About</a></li>

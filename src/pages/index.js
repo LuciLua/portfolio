@@ -77,20 +77,52 @@ function Home() {
             <h1>Skills</h1>
             <div className={styles.p}>
               <div className={styles.item}>
-                <Image width={60} height={60} src="/html.svg" alt="HTML" title="HTML" />
+                <Image objectFit='contain' width={60} height={60} src="/html.svg" alt="HTML" title="HTML" />
                 <span>HTML</span>
               </div>
               <div className={styles.item}>
-                <Image width={60} height={60} src="/css.svg" alt="CSS" title="CSS" />
+                <Image objectFit='contain' width={60} height={60} src="/css.svg" alt="CSS" title="CSS" />
                 <span>CSS</span>
               </div>
               <div className={styles.item}>
-                <Image width={60} height={60} src="/javascript.svg" alt="JavaScrip" title="JavaScrip" />
+                <Image objectFit='contain' width={60} height={60} src="/javascript.svg" alt="JavaScrip" title="JavaScrip" />
                 <span>JavaScript</span>
               </div>
               <div className={styles.item}>
-                <Image width={60} height={60} src="/python.svg" alt="Python" title="Python" />
+                <Image objectFit='contain' width={60} height={60} src="/python.svg" alt="Python" title="Python" />
                 <span>Python</span>
+              </div>
+              <div className={styles.item}>
+                <Image objectFit='contain' width={60} height={60} src="/typescript.png" alt="Typescript" title="Typescript" />
+                <span>Typescript</span>
+              </div>
+              <div className={styles.item}>
+                <Image objectFit='contain' width={60} height={60} src="/vue.png" alt="VueJs" title="VueJs" />
+                <span>VueJs</span>
+              </div>
+              <div className={styles.item}>
+                <Image objectFit='contain' width={60} height={60} src="/node.png" alt="NodeJs" title="NodeJs" />
+                <span>NodeJs</span>
+              </div>
+              <div className={styles.item}>
+                <Image objectFit='contain' width={60} height={60} src="/react.png" alt="React" title="React" />
+                <span>React</span>
+              </div>
+              <div className={styles.item}>
+                <Image objectFit='contain' width={60} height={60} src="/sass.png" alt="Sass" title="Sass" />
+                <span>Sass</span>
+              </div>
+              <div className={styles.item}>
+                <Image objectFit='contain' width={60} height={60} src="/next.png" alt="NextJs" title="NextJs" />
+                <span>NextJs</span>
+              </div>
+              <div className={styles.item}>
+                <Image objectFit='contain' width={60} height={60} src="/batch.png" alt="Batch Scripts" title="Batch Scripts" />
+                <span>Batch Scripts</span>
+              </div>
+              <div className={styles.item}>
+                <Image objectFit='contain' width={60} height={60} src="/mysql.png" alt="MySql" title="MySql" />
+                <span>MySql</span>
               </div>
             </div>
           </div>

@@ -6,26 +6,8 @@
 
 
 #cardme{
-    /* border: 1px solid rgb(255, 0, 0); */
-    z-index: 2;
-}
-
-/* #paragraph{ */
-    /* border: 1px solid blue; */
-/* } */
-
-/* #projetos-p{ */
-    /* border: 1px solid yellow; */
-/* } */
-
-
-/* fim do inicio */
-
-/* geral para todas as paginas */
-
-
-#cardme{
     height: fit-content;
+    z-index: 2;
 }
 
 
@@ -52,7 +34,8 @@
 
 .cards{
     width: 45%;
-    min-width: 300px;
+    min-width: 280px;
+    width: 100%;
     max-width: 400px;
 /* 
     max-height: 40vh; */
@@ -63,7 +46,7 @@
     border-radius: 10px;
 
     position: relative;
-    margin: 20px;
+    margin: 10px;
 
     display: flex;
     flex-direction: column;
