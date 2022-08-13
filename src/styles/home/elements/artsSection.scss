@@ -1,0 +1,177 @@
+.artsSectionContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+
+  width: 100%;
+
+  background: radial-gradient(#00fc4c20 5%, transparent 70%);
+  background-position: center;
+
+  position: relative;
+  margin-bottom: 200px;
+
+  .typeArtCardContainer {
+    width: 500px;
+    margin: 2px;
+
+    position: relative;
+    padding: 0;
+    display: flex;
+    align-items: center;
+
+    .descriptionOfArtCardType {
+      position: relative;
+      float: right;
+      margin-left: 15px;
+      margin-right: 15px;
+
+      width: 100%;
+      height: 100%;
+
+      color: #ffffffaf;
+
+      font-family: Lexend-300;
+      font-display: swap;
+    }
+
+    .circleArtContainer {
+      border-radius: 60%;
+      position: relative;
+
+      border: #fff 2px dashed;
+      width: 150px;
+      height: 150px;
+      min-width: 150px;
+      min-height: 150px;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      overflow: hidden;
+
+      margin: 10px;
+      transition: 0.3s;
+      cursor: pointer;
+      background-color: rgba(0, 0, 0, 0.434);
+
+      &:hover {
+        background-color: #ffffff1a;
+      }
+
+      .imgContainerArt2D,
+      .imgContainerArt3D {
+        padding: 0;
+        width: 80px;
+        min-height: 80px;
+        min-width: 80px;
+        height: 80px;
+
+        position: absolute;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        margin: 0px;
+
+        overflow: hidden;
+        filter: invert(1) sepia(10) saturate(25) hue-rotate(59deg);
+      }
+
+      .imgContainerArt2D {
+        animation: imgContainerArt3D 30s infinite linear;
+      }
+
+      .imgContainerArt3D {
+        animation: a2d 10s infinite linear;
+      }
+    }
+  }
+}
+
+@keyframes imgContainerArt3D {
+  0%,
+  100% {
+    transform: rotate(360deg);
+  }
+
+  50% {
+    transform: rotate(-360deg);
+  }
+}
+
+@keyframes a2d {
+  0%,
+  100% {
+    transform: scale(0.8) rotate(0deg);
+  }
+
+  50% {
+    transform: scale(1) rotate(20deg);
+  }
+}
+
+
+// das paginas
+.b3d,
+.b2d {
+  color: #00ff66;
+  text-align: center;
+  margin-top: 3vh;
+  margin-bottom: 3vh;
+  width: 100%;
+  position: relative;
+}
+
+.b3d,
+.b2d {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.b3d .line {
+  margin-top: 9vh;
+}
+
+.b3d p,
+.b2d p {
+  color: rgb(128, 128, 128);
+
+  font-family: Arial;
+  font-display: swap;
+  font-weight: 300;
+  font-size: 14px;
+
+  text-align: center;
+  line-height: 2;
+
+  width: 80%;
+  margin: 20px 0 60px 0;
+
+  max-width: 900px;
+}
+
+
+@media (max-width: 700px) {
+
+    .artsSectionContainer{
+        .typeArtCardContainer{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            text-align: center;
+
+            .descriptionOfArtCardType{
+                margin: 15px 0;
+                max-width: 70%;
+            }
+        }
+    }
+}

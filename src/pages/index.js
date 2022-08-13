@@ -59,8 +59,8 @@ function Home() {
         </div>
       </div>
       <div className={styles.pages} id="paragraph">
-        <div className={styles.contactAlign}>
-          <div className={styles.left}>
+        <div className={styles.journeyAndSkillsWrap}>
+          <div className={styles.journeySection}>
             <h1>Journey</h1>
             <p>
               Comecei a programar mesmo em 2020, quando tive a
@@ -73,9 +73,9 @@ function Home() {
 
             </p>
           </div>
-          <div className={styles.right}>
+          <div className={styles.skillsContainer}>
             <h1>Skills</h1>
-            <div className={styles.p}>
+            <div className={styles.skillsItemContainer}>
               <div className={styles.item}>
                 <Image objectFit='contain' width={60} height={60} src="/html.svg" alt="HTML" title="HTML" />
                 <span>HTML</span>
@@ -162,32 +162,42 @@ function Home() {
           <a href="./projects"><button alt="Mais projetos" title="Mais projetos">Mais projetos</button></a>
         </div>
       </div>
+
       <br />
       <div className={styles.line}></div>
+
       <div className={styles.titleArt}>
         <h1>Arts.</h1>
       </div>
 
-      <div className={styles.tA}>
-        <div className={styles.iCa}>
+      <div className={styles.artsSectionContainer}>
+        <div className={styles.typeArtCardContainer}>
           <a href="./arts#b3d" alt="Artes em 3D" title="Artes em 3D">
-            <div className={styles.cA}>
-              <div className={styles.a2d}>
-                <Image layout='fill' src="/cube.svg" alt="Artes em 3D" title="Artes em 3D" />
+            <div className={styles.circleArtContainer}>
+              <div className={styles.imgContainerArt2D}>
+                <Image
+                  layout='fill'
+                  src="/cube.svg"
+                  alt="Artes em 3D"
+                  title="Artes em 3D" />
               </div>
             </div>
           </a>
-          <p>3D Artes | Personagens, cenários, animações</p>
+          <p className={styles.descriptionOfArtCardType}>3D Artes | Personagens, cenários, animações</p>
         </div>
-        <div className={styles.iCa}>
+        <div className={styles.typeArtCardContainer}>
           <a href="./arts#b2d" alt="Artes em 2D" title="Artes em 2D">
-            <div className={styles.cA}>
-              <div className={styles.a3d}>
-                <Image layout='fill' src="/galery.svg" alt="Artes em 2D" title="Artes em 2D" />
+            <div className={styles.circleArtContainer}>
+              <div className={styles.imgContainerArt3D}>
+                <Image
+                  layout='fill'
+                  src="/galery.svg"
+                  alt="Artes em 2D"
+                  title="Artes em 2D" />
               </div>
             </div>
           </a>
-          <p>2D Artes | Pinturas, Desenhos, Personagens</p>
+          <p className={styles.descriptionOfArtCardType}>2D Artes | Pinturas, Desenhos, Personagens</p>
         </div>
       </div>
     </>

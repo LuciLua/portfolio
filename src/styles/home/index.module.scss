@@ -1,16 +1,20 @@
-@import 'variaveis';
-@import 'botoes';
-@import 'cabecalho';
-@import 'conteudo';
-@import 'inicial';
-@import 'titulo';
-@import 'about';
-@import 'cards';
-@import 'contact';
-@import 'leftright';
-@import 'paginas';
-@import 'sectionProjects';
-@import 'projects';
-@import 'outros';
+@import '/src/styles/home/elements/variaveis';
+@import '/src/styles/home/elements/botoes';
+@import '/src/styles/home/elements/cabecalho';
+@import '/src/styles/home/elements/conteudo';
+@import '/src/styles/home/elements/inicial';
+@import '/src/styles/home/elements/titulo';
+@import '/src/styles/home/elements/about';
+@import '/src/styles/home/elements/cards';
+@import '/src/styles/home/elements/contact';
+@import '/src/styles/home/elements/paginas';
+@import '/src/styles/home/elements/sectionProjects';
+@import '/src/styles/home/elements/projects';
+@import '/src/styles/home/elements/outros';
+@import '/src/styles/home/elements/artsSection';
+
+@import '/src/styles/home/elements/journeyAndSkillsWrap.scss';
+@import '/src/styles/home/elements/skillsSection';
+@import '/src/styles/home/elements/journeySection.scss';
 
 // organizar outros...

@@ -1,34 +1,4 @@
 
-.contactAlign{
-    display: flex;
-    flex-wrap: wrap;
-
-    width: 100%;
-    height: fit-content;
-    padding: 20px;
-
-    margin-top: 10vh;
-
-    justify-content: center;
-    align-items: center;
-}
-
-.contactAlign h1::first-letter{
-    color: var(--green-1)
-}
-.contactAlign h1{
-    font-family: Lexend-500;
-    font-display: swap;
-
-    color: #fff;
-    margin-bottom: 20px;
-}
-
-.contactAlign p{
-    padding: 20px;
-}
-
-
 /* contect about page */
 
 
