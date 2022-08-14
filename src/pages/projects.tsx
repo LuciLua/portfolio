@@ -1,4 +1,4 @@
-import styles from '../styles/home/index.module.scss'
+import styles from '../styles/projects/index.module.scss'
 import Card from '../components/ProjectCards/Card'
 import Head from 'next/head'
 
@@ -9,7 +9,7 @@ function Projects() {
                 <title>Luci Lua | Projects</title>
             </Head>
             <div className={styles.pages} id="projetos-subpagina">
-                <div className={styles.pInit}>
+                <div className={styles.titleProjectsContainer}>
                     <h2>Projetos</h2>
                 </div>
                 <div className={styles.sectionProjectsOtherPage}>

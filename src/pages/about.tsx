@@ -1,4 +1,4 @@
-import styles from '../styles/home/index.module.scss'
+import styles from '../styles/about/index.module.scss'
 import Image from 'next/image'
 import Head from "next/head"
 
@@ -9,12 +9,15 @@ function About() {
         <title>Luci Lua | About</title>
       </Head>
       <div className={`${styles.pages} ${styles.aboutSubpagina}`} id="about-subpagina">
-        <div className={styles.pInit}>
+        <div className={styles.titleAboutContainer}>
           <h2>About me</h2>
         </div>
 
         <div className={styles.contentAbout}>
-          <div className={styles.photo} alt="Luci" title="Luci">
+          <div
+            className={styles.photo}
+            // alt="Luci" 
+            title="Luci">
             <Image src="/l.jpg" alt="Luci" layout='fill' quality={50} priority />
           </div>
           <div className={styles.ballName}>

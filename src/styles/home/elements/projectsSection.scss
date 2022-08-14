@@ -1,0 +1,117 @@
+.mainProjectsSection {
+  .titleMainProjectsSection {
+    color: #fff;
+    font-family: Lexend-300;
+    text-align: center;
+    font-size: 25px;
+    margin-bottom: 20px;
+
+    .higthlight {
+      color: #00ff66;
+      font-family: Lexend-400;
+    }
+  }
+
+  .morePp {
+    width: 100%;
+    height: fit-content;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-top: 35px;
+    a {
+      background: linear-gradient(transparent, #000000);
+      border: #00ff66 1px solid;
+
+      border-radius: 0px;
+      width: 200px;
+      height: 60px;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      text-decoration: none;
+      cursor: pointer;
+
+      transition: 0.7s;
+
+      z-index: 30;
+
+      &:hover {
+        transition: 0.7s;
+        transform: scale(1.04);
+
+        background: linear-gradient(rgba(255, 255, 255, 0.03), #000000ae);
+      }
+
+      button {
+        background-color: transparent;
+        border: none;
+        color: #00ff66;
+
+        cursor: pointer;
+
+        font-family: Lexend-500;
+        font-size: 15px;
+        font-display: swap;
+      }
+    }
+  }
+
+  .btnCollectionForMoveCards {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    button {
+      border: none;
+      background-color: #00000098;
+      width: 50px;
+      height: 50px;
+      color: #fff;
+      cursor: pointer;
+
+      font-family: Lexend-300;
+      font-display: swap;
+
+      z-index: 100;
+      position: absolute;
+      top: 32%;
+
+      border-radius: 3px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.274);
+
+      &:hover {
+        filter: sepia(1) saturate(10) hue-rotate(60deg);
+      }
+      &:last-of-type {
+        right: 0;
+      }
+      &:first-of-type {
+        left: 0;
+      }
+    }
+  }
+
+  .sectionProjects {
+    width: 100%;
+    max-width: 100%;
+    position: relative;
+
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    transition: 0.4s;
+    overflow-x: scroll;
+
+    &::-webkit-scrollbar {
+      display: none;
+    }
+  }
+}

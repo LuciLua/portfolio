@@ -1,5 +1,5 @@
-import styles from '../styles/home/index.module.scss'
-import ArtCard from '../components/artcards/Artcards'
+import styles from '../styles/arts/index.module.scss'
+import ArtCard from '../components/ArtCards/ArtCards'
 import Head from "next/head"
 
 function Arts() {
@@ -13,7 +13,7 @@ function Arts() {
   function generateArtCards(choiceAnList) {
     return choiceAnList.map(card => {
       return (
-        <div className={styles.o} key={card}>
+        <div className={styles.artCardsCollection} key={card}>
           <ArtCard id={card} />
         </div>
       )
@@ -33,26 +33,31 @@ function Arts() {
         <title>Luci Lua | Arts</title>
       </Head>
       <div className={styles.pages} id="projetos-subpagina">
-        <div className={styles.pInit}>
+
+        <div className={styles.titleArtsContainer}>
           <h2>Artes</h2>
         </div>
-      </div>
-      <div className={styles.b3d}>
-        <h1 id="b3d">3D</h1>
-        <p>O 3D me conquistou logo de primeira, antes mesmo de ter contato com ele na faculdade, eu já estava pesquisando o que era aquele mundo que tanto me atraía, mesmo depois das aulas eu continuei completamente fissurada a fazer personagens, cenários, texuras, animações e experimentos em 3D. Eu utilizo desde sempre o
-          software que considero o melhor, por ser gratuito e muito completo,o Blender, que me possibilita explorar minha criatividade e avançar com a técnica.</p>
-      </div>
 
-      <div className={`${styles.pages} ${styles.artes}`} id="artes">
-        <div className={styles.artG}>
+        <div className={`${styles.artSection}`} id="artes">
+          <div className={styles.artCollection}>
+            <h1 id="b3d">3D</h1>
+            <p>O 3D me conquistou logo de primeira, antes mesmo de ter contato com ele na faculdade, eu já estava pesquisando o que era aquele mundo que tanto me atraía, mesmo depois das aulas eu continuei completamente fissurada a fazer personagens, cenários, texuras, animações e experimentos em 3D. Eu utilizo desde sempre o
+              software que considero o melhor, por ser gratuito e muito completo,o Blender, que me possibilita explorar minha criatividade e avançar com a técnica.</p>
+          </div>
+          {/* .artCardsCollection will be created here */}
           {generateArtCards3D()}
-          <div className={styles.b3d}>
+        </div>
+
+        <div className={`${styles.artSection}`} id="artes">
+          <div className={styles.artCollection}>
             <div className={styles.line}></div>
-            <h1 id="b2d" className={styles.b2d}>2D</h1>
+            <h1 id="b2d">2D</h1>
             <p>Minha história com a arte 2D começou de uma forma engraçada e um pouco triste. Bem, estava eu em uma das aulas de Imagem Digital 3D, o professor se aproximnou e ao ver a forma com que eu lidava com a Arte 3D me falou sobre um projeto de Animação, bem, fiquei interessada, porém ele fez a seguinte pergunta: Lúcia, você sabe desenhar?. E depois disso, quis aprender, senti que fazer um curso de Artes e não saber desenhar era algo que me deixava com um sentimento estranho e de não pertencimento, por mais que eu mesma discorde disso, acabei aprendendo a desenhar.</p>
           </div>
+          {/* .artCardsCollection will be created here */}
           {generateArtCards2D()}
         </div>
+
       </div>
     </>
   )
