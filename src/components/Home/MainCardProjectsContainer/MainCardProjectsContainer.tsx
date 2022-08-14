@@ -1,5 +1,5 @@
-import Card from "../../ProjectCards/Card"
-import styles from "./MainCardProjectsContainer.module.scss"
+import Card from "../../ProjectCards/Card" 
+import styles from "./mainCardProjectsContainer.module.scss"
 
 function MainCardProjectsContainer() {
     return (
