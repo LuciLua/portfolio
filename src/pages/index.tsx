@@ -1,16 +1,16 @@
 import Image from 'next/image'
 import styles from '../styles/home/index.module.scss'
 import Head from 'next/head';
-import ProjectCard from '../components/projectcards/cards';
+import Card from '../components/ProjectCards/Card';
 
 function Home() {
 
   function next() {
-    document.getElementById('sectionProjects').scrollLeft += 390;
+    // document.getElementById('sectionProjects').scrollLeft += 390;
   };
 
   function prev() {
-    document.getElementById('sectionProjects').scrollLeft -= 390;
+    // document.getElementById('sectionProjects').scrollLeft -= 390;
   };
 
   return (
@@ -132,34 +132,43 @@ function Home() {
       <div className={`${styles.projetosP} ${styles.pages}`} id="projetos-p">
         <h2>Projetos em <span>destaque</span></h2>
         <div className={styles.btnNp}>
-          <button alt="Anterior" title="Anterior" onClick={prev}>left</button>
-          <button alt="Próxima" title="Próxima" onClick={next}>right</button>
+          <button
+            // alt="Anterior"
+            title="Anterior"
+            onClick={prev}>left</button>
+          <button
+            // alt="Próxima"
+            title="Próxima"
+            onClick={next}>right</button>
         </div>
         <div className={styles.sectionProjects} id="sectionProjects">
           <div className={styles.projectCard}>
-            <ProjectCard titleApp="Podcastr" descriptionApp="Aplicação desenvolvida com o framework Next.js" githubHref="https://github.com/LuciLua/NLW5-Podcastr" directLinkHrefApp="https://www.podcastr.ga/" shortTitle="Projeto Podcast" mainImgSrc="/proj/podcastr.webp" />
+            <Card titleApp="Podcastr" descriptionApp="Aplicação desenvolvida com o framework Next.js" githubHref="https://github.com/LuciLua/NLW5-Podcastr" directLinkHrefApp="https://www.podcastr.ga/" shortTitle="Projeto Podcast" mainImgSrc="/proj/podcastr.webp" />
           </div>
           <div className={styles.projectCard}>
-            <ProjectCard titleApp="Audiovisual | Neutrum" descriptionApp="Cenários e Edição da animação Neutrum" githubHref="/" directLinkHrefApp="https://www.youtube.com/watch?v=VrI2ILQvzAw" shortTitle="Projeto Neutrum" mainImgSrc="/proj/neutrum.webp" />
+            <Card titleApp="Audiovisual | Neutrum" descriptionApp="Cenários e Edição da animação Neutrum" githubHref="/" directLinkHrefApp="https://www.youtube.com/watch?v=VrI2ILQvzAw" shortTitle="Projeto Neutrum" mainImgSrc="/proj/neutrum.webp" />
           </div>
           <div className={styles.projectCard}>
-            <ProjectCard titleApp="Snake Game" descriptionApp="Jogo para navegador utilizando Javascript" githubHref="https://github.com/LuciLua/snakegame" directLinkHrefApp="https://www.gamesnake.tk/" shortTitle="Projeto Snake Game" mainImgSrc="/proj/snake.webp" />
+            <Card titleApp="Snake Game" descriptionApp="Jogo para navegador utilizando Javascript" githubHref="https://github.com/LuciLua/snakegame" directLinkHrefApp="https://www.gamesnake.tk/" shortTitle="Projeto Snake Game" mainImgSrc="/proj/snake.webp" />
           </div>
           <div className={styles.projectCard}>
-            <ProjectCard titleApp="Editor Rich Text" descriptionApp="Editor de texto Rich Text para navegador" githubHref="https://github.com/LuciLua/RichTextEditor" directLinkHrefApp="https://rich-text-editor.vercel.app/" shortTitle="Projeto RichText Editor" mainImgSrc="/proj/rick.webp" />
+            <Card titleApp="Editor Rich Text" descriptionApp="Editor de texto Rich Text para navegador" githubHref="https://github.com/LuciLua/RichTextEditor" directLinkHrefApp="https://rich-text-editor.vercel.app/" shortTitle="Projeto RichText Editor" mainImgSrc="/proj/rick.webp" />
           </div>
           <div className={styles.projectCard}>
-            <ProjectCard titleApp="Calendário" descriptionApp="Aplicação em desenvolvimento utilizando o framework Next.js" githubHref="https://github.com/LuciLua/calendar" directLinkHrefApp="http://calendar-blond.vercel.app/" shortTitle="Projeto Calender" mainImgSrc="/proj/calender.webp" />
+            <Card titleApp="Calendário" descriptionApp="Aplicação em desenvolvimento utilizando o framework Next.js" githubHref="https://github.com/LuciLua/calendar" directLinkHrefApp="http://calendar-blond.vercel.app/" shortTitle="Projeto Calender" mainImgSrc="/proj/calender.webp" />
           </div>
           <div className={styles.projectCard}>
-            <ProjectCard titleApp="Audiovisual | Moda" descriptionApp="Produção audiovisual de moda e ensaio fotográfico" githubHref={false} directLinkHrefApp="https://dialogosfuturismo1.wixsite.com/futurismo/video" shortTitle="Projeto Dialogos Entre Moda e Arte" mainImgSrc="/proj/dialogo.webp" />
+            <Card titleApp="Audiovisual | Moda" descriptionApp="Produção audiovisual de moda e ensaio fotográfico" githubHref={false} directLinkHrefApp="https://dialogosfuturismo1.wixsite.com/futurismo/video" shortTitle="Projeto Dialogos Entre Moda e Arte" mainImgSrc="/proj/dialogo.webp" />
           </div>
           <div className={styles.projectCard}>
-            <ProjectCard titleApp="To Do List" descriptionApp="Lista ToDo" githubHref="https://github.com/LuciLua/todo" directLinkHrefApp="https://todo-lucilua.vercel.app/" shortTitle="To Do" mainImgSrc="/proj/todo.png" />
+            <Card titleApp="To Do List" descriptionApp="Lista ToDo" githubHref="https://github.com/LuciLua/todo" directLinkHrefApp="https://todo-lucilua.vercel.app/" shortTitle="To Do" mainImgSrc="/proj/todo.png" />
           </div>
         </div>
         <div className={styles.morePp}>
-          <a href="./projects"><button alt="Mais projetos" title="Mais projetos">Mais projetos</button></a>
+          <a href="./projects">
+            <button
+              // alt="Mais projetos" 
+              title="Mais projetos">Mais projetos</button></a>
         </div>
       </div>
 
@@ -172,7 +181,10 @@ function Home() {
 
       <div className={styles.artsSectionContainer}>
         <div className={styles.typeArtCardContainer}>
-          <a href="./arts#b3d" alt="Artes em 3D" title="Artes em 3D">
+          <a
+            href="./arts#b3d"
+            // alt="Artes em 3D"
+            title="Artes em 3D">
             <div className={styles.circleArtContainer}>
               <div className={styles.imgContainerArt2D}>
                 <Image
@@ -186,7 +198,10 @@ function Home() {
           <p className={styles.descriptionOfArtCardType}>3D Artes | Personagens, cenários, animações</p>
         </div>
         <div className={styles.typeArtCardContainer}>
-          <a href="./arts#b2d" alt="Artes em 2D" title="Artes em 2D">
+          <a
+            href="./arts#b2d"
+            // alt="Artes em 2D"
+            title="Artes em 2D">
             <div className={styles.circleArtContainer}>
               <div className={styles.imgContainerArt3D}>
                 <Image

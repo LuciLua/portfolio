@@ -1,6 +1,6 @@
 import React from 'react'
-import Footer from "../components/footer"
-import Menu from "../components/menu"
+import Footer from "../components/Footer/Footer"
+import Menu from "../components/Menu/Menu"
 import '../styles/global.scss'
 import Script from 'next/script'
 

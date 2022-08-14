@@ -1,7 +1,7 @@
 import styles from "./cards.module.scss"
 import Image from "next/image"
 
-function ProjectCard(props) {
+function Card(props: any) {
 
     const { titleApp, descriptionApp, githubHref, directLinkHrefApp, shortTitle, mainImgSrc } = props
 
@@ -61,4 +61,4 @@ function ProjectCard(props) {
     )
 }
 
-export default ProjectCard
+export default Card
