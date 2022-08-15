@@ -4,7 +4,7 @@ import Head from 'next/head';
 import MainCard from '../components/home/maincard/MainCard';
 import Skillcardcontainer from '../components/home/skillcardcontainer/Skillcardcontainer';
 import Journeycardcontainer from '../components/home/journeycardcontainer/Journeycardcontainer';
-import MainCardProjectsContainer from '../components/home/maincardprojectscontainer/MainCardProjectsContainer';
+import Maincardprojectscontainer from '../components/home/maincardprojectscontainer/Maincardprojectscontainer';
 
 import { AiOutlineLeftCircle, AiOutlineRightCircle } from 'react-icons/ai';
 
@@ -70,7 +70,7 @@ function Home() {
           </button>
         </div>
         <div className={styles.sectionProjects} id="sectionProjects">
-          <MainCardProjectsContainer />
+          <Maincardprojectscontainer />
         </div>
         <div className={styles.morePp}>
           <a href="./projects">

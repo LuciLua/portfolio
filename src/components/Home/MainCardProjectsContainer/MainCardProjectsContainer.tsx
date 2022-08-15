@@ -1,7 +1,7 @@
 import Card from "../../card/Card";
 import styles from "./maincardprojectscontainer.module.scss";
 
-function MainCardProjectsContainer() {
+function Maincardprojectscontainer() {
   return (
     <>
       <div className={styles.projectCard}>
@@ -78,4 +78,4 @@ function MainCardProjectsContainer() {
   );
 }
 
-export default MainCardProjectsContainer;
+export default Maincardprojectscontainer;
