@@ -1,6 +1,6 @@
-import styles from "./JourneyCardContainer.module.scss";
+import styles from "./journeycardcontainer.module.scss";
 
-function JourneyCardContainer() {
+function Journeycardcontainer() {
   return (
     <>
       <p className={styles.journeyText}>
@@ -17,4 +17,4 @@ function JourneyCardContainer() {
   );
 }
 
-export default JourneyCardContainer;
+export default Journeycardcontainer;

@@ -12,7 +12,7 @@ function Projects() {
         <div className={styles.titleProjectsContainer}>
           <h2>Projetos</h2>
         </div>
-        {/* <div className={styles.sectionProjectsOtherPage}>
+        <div className={styles.sectionProjectsOtherPage}>
           <div className={styles.projectCard}>
             <Card
               titleApp="Podcastr"
@@ -173,7 +173,7 @@ function Projects() {
               mainImgSrc="/proj/pomba.webp"
             />
           </div>
-        </div> */}
+        </div>
       </div>
     </>
   );
