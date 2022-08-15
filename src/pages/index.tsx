@@ -2,7 +2,7 @@ import Image from 'next/image'
 import styles from '../styles/home/index.module.scss'
 import Head from 'next/head';
 import MainCard from '../components/home/maincard/MainCard';
-import SkillCardContainer from '../components/home/skillcardcontainer/Skillcardcontainer';
+import Skillcardcontainer from '../components/home/skillcardcontainer/Skillcardcontainer';
 import Journeycardcontainer from '../components/home/journeycardcontainer/Journeycardcontainer';
 import MainCardProjectsContainer from '../components/home/maincardprojectscontainer/MainCardProjectsContainer';
 
@@ -45,7 +45,7 @@ function Home() {
           </div>
           <div className={styles.skillsContainer}>
             <h1>Skills</h1>
-            <SkillCardContainer />
+            <Skillcardcontainer />
           </div>
         </div>
         <div className={styles.line}></div>

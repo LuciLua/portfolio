@@ -1,7 +1,7 @@
 import styles from "./skillcardcontainer.module.scss";
 import Skillcarditem from "./skillcarditem/Skillcarditem";
 
-function SkillCardContainer() {
+function Skillcardcontainer() {
   return (
     <div className={styles.skillsItemContainer}>
       <Skillcarditem srcIcon="/html.svg" title="HTML">
@@ -44,4 +44,4 @@ function SkillCardContainer() {
   );
 }
 
-export default SkillCardContainer;
+export default Skillcardcontainer;
