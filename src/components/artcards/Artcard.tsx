@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Eye from "./Eye";
 
-function ArtCard(props) {
+function Artcard(props) {
   const { id } = props;
 
   return (
@@ -18,4 +18,4 @@ function ArtCard(props) {
   );
 }
 
-export default ArtCard;
+export default Artcard;

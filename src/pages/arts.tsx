@@ -1,5 +1,5 @@
 import styles from "../styles/arts/index.module.scss";
-import ArtCard from "../components/artcards/Artcards";
+import Artcard from "../components/artcards/Artcard";
 import Head from "next/head";
 
 function Arts() {
@@ -30,7 +30,7 @@ function Arts() {
     return choiceAnList.map((card) => {
       return (
         <div className={styles.artCardsCollection} key={card}>
-          <ArtCard id={card} />
+          <Artcard id={card} />
         </div>
       );
     });
