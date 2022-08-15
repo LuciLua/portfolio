@@ -1,25 +1,22 @@
-.init{
-    background: linear-gradient(rgb(10, 11, 11),var(--background)40%);
+.init {
+  background: linear-gradient(rgb(10, 11, 11), var(--background) 40%);
 }
 
-.init img{
-    position: absolute;
-    max-width: 100%;
-    min-width: 100%;
-    min-height: 100%;
-    object-fit: cover;
-    z-index: -5;
-    filter: brightness(0.2);
-
+.init img {
+  position: absolute;
+  max-width: 100%;
+  min-width: 100%;
+  min-height: 100%;
+  object-fit: cover;
+  z-index: -5;
+  filter: brightness(0.2);
 }
 
-.gradient{
-    width: 100%;
-    height: 100px;
-    background: linear-gradient(rgba(255, 0, 0, 0) 60%,var(--background));
-    bottom: 0;
-    position: absolute;
-    object-fit: cover;
-    
+.gradient {
+  width: 100%;
+  height: 100px;
+  background: linear-gradient(rgba(255, 0, 0, 0) 60%, var(--background));
+  bottom: 0;
+  position: absolute;
+  object-fit: cover;
 }
-

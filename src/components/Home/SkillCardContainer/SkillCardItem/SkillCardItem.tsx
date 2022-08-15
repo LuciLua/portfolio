@@ -1,22 +1,22 @@
-import Image from "next/image"
-import styles from "./SkillCardItem.module.scss"
+import Image from "next/image";
+import styles from "./SkillCardItem.module.scss";
 
 function SkillCardItem(props) {
+  const { srcIcon, title, children } = props;
 
-    const { srcIcon, title, children } = props
-
-    return (
-        <div className={styles.item}>
-            <Image
-                objectFit='contain'
-                width={60}
-                height={60}
-                src={srcIcon}
-                alt={title}
-                title={title} />
-            <span>{children}</span>
-        </div>
-    )
+  return (
+    <div className={styles.item}>
+      <Image
+        objectFit="contain"
+        width={60}
+        height={60}
+        src={srcIcon}
+        alt={title}
+        title={title}
+      />
+      <span>{children}</span>
+    </div>
+  );
 }
 
-export default SkillCardItem
+export default SkillCardItem;

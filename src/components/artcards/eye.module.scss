@@ -1,12 +1,12 @@
-.eye{
-    position: absolute;
-    width: 30px;
-    height: 30px;
-    transition: 0.2s;
+.eye {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  transition: 0.2s;
 
-    opacity: 20%;
-    filter: invert(1);
+  opacity: 20%;
+  filter: invert(1);
 }
-.eye:hover{
-    opacity: 100%;
+.eye:hover {
+  opacity: 100%;
 }

@@ -92,7 +92,6 @@
   }
 }
 
-
 @keyframes imgContainerArt3D {
   0%,
   100% {
@@ -115,22 +114,19 @@
   }
 }
 
-
-
 @media (max-width: 700px) {
+  .artsSectionContainer {
+    .typeArtCardContainer {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      text-align: center;
 
-    .artsSectionContainer{
-        .typeArtCardContainer{
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-wrap: wrap;
-            text-align: center;
-
-            .descriptionOfArtCardType{
-                margin: 15px 0;
-                max-width: 70%;
-            }
-        }
+      .descriptionOfArtCardType {
+        margin: 15px 0;
+        max-width: 70%;
+      }
     }
+  }
 }

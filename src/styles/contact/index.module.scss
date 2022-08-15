@@ -29,117 +29,109 @@
   }
 }
 
+.contentContact {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
 
+  align-items: center;
 
-.contentContact{
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
+  position: relative;
 
-    align-items: center;
+  min-height: fit-content;
 
-    position: relative;
-    
-    min-height: fit-content;
-
-    padding: 20px;
+  padding: 20px;
 }
 
-.contentContact form{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+.contentContact form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 
-    width: 50%;
-    min-width: 250px;
-    max-width: 50vh;
+  width: 50%;
+  min-width: 250px;
+  max-width: 50vh;
 }
 
-.contentContact form input{
-    width: 100%;
+.contentContact form input {
+  width: 100%;
 
-    background-color: rgba(255, 255, 255, 0.049);
-    color: rgba(255, 255, 255, 0.501);
+  background-color: rgba(255, 255, 255, 0.049);
+  color: rgba(255, 255, 255, 0.501);
 
-    border: 1px solid rgba(255, 255, 255, 0.097);
-    border-radius: 4px;
-    
-    padding: 10px 15px 10px 15px;
+  border: 1px solid rgba(255, 255, 255, 0.097);
+  border-radius: 4px;
 
-    margin: 10px;
+  padding: 10px 15px 10px 15px;
 
+  margin: 10px;
 
-    position: relative;
-
+  position: relative;
 }
 
-.contentContact form textarea{
-    width: 100%;
+.contentContact form textarea {
+  width: 100%;
 
-    background-color: rgba(255, 255, 255, 0.049);
+  background-color: rgba(255, 255, 255, 0.049);
 
-    border: 1px solid rgba(255, 255, 255, 0.097);
+  border: 1px solid rgba(255, 255, 255, 0.097);
 
-    border-radius: 4px;
+  border-radius: 4px;
 
-    padding: 10px 15px 10px 15px;
+  padding: 10px 15px 10px 15px;
 
-    margin: 10px;
+  margin: 10px;
 
-    resize: none;
+  resize: none;
 
-    color: rgba(255, 255, 255, 0.501);
-
+  color: rgba(255, 255, 255, 0.501);
 }
 
-.contentContact form input:focus, 
-.contentContact form textarea:focus{
-    outline: 1px solid rgb(68, 242, 0);
-} 
-
-.contentContact form button{
-    
-    background-color: rgba(58, 97, 63, 0.254);
-
-    border: 1px solid rgba(255, 255, 255, 0.097);
-
-    border-radius: 4px;
-
-    padding: 10px 15px 10px 15px;
-
-    width: 100%;
-
-    color: #00ff66;
-
-    cursor: pointer;
-
-    margin: 10px;
+.contentContact form input:focus,
+.contentContact form textarea:focus {
+  outline: 1px solid rgb(68, 242, 0);
 }
 
+.contentContact form button {
+  background-color: rgba(58, 97, 63, 0.254);
 
-.contentContact form button:hover{
-    background-color: #00ff6246;
-}
-.contentContact form button:active{
-    background-color: #07220365;
-}
+  border: 1px solid rgba(255, 255, 255, 0.097);
 
-.contentContact p{
-    font-family: Lexend-300;
-    color: #9a9a9a;
+  border-radius: 4px;
 
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  padding: 10px 15px 10px 15px;
 
-    text-align: center;
+  width: 100%;
 
-    position: relative;
+  color: #00ff66;
+
+  cursor: pointer;
+
+  margin: 10px;
 }
 
-.contactSubpagina{
-    width: 100%;
-    min-height: 100vh;
+.contentContact form button:hover {
+  background-color: #00ff6246;
+}
+.contentContact form button:active {
+  background-color: #07220365;
 }
 
+.contentContact p {
+  font-family: Lexend-300;
+  color: #9a9a9a;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  text-align: center;
+
+  position: relative;
+}
+
+.contactSubpagina {
+  width: 100%;
+  min-height: 100vh;
+}

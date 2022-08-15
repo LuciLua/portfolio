@@ -1,27 +1,27 @@
 .skillsItemContainer {
-    position: relative;
-    width: 100%;
-    height: fit-content;
-    min-height: 300px;
-    display: flex;
-    align-items: center;
+  position: relative;
+  width: 100%;
+  height: fit-content;
+  min-height: 300px;
+  display: flex;
+  align-items: center;
 
-    flex-wrap: wrap;
-    justify-content: space-around;
+  flex-wrap: wrap;
+  justify-content: space-around;
 }
 
 @media (max-width: 700px) {
-    .skillsItemContainer {
-        min-width: 150px;
-        max-width: 400px;
-        width: 100%;
-  
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-wrap: wrap;
-  
-        margin: 0;
-        padding: 0;
-      }
+  .skillsItemContainer {
+    min-width: 150px;
+    max-width: 400px;
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+
+    margin: 0;
+    padding: 0;
+  }
 }
