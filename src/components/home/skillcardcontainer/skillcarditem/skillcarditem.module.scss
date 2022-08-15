@@ -1,0 +1,54 @@
+.item {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+
+  margin-left: auto;
+  margin-right: auto;
+
+  width: 60px;
+  min-width: 60px;
+  max-height: 60px;
+
+  height: 80px;
+  max-width: 80px;
+  min-height: 80px;
+
+  margin: 15px;
+
+  transition: 0.1s;
+
+  &:hover {
+    transform: scale(1.05);
+    transition: 0.1s;
+
+    & img {
+      filter: invert(1) sepia(10) saturate(65) hue-rotate(59deg);
+    }
+  }
+
+  span {
+    position: relative;
+
+    color: #00ff66;
+    font-family: Lexend-500;
+    font-display: swap;
+
+    text-align: center;
+
+    margin-top: 10px;
+
+    text-shadow: 0 0 12px #16161a;
+
+    user-select: none;
+  }
+
+  img {
+    width: 50px;
+    height: 50px;
+    filter: grayscale(1) invert(1);
+    margin: 10px;
+    position: relative;
+  }
+}
