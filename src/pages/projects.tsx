@@ -1,6 +1,6 @@
 import styles from '../styles/projects/index.module.scss'
-import Card from '../components/ProjectCards/Card'
 import Head from 'next/head'
+// import Card from '../components/ProjectCards/Card'
 
 function Projects() {
     return (
@@ -12,7 +12,7 @@ function Projects() {
                 <div className={styles.titleProjectsContainer}>
                     <h2>Projetos</h2>
                 </div>
-                <div className={styles.sectionProjectsOtherPage}>
+                {/* <div className={styles.sectionProjectsOtherPage}>
                     <div className={styles.projectCard}>
                         <Card titleApp="Podcastr" descriptionApp="Aplicação desenvolvida com o framework Next.js" githubHref="https://github.com/LuciLua/NLW5-Podcastr" directLinkHrefApp="https://www.podcastr.ga/" shortTitle="Projeto Podcast" mainImgSrc="/proj/podcastr.webp" />
                     </div>
@@ -61,7 +61,7 @@ function Projects() {
                     <div className={styles.projectCard}>
                         <Card titleApp="Audiovisual | 3D" descriptionApp="Curta de animação em 3D feito no Blender" githubHref={false} directLinkHrefApp="https://www.youtube.com/watch?v=d1iIKCi0Gvc" shortTitle="Projeto A Vingança da Pomba" mainImgSrc="/proj/pomba.webp" />
                     </div>
-                </div>
+                </div> */}
             </div>
         </>
     )
