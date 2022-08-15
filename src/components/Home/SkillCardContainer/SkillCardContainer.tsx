@@ -1,5 +1,5 @@
-import styles from "./SkillCardContainer.module.scss";
-import SkillCardItem from "./SkillCardItem/SkillCardItem";
+import styles from "./skillcardcontainer.module.scss";
+import SkillCardItem from "./skillcarditem/Skillcarditem";
 
 function SkillCardContainer() {
   return (

@@ -1,5 +1,5 @@
 import Image from "next/image";
-import styles from "./MainCard.module.scss";
+import styles from "./maincard.module.scss";
 
 function MainCard() {
   return (

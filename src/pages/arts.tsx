@@ -1,5 +1,5 @@
 import styles from "../styles/arts/index.module.scss";
-import ArtCard from "../components/ArtCards/ArtCards";
+import ArtCard from "../components/artcards/Artcards";
 import Head from "next/head";
 
 function Arts() {

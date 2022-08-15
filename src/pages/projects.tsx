@@ -1,6 +1,6 @@
 import styles from "../styles/projects/index.module.scss";
 import Head from "next/head";
-import Card from "../components/ProjectCards/Card";
+import Card from "../components/card/Card";
 
 function Projects() {
   return (

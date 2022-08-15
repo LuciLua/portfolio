@@ -1,5 +1,5 @@
 import Image from "next/image";
-import styles from "./SkillCardItem.module.scss";
+import styles from "./skillcarditem.module.scss"
 
 function SkillCardItem(props) {
   const { srcIcon, title, children } = props;
