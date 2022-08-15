@@ -6,6 +6,7 @@ import SkillCardContainer from '../components/Home/SkillCardContainer/SkillCardC
 import JourneyCardContainer from '../components/Home/JourneyCardContainer/JourneyCardContainer';
 
 import { AiOutlineLeftCircle, AiOutlineRightCircle } from 'react-icons/ai';
+import MainCardProjectsContainer from '../components/Home/MainCardProjectsContainer/MainCardProjectsContainer';
 
 function Home() {
 
@@ -69,7 +70,7 @@ function Home() {
           </button>
         </div>
         <div className={styles.sectionProjects} id="sectionProjects">
-          {/* <MainCardProjectsContainer /> */}
+          <MainCardProjectsContainer />
         </div>
         <div className={styles.morePp}>
           <a href="./projects">
