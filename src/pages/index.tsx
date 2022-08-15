@@ -22,11 +22,9 @@ function Home() {
       <Head>
         <title>Luci Lua | Portfólio</title>
       </Head>
-      <div
-        className={`${styles.pages} ${styles.init}`}
+      <div className={`${styles.pages} ${styles.init}`}
         id="init"
-        spellCheck="false"
-      >
+        spellCheck="false">
         <div className={styles.title}>
           <h1>
             <span>Portfólio</span>.Luci
@@ -57,7 +55,7 @@ function Home() {
         <div className={styles.line}></div>
       </div>
 
-      <div
+      {/* <div
         className={`${styles.mainProjectsSection} ${styles.pages}`}
         id="projetosP"
       >
@@ -93,7 +91,7 @@ function Home() {
             </button>
           </a>
         </div>
-      </div>
+      </div> */}
 
       <br />
       <div className={styles.line}></div>
