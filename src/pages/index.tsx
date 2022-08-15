@@ -70,7 +70,7 @@ function Home() {
           </button>
         </div>
         <div className={styles.sectionProjects} id="sectionProjects">
-          <MainCardProjectsContainer />
+          {/* <MainCardProjectsContainer /> */}
         </div>
         <div className={styles.morePp}>
           <a href="./projects">

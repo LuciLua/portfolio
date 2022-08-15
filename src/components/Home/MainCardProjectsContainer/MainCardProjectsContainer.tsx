@@ -1,4 +1,4 @@
-import Card from "../../../components/ProjectCards/Card"
+import Card from "../../ProjectCards/Card"
 import styles from "./mainCardProjectsContainer.module.scss"
 
 function MainCardProjectsContainer() {
