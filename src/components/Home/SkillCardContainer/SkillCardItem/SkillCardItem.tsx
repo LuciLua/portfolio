@@ -1,7 +1,7 @@
 import Image from "next/image";
 import styles from "./skillcarditem.module.scss"
 
-function SkillCardItem(props) {
+function Skillcarditem(props) {
   const { srcIcon, title, children } = props;
 
   return (
@@ -19,4 +19,4 @@ function SkillCardItem(props) {
   );
 }
 
-export default SkillCardItem;
+export default Skillcarditem;
