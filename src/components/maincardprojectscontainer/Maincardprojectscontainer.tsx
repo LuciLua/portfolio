@@ -1,4 +1,4 @@
-import Card from "../../card/Card";
+import Card from "../card/Card";
 import styles from "./maincardprojectscontainer.module.scss";
 
 function Maincardprojectscontainer() {

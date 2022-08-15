@@ -1,10 +1,13 @@
 import Image from 'next/image'
 import styles from '../styles/home/index.module.scss'
 import Head from 'next/head';
-import MainCard from '../components/home/maincard/MainCard';
-import Skillcardcontainer from '../components/home/skillcardcontainer/Skillcardcontainer';
-import Journeycardcontainer from '../components/home/journeycardcontainer/Journeycardcontainer';
-import Maincardprojectscontainer from '../components/home/maincardprojectscontainer/Maincardprojectscontainer';
+import MainCard from '../components/maincard/MainCard';
+
+import Skillcardcontainer from '../components/skillcardcontainer/Skillcardcontainer';
+
+import Journeycardcontainer from '../components/journeycardcontainer/Journeycardcontainer';
+
+import Maincardprojectscontainer from '../components/maincardprojectscontainer/Maincardprojectscontainer';
 
 import { AiOutlineLeftCircle, AiOutlineRightCircle } from 'react-icons/ai';
 

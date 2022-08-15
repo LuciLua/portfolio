@@ -10,7 +10,6 @@ function Card(props: any) {
     shortTitle,
     mainImgSrc,
   } = props;
-
   function verifyGithubRepo() {
     if (githubHref) {
       return (
