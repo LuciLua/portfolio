@@ -4,7 +4,6 @@ import Head from 'next/head';
 import MainCard from '../components/Home/MainCard/MainCard';
 import SkillCardContainer from '../components/Home/SkillCardContainer/SkillCardContainer';
 import JourneyCardContainer from '../components/Home/JourneyCardContainer/JourneyCardContainer';
-import MainCardProjectsContainer from '../components/Home/MainCardProjectsContainer/MainCardProjectsContainer';
 
 import { AiOutlineLeftCircle, AiOutlineRightCircle } from 'react-icons/ai';
 
