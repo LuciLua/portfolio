@@ -38,8 +38,7 @@ function Home() {
             <a href="#cardme"><button id="start">Explore</button></a>
           </div>
         </div>
-
-        <MainCard />
+        <MainCard id='#cardme' />
         <div className={styles.journeyAndSkillsWrap}>
           <div className={styles.journeySection}>
             <h1>Journey</h1>

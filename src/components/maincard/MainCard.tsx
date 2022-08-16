@@ -1,9 +1,9 @@
 import Image from "next/image";
 import styles from "./maincard.module.scss";
 
-function MainCard() {
+function MainCard({ id }) {
   return (
-    <div className={styles.containerMainCard}>
+    <div className={styles.containerMainCard} id={id}>
       <div className={styles.cardWrap}>
         <br />
         <div className={styles.img}>
