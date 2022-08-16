@@ -48,23 +48,23 @@ function Arts() {
       <Head>
         <title>Luci Lua | Arts</title>
       </Head>
-      <div className={styles.pages} id="projetos-subpagina">
+      <div className='pages' id="projetos-subpagina">
         <div className={styles.titleArtsContainer}>
-          <h2>Artes</h2>
+          <h2>Arts</h2>
         </div>
 
         <div className={`${styles.artSection}`} id="artes">
           <div className={styles.artCollection}>
             <h1 id="b3d">3D</h1>
             <p>
-              O 3D me conquistou logo de primeira, antes mesmo de ter contato
-              com ele na faculdade, eu já estava pesquisando o que era aquele
-              mundo que tanto me atraía, mesmo depois das aulas eu continuei
-              completamente fissurada a fazer personagens, cenários, texuras,
-              animações e experimentos em 3D. Eu utilizo desde sempre o software
-              que considero o melhor, por ser gratuito e muito completo,o
-              Blender, que me possibilita explorar minha criatividade e avançar
-              com a técnica.
+              3D won me over right away, even before I had contact
+              with him in college, I was already researching what that
+              world that attracted me so much, even after classes I continued
+              completely obsessed with making characters, scenarios, textures,
+              3D animations and experiments. I have always used the software
+              which I consider the best, for being free and very complete, the
+              Blender, which allows me to explore my creativity and advance
+              with the technique.
             </p>
           </div>
           {/* .artCardsCollection will be created here */}
@@ -73,18 +73,18 @@ function Arts() {
 
         <div className={`${styles.artSection}`} id="artes">
           <div className={styles.artCollection}>
-            <div className={styles.line}></div>
+            <div className='line'></div>
             <h1 id="b2d">2D</h1>
             <p>
-              Minha história com a arte 2D começou de uma forma engraçada e um
-              pouco triste. Bem, estava eu em uma das aulas de Imagem Digital
-              3D, o professor se aproximnou e ao ver a forma com que eu lidava
-              com a Arte 3D me falou sobre um projeto de Animação, bem, fiquei
-              interessada, porém ele fez a seguinte pergunta: Lúcia, você sabe
-              desenhar?. E depois disso, quis aprender, senti que fazer um curso
-              de Artes e não saber desenhar era algo que me deixava com um
-              sentimento estranho e de não pertencimento, por mais que eu mesma
-              discorde disso, acabei aprendendo a desenhar.
+              My story with 2D art started in a funny way and a
+              little sad. Well, I was in one of the Digital Imaging classes
+              3D, the teacher approached and seeing the way I was dealing
+              with 3D Art told me about an Animation project, well, I was
+              interested, but he asked the following question: Lucia, do you know
+              to draw?. And after that, I wanted to learn, I felt that taking a course
+              of Arts and not knowing how to draw was something that left me with a
+              strange feeling of not belonging, even though I
+              disagree with that, I ended up learning to draw.
             </p>
           </div>
           {/* .artCardsCollection will be created here */}

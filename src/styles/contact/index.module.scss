@@ -1,5 +1,4 @@
-.pages {
-  padding-top: 100px;
+.contactSubpagina {
 
   .titleContactContainer {
     width: 100%;
@@ -49,9 +48,9 @@
   align-items: center;
   flex-direction: column;
 
-  width: 50%;
+  width: 100%;
   min-width: 250px;
-  max-width: 50vh;
+  max-width: 45vw;
 }
 
 .contentContact form input {
@@ -134,4 +133,13 @@
 .contactSubpagina {
   width: 100%;
   min-height: 100vh;
+}
+
+@media (max-width: 700px) {
+
+  .contentContact form {
+    width: 100%;
+    min-width: 0;
+    max-width: 85vw;
+  }
 }

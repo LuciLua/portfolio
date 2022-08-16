@@ -1,4 +1,4 @@
-.skillsContainer {
+.skillsSection {
   width: 50%;
   min-height: 330px;
   min-width: 300px;
@@ -14,7 +14,7 @@
 }
 
 @media (max-width: 700px) {
-  .skillsContainer {
+  .skillsSection {
     width: 100%;
     min-width: 0;
 

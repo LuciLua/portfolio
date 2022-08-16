@@ -9,7 +9,7 @@ function About() {
         <title>Luci Lua | About</title>
       </Head>
       <div
-        className={`${styles.pages} ${styles.aboutSubpagina}`}
+        className={`pages ${styles.aboutSubpagina}`}
         id="about-subpagina"
       >
         <div className={styles.titleAboutContainer}>
@@ -34,14 +34,8 @@ function About() {
             <h1>Luci.</h1>
           </div>
           <p>
-            Olá! Sou Luci, estudante de artes da Universidade Federal de Juiz de
-            Fora e estusiasta da tecnologia. Minha grande paixão é a novidade, a
-            possibilidade de mudança e, para mim, mudar é o primeiro grande
-            passo para evoluir. Atualmente tenho 19 anos e minha jornada na
-            programação começou de fato à 1 ano atrás durante um longo período
-            de férias, desde então aprendi diversas ferramentas e meios para
-            levar aos outros algo legal para ver, interagir ou até mesmo
-            aprender.
+            Hi, I&apos;m Luci.
+            I grew up in front of a computer and I really love it, programming has always been something that caught my attention, movies that showed hackers made my eyes shine and today I seek to develop applications and tools to make people&apos;s lives easier.
           </p>
         </div>
       </div>

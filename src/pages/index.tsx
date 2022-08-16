@@ -24,107 +24,110 @@ function Home() {
 
   return (
     <>
-      <Head>
-        <title>Luci Lua | Portfólio</title>
-      </Head>
-      <div className={`${styles.pages} ${styles.init}`} id="init" spellCheck="false">
-        <div className={styles.title}>
-          <h1><span>Portfólio</span>.Luci</h1>
-          <h2>Im developer. Im Designer</h2>
-          <div className={styles.gradient}></div>
-          <a href="#cardme"><button id="start">Explore</button></a>
-        </div>
-      </div>
+      <div className='pages'>
 
-      <div className={styles.pages} id="cardme">
+        <Head>
+          <title>Luci Lua | Portfólio</title>
+        </Head>
+        <div className={styles.initMask}></div>
+        <div className={styles.init} spellCheck="false">
+          <div className={styles.title}>
+            <h1><span>Portfólio</span>.Luci</h1>
+            <h2>Im developer. Im Designer</h2>
+            <div className={styles.gradient}></div>
+            <a href="#cardme"><button id="start">Explore</button></a>
+          </div>
+        </div>
+
         <MainCard />
-      </div>
-      <div className={styles.pages} id="paragraph">
         <div className={styles.journeyAndSkillsWrap}>
           <div className={styles.journeySection}>
             <h1>Journey</h1>
             <Journeycardcontainer />
           </div>
-          <div className={styles.skillsContainer}>
+          <div className={styles.skillsSection}>
             <h1>Skills</h1>
             <Skillcardcontainer />
           </div>
         </div>
-        <div className={styles.line}></div>
-      </div>
-      <div className={`${styles.mainProjectsSection} ${styles.pages}`} id="projetosP">
-        <h2 className={styles.titleMainProjectsSection}>
-          Projetos em <span className={styles.higthlight}>destaque</span>
-        </h2>
-        <div className={styles.btnCollectionForMoveCards}>
-          <button
-            // alt="Anterior"
-            title="Anterior"
-            onClick={prev}>
-            <AiOutlineLeftCircle />
-          </button>
-          <button
-            // alt="Próxima"
-            title="Próxima"
-            onClick={next}>
-            <AiOutlineRightCircle />
-          </button>
+        <div className='line'></div>
+        <div className={`${styles.mainProjectsSection}`} id="projetosP">
+          <h2 className={styles.titleMainProjectsSection}>
+            Projetos em <span className={styles.higthlight}>destaque</span>
+          </h2>
+          <div className={styles.btnCollectionForMoveCards}>
+            <button
+              // alt="Anterior"
+              title="Anterior"
+              onClick={prev}>
+              <AiOutlineLeftCircle />
+            </button>
+            <button
+              // alt="Próxima"
+              title="Próxima"
+              onClick={next}>
+              <AiOutlineRightCircle />
+            </button>
+          </div>
+          <div className={styles.sectionProjects} id="sectionProjects">
+            <Maincardprojectscontainer />
+          </div>
+          <div className={styles.morePp}>
+            <Link href="./projects">
+              <a>
+                <button
+                  // alt="Mais projetos" 
+                  title="Mais projetos">Mais projetos</button>
+              </a>
+            </Link>
+          </div>
         </div>
-        <div className={styles.sectionProjects} id="sectionProjects">
-          <Maincardprojectscontainer />
-        </div>
-        <div className={styles.morePp}>
-          <Link href="./projects">
-            <a>
-              <button
-                // alt="Mais projetos" 
-                title="Mais projetos">Mais projetos</button>
-            </a>
-          </Link>
-        </div>
-      </div>
-      <br />
-      <div className={styles.line}></div>
-      <div className={styles.titleArt}>
-        <h1>Arts.</h1>
-      </div>
-      <div className={styles.artsSectionContainer}>
-        <div className={styles.typeArtCardContainer}>
-          <Link href="./arts#b3d">
-            <a
-              // alt="Artes em 3D"
-              title="Artes em 3D">
-              <div className={styles.circleArtContainer}>
-                <div className={styles.imgContainerArt2D}>
-                  <Image
-                    layout='fill'
-                    src="/cube.svg"
-                    alt="Artes em 3D"
-                    title="Artes em 3D" />
-                </div>
-              </div>
-            </a>
-          </Link>
-          <p className={styles.descriptionOfArtCardType}>3D Artes | Personagens, cenários, animações</p>
-        </div>
-        <div className={styles.typeArtCardContainer}>
-          <Link href="./arts#b2d">
-            <a
-              href="./arts#b2d"
-              // alt="Artes em 2D"
-              title="Artes em 2D">
-              <div className={styles.circleArtContainer}>
-                <div className={styles.imgContainerArt3D}>
-                  <Image
-                    layout='fill'
-                    src="/galery.svg"
-                    alt="Artes em 2D"
-                    title="Artes em 2D" />
-                </div>
-              </div>
-            </a>
-          </Link>
-          <p className={styles.descriptionOfArtCardType}>2D Artes | Pinturas, Desenhos, Personagens</p>
+        <br />
+        <div className={'line'}></div>
+        <div className={styles.artsSectionContainer}>
+          <div className={styles.titleArt}>
+            <h1>Arts.</h1>
+          </div>
+          <div className={styles.artsSectionContainerWrapTypes}>
+
+            <div className={styles.typeArtCardContainer}>
+              <Link href="./arts#b3d">
+                <a
+                  // alt="Artes em 3D"
+                  title="Artes em 3D">
+                  <div className={styles.circleArtContainer}>
+                    <div className={styles.imgContainerArt2D}>
+                      <Image
+                        layout='fill'
+                        src="/cube.svg"
+                        alt="Artes em 3D"
+                        title="Artes em 3D" />
+                    </div>
+                  </div>
+                </a>
+              </Link>
+              <p className={styles.descriptionOfArtCardType}>3D Artes | Personagens, cenários, animações</p>
+            </div>
+            <div className={styles.typeArtCardContainer}>
+              <Link href="./arts#b2d">
+                <a
+                  href="./arts#b2d"
+                  // alt="Artes em 2D"
+                  title="Artes em 2D">
+                  <div className={styles.circleArtContainer}>
+                    <div className={styles.imgContainerArt3D}>
+                      <Image
+                        layout='fill'
+                        src="/galery.svg"
+                        alt="Artes em 2D"
+                        title="Artes em 2D" />
+                    </div>
+                  </div>
+                </a>
+              </Link>
+              <p className={styles.descriptionOfArtCardType}>2D Artes | Pinturas, Desenhos, Personagens</p>
+            </div>
+          </div>
         </div>
       </div>
     </>

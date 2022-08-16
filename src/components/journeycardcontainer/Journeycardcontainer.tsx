@@ -4,14 +4,14 @@ function Journeycardcontainer() {
   return (
     <>
       <p className={styles.journeyText}>
-        Comecei a programar mesmo em 2020, quando tive a oportunidade de estar
-        fazendo a matéria Multimídia Instrumental dentro do curso de artes da
-        UFJF, onde estudo até hoje. Logo após me apaixonar por isso, voltei a
-        estudar python , minha primeira linguaguem de programação, além de
-        continuar me aprofundando em desenvolvimento web, aprendendo NodeJS,
-        NextJS entre outros. Uma das tecnologias que mais gostei e uso sempre
-        que posso é o site da Vercel, onde faço deploy dos meus projetos para
-        acesso público.
+        I started programming in 2020, when I had the opportunity to be
+        taking the Instrumental Multimedia subject within the arts course at
+        UFJF, where I study until today. Shortly after falling in love with it, I returned to
+        study python, my first programming language, in addition to
+        continue to delve deeper into web development, learning NodeJS,
+        NextJS among others. One of the technologies I liked the most and I always use
+        that I can is the Vercel website, where I deploy my projects to
+        public access.
       </p>
     </>
   );
