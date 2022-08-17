@@ -16,7 +16,7 @@ function Contact() {
     }
 
     if (reqs == inputs.length) {
-      if (spamVerification.value == "CrytoOBela") {
+      if (spamVerification.value == "CrytoObela") {
 
         e.preventDefault()
 
