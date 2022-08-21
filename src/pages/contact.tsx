@@ -72,13 +72,13 @@ function Contact() {
 
       <div className={styles.contentContact}>
         <form
-          action="https://docs.google.com/forms/d/e/1FAIpQLSehd1Fv1bXZRMB2eaKo1bSHvsADwVcS3blsy1JqXJTHIN-lBA/formResponse"
+          action={process.env.LINK}
           target="prox"
         >
           <input
             type="text"
             placeholder="Nome"
-            name="entry.783351493"
+            name={process.env.NAME}
             className={"inpForm"}
             id={"spamVerification"}
             required
@@ -86,13 +86,13 @@ function Contact() {
           <input
             type="text"
             placeholder="Email"
-            name="entry.34306990"
+            name={process.env.EMAIL}
             className={"inpForm"}
             required
           />
           <textarea
             placeholder="Mensagem"
-            name="entry.1056023067"
+            name={process.env.MSG}
             id=""
             cols={30}
             rows={10}
@@ -105,7 +105,7 @@ function Contact() {
         </form>
 
         <iframe
-          src="https://docs.google.com/forms/d/e/1FAIpQLSehd1Fv1bXZRMB2eaKo1bSHvsADwVcS3blsy1JqXJTHIN-lBA/formResponse"
+          src={process.env.LINK}
           style={{ display: "none" }}
           name="prox"
           frameBorder="0"
