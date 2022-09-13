@@ -1,36 +1,51 @@
 import styles from "../styles/arts/index.module.scss";
 import Artcard from "../components/artcards/Artcard";
 import Head from "next/head";
+import Image from "next/image";
+
+import {useState}  from 'react'
 
 function Arts() {
-  const ids3D = [
-    "a",
-    "b",
-    "c",
-    "d",
-    "f",
-    "g",
-    "h",
-    "i",
-    "j",
-    "l",
-    "m",
-    "n",
-    "o",
-    "p",
-    "q",
-    "r",
-  ];
-  const paths3DIMG = ids3D.map((item) => `/dim/d_${item}`);
+
+  const [selectIMG, setSelectIMG] = useState('/port2D/o_a.webp')
+
+
+  const ids3D = ["a", "b", "c", "d", "f", "g", "h", "i", "j", "l", "m", "n", "o", "p", "q", "r",];
+  const paths3DIMG = ids3D.map((item) => `/port3D/d_${item}`);
 
   const ids2D = ["a", "b", "c", "d", "e", "f", "h", "i", "j", "k", "l", "m"];
-  const paths2DIMG = ids2D.map((item) => `/port2d/o_${item}`);
+  const paths2DIMG = ids2D.map((item) => `/port2D/o_${item}`);
+
+  function openModal(card) {
+
+    var modal = document.querySelector('.modal')
+
+    setSelectIMG(card)
+    console.log(selectIMG)
+
+    if (modal.classList.contains('visible')) {
+      modal.classList.remove('visible')
+      modal.classList.add('invisible')
+    } else {
+      modal.classList.remove('invisible')
+      modal.classList.add('visible')
+    }
+
+
+
+    console.log(modal)
+  }
 
   function generateArtCards(choiceAnList) {
     return choiceAnList.map((card) => {
       return (
-        <div className={styles.artCardsCollection} key={card}>
-          <Artcard id={card} />
+        <div key={card} className={`art_card_${card}`} onClick={(e) => openModal(card)}>
+          <div className={styles.artCardsCollection} key={card}>
+            <Artcard id={card} />
+          </div>
+          <div className={`invisible modal`} key={`modal_${card}`}>
+            <Image layout="fill" src={`${selectIMG}.webp`} alt="IMG" />
+          </div>
         </div>
       );
     });

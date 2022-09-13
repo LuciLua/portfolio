@@ -98,3 +98,45 @@ html {
 }
 
 
+
+.modal {
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.427);
+  backdrop-filter: blur(3px);
+
+  top: 0;
+  left: 0;
+
+  position: fixed;
+
+  justify-content: center;
+  align-items: center;
+
+  z-index: 200000;
+
+  animation: fadeIn 0.1s linear;
+
+  img {
+    height: 100%;
+    object-fit: contain;
+  }
+}
+
+.visible{
+  display: flex;
+}
+
+.invisible{
+  display: none;
+}
+
+@keyframes fadeIn{
+  0%{
+    opacity: 0%;
+  }
+  100%{
+    opacity: 100%;
+  }
+}
+

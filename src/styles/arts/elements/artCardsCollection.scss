@@ -17,19 +17,27 @@
   user-select: none;
   padding: 20px;
 
-  h1 {
-    color: rgb(64, 255, 0);
-    margin-bottom: 15px;
-    text-align: center;
-  }
+  .artCollection {
+    width: 100%;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
-  p {
-    color: rgba(147, 147, 147, 0.518);
-    text-align: justify;
-    max-width: 800px;
-    margin-bottom: 50px;
+    h1 {
+      color: rgb(64, 255, 0);
+      margin-bottom: 15px;
+      text-align: center;
+    }
 
-    line-height: 1.5;
+    p {
+      color: rgba(147, 147, 147, 0.518);
+      text-align: justify;
+      max-width: 800px;
+      margin-bottom: 50px;
+
+      line-height: 1.5;
+    }
   }
 
   .artCardsCollection {
