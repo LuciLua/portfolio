@@ -31,6 +31,9 @@
     background-color: rgba(0, 0, 0, 0.182);
     backdrop-filter: blur(4px);
 
+    span{
+      display: none;
+    }
     // background-color: transparent;
 
     li {
