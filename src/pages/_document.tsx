@@ -26,7 +26,7 @@ function Document() {
         <meta property="og:title" content="Portfólio de LuciLua." />
         <meta property="og:site_name" content="LuciLua portfólio" />
 
-        <meta property="og:url" content="https://www.luci-lua.tk/" />
+        <meta property="og:url" content="https://www.lucilua.com.br/" />
         <meta property="og:type" content="website" />
         <meta property="og:title" content="Portfólio de LuciLua" />
         <meta
@@ -36,11 +36,11 @@ function Document() {
 
         <meta
           property="og:image"
-          content="https://www.luci-lua.tk/src/img/ogimg.jpg"
+          content="https://www.lucilua.com.br/src/img/ogimg.jpg"
         />
         <meta
           property="og:image:secure_url"
-          content="https://www.luci-lua.tk/src/img/ogimg.jpg"
+          content="https://www.lucilua.com.br/src/img/ogimg.jpg"
         />
         <meta property="og:image:type" content="image/jpeg" />
 

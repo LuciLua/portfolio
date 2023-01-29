@@ -2,7 +2,7 @@ import React from "react";
 import Footer from "../components/footer/Footer";
 import Menu from "../components/menu/Menu";
 import "../styles/global.scss";
-import Script from "next/script";
+// import Script from "next/script";
 
 function App({ Component, pageProps }) {
   return (
@@ -10,7 +10,7 @@ function App({ Component, pageProps }) {
       <Menu />
       <Component {...pageProps} />
       <Footer />
-      <Script
+      {/* <Script
         strategy="lazyOnload"
         src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS}`}
       />
@@ -22,7 +22,7 @@ function App({ Component, pageProps }) {
                     gtag('config', '${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS}', {
                     page_path: window.location.pathname,
                     });
-            `}</Script>
+            `}</Script> */}
     </>
   );
 }
