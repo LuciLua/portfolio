@@ -13,7 +13,6 @@ import { AiOutlineLeftCircle, AiOutlineRightCircle } from 'react-icons/ai';
 import Link from 'next/link';
 
 function Home() {
-
   function next() {
     document.getElementById('sectionProjects').scrollLeft += 390;
   };
