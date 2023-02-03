@@ -21,6 +21,7 @@
   },
   "homepage": "https://github.com/LuciLua/portfolio#readme",
   "dependencies": {
+    "@ctrl/react-adsense": "^1.6.1",
     "@types/typescript": "^2.0.0",
     "next": "12.2.5",
     "nodemon": "^2.0.19",

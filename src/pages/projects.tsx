@@ -2,6 +2,9 @@ import styles from "../styles/projects/index.module.scss";
 import Head from "next/head";
 import Card from "../components/card/Card";
 
+import React from 'react';
+import { Adsense } from '@ctrl/react-adsense';
+
 function Projects() {
   return (
     <div className={`pages ${styles.projetosSubpagina}`} id="projetos-subpagina">
@@ -11,6 +14,14 @@ function Projects() {
       <div className={styles.titleProjectsContainer}>
         <h2>Projects</h2>
       </div>
+      <Adsense
+        client="ca-pub-1035225397173431"
+        slot="5583921014"
+        style={{ display: 'fluid' }}
+        layout="in-article"
+        format="auto"
+        responsive="true"
+      />
       <div className={styles.sectionProjectsOtherPage}>
         <div className={styles.projectCard}>
           <Card
@@ -52,6 +63,7 @@ function Projects() {
             mainImgSrc="/proj/login.webp"
           />
         </div>
+
         <div className={styles.projectCard}>
           <Card
             titleApp="Social Music"
