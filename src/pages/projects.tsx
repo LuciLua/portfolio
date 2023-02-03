@@ -2,7 +2,6 @@ import styles from "../styles/projects/index.module.scss";
 import Head from "next/head";
 import Card from "../components/card/Card";
 
-import React from 'react';
 import { Adsense } from '@ctrl/react-adsense';
 
 function Projects() {
@@ -17,7 +16,7 @@ function Projects() {
       <Adsense
         client="ca-pub-1035225397173431"
         slot="5583921014"
-        style={{ display: 'fluid' }}
+        style={{ display: 'block', width: '100vw', height: '320px', background: '#353541', cursor: 'pointer' }}
         layout="in-article"
         format="auto"
         responsive="true"

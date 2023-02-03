@@ -67,6 +67,12 @@ function Document() {
         <meta name="copyright" content="© 2021 LuciLua" />
 
         <link rel="shortcut icon" href="./ico.ico" type="image/x-icon" />
+
+        <Script
+          async custom-element="amp-ad" src="https://cdn.ampproject.org/v0/amp-ad-0.1.js" />
+        <Script
+          async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1035225397173431"
+          crossOrigin="anonymous" />
       </Head>
       <body>
         <Main />
