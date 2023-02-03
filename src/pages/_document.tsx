@@ -75,6 +75,8 @@ function Document() {
           strategy="lazyOnload"
           src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS}`}
         />
+        <Script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1035225397173431"
+          crossOrigin="anonymous" />
 
         <Script id={`analytics`} strategy="lazyOnload">{`
                     window.dataLayer = window.dataLayer || [];
