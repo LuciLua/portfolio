@@ -3,7 +3,8 @@ import Artcard from "../components/artcards/Artcard";
 import Head from "next/head";
 import Image from "next/image";
 
-import {useState}  from 'react'
+import { useState } from 'react'
+import { Adsense } from "@ctrl/react-adsense";
 
 function Arts() {
 
@@ -85,6 +86,12 @@ function Arts() {
           {/* .artCardsCollection will be created here */}
           {generateArtCards3D()}
         </div>
+
+        <Adsense
+          format="autorelaxed"
+          client="ca-pub-1035225397173431"
+          slot="6271150875"
+        />
 
         <div className={`${styles.artSection}`} id="artes">
           <div className={styles.artCollection}>

@@ -16,7 +16,7 @@ function Projects() {
       <Adsense
         client="ca-pub-1035225397173431"
         slot="5583921014"
-        style={{ display: 'block', width: '100vw', height: '320px', background: '#353541', cursor: 'pointer' }}
+        style={{ display: 'block', maxWidth: '100vw', height: '100px', cursor: 'pointer' }}
         layout="in-article"
         format="auto"
         responsive="true"
