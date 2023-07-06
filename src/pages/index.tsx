@@ -34,7 +34,9 @@ function Home() {
             <h1><span>Portfólio</span>.Luci</h1>
             <h2>Im developer. Im Designer</h2>
             <div className={styles.gradient}></div>
-            <a href="#cardme"><button id="start">Explore</button></a>
+            <a href="#cardme" id='start'>Explore</a>
+            <a target={'_blank'} href="https://lucilua-film-portfolio.vercel.app/projetos" rel="noreferrer">discover my audiovisual works
+            </a>
           </div>
         </div>
         <MainCard id='cardme' />
