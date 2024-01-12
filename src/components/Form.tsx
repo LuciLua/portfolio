@@ -26,10 +26,11 @@ export function Form() {
             className="bg-transparent border-b-[2px] border-b-[#bdbdbd] outline-none valid:border-[#5b5b5b] focus:border-[#5b5b5b] peer "
             required
             type="text"
+            id="name"
           />
           <label
             className="pointer-events-none  absolute top-[0px] transition-[0.3s] peer-valid:top-[-20px] peer-valid:text-[#7192a2] peer-valid:font-[500] peer-valid:text-[14px]"
-            htmlFor=""
+            htmlFor="name"
           >
             Your Name
           </label>
@@ -41,10 +42,11 @@ export function Form() {
             required
             name="entry.1638245563"
             type="text"
+            id="email"
           />
           <label
             className="pointer-events-none  absolute top-[0px] peer-valid:top-[-20px] peer-valid:text-[#7192a2] peer-valid:font-[500] peer-valid:text-[14px]"
-            htmlFor=""
+            htmlFor="email"
           >
             Your Email
           </label>
@@ -52,11 +54,22 @@ export function Form() {
         {/* <a href="" className="text-[#000] underline">
           or use your google account
         </a> */}
-        <textarea
-          ref={formMessage}
-          name="entry.1937766715"
-          className="bg-transparent outline-none inset-3 shadow-[inset_0_0_12px_#0004] rounded-[4px] resize-none h-[200px] p-[10px] text-inherit"
-        />
+        <div className="flex flex-col w-full relative">
+          <textarea
+            id="message"
+            ref={formMessage}
+            required
+            name="entry.1937766715"
+            className="bg-transparent outline-none inset-3 shadow-[inset_0_0_12px_#0004] rounded-[4px] resize-none h-[200px] p-[10px] text-inherit peer"
+          />
+          <label
+            className="p-[10px] pointer-events-none  absolute top-[0px] peer-valid:top-[-30px] peer-valid:left-[-10px] transition-[0.3s] peer-valid:text-[#7192a2] peer-valid:font-[500] peer-valid:text-[14px]"
+            htmlFor="message"
+          >
+            Message
+          </label>
+        </div>
+
         <button
           ref={formBtnSend}
           className="bg-[#121212] text-[#fff] p-3"

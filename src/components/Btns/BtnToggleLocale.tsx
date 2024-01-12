@@ -25,6 +25,8 @@ export function BtnToggleLocale({
     <button
       onClick={() => toggleTranslateLanguage(lang)}
       className={`${className}`}
+      aria-label="change_language"
+      title="Change language"
     >
       {lang_label ? lang_label : lang}
     </button>

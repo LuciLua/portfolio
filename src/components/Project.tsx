@@ -4,6 +4,7 @@ import { motion, useInView } from "framer-motion"
 import { useRef } from "react"
 import { useModal } from "../hooks/useModal"
 import { useTranslation } from "../hooks/useTranslation"
+import Image from "next/image"
 
 export function Project({ name, img, url, stack, description }) {
   const ref = useRef<HTMLDivElement>(null)
@@ -19,7 +20,7 @@ export function Project({ name, img, url, stack, description }) {
   return (
     <motion.div
       className="w-fit rounded-[12px] max-w-[350px] h-fit min-w-[300px] min-h-[250px] 
-      border-[1px] overflow-hidden border-[var(--bg-medium)]"
+      border-[1px] overflow-hidden border-[var(--bg-medium)] relative flex flex-col"
       ref={ref}
       style={{
         transform: isInView ? "none" : rotated,
@@ -27,11 +28,17 @@ export function Project({ name, img, url, stack, description }) {
         transition: "all 0.5s cubic-bezier(0.17, 0.55, 0.55, 1) 0.1s",
       }}
     >
-      <img
-        src={img}
-        alt="image_project"
-        className="w-full object-contain h-fit opacity-90  grayscale-[0.3] contrast-[1.1] brightness-[0.95] relative"
-      />
+      <div className="w-full overflow-hidden h-[187px] relative flex items-start  bg-[#ddd]">
+        <Image
+          placeholder="blur"
+          blurDataURL="base64"
+          fill
+          quality={50}
+          src={img}
+          alt="image_project"
+          className="object-contain  opacity-90  grayscale-[0.3] contrast-[1.1] brightness-[0.95] relative"
+        />
+      </div>
       <div className="flex w-full gap-2 h-fit border-y-[1px] border-y-[var(--bg-medium)] px-[4px] py-[10px] flex-wrap">
         {stack.map((tool) => {
           return (

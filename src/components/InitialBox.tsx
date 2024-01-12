@@ -69,12 +69,14 @@ export function InitialBox() {
                 <Link
                   href={`/${lang}/#contact`}
                   className="bg-[var(--btn-bg-primary)] text-[var(--btn-text-primary)] px-[30px] py-[10px] font-[500] rounded-[3px] text-nowrap"
+                  aria-label="contact me now"
                 >
                   {translations.initial_box.primary_btn}
                 </Link>
                 <Link
                   href={`/${lang}/about`}
                   className="bg-[var(--bg-medium)] text-[var(--text-h1)] px-[30px] py-[10px] font-[500] rounded-[3px] text-nowrap"
+                  aria-label="about me"
                 >
                   {translations.initial_box.secondary_btn}
                 </Link>
@@ -96,6 +98,7 @@ export function InitialBox() {
             className="cursor-pointer hover:scale-105 transition-[0.3s]"
             href="https://www.linkedin.com/in/lucia-guelber/"
             target="_blank"
+            aria-label="access_my_linkedin"
           >
             <AiFillLinkedin className=" text-[var(--text-h1)] text-[36px] w-fit h-fit " />
           </a>
@@ -103,6 +106,7 @@ export function InitialBox() {
             className="cursor-pointer hover:scale-105 transition-[0.3s]"
             href="https://github.com/lucilua/"
             target="_blank"
+            aria-label="access_my_github"
           >
             <AiFillGithub className=" text-[var(--text-h1)] text-[36px] w-fit h-fit" />
           </a>

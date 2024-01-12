@@ -24,9 +24,9 @@ export const metadata: Metadata = {
   alternates: {
     canonical: 'https://lucilua.com.br/',
     languages: {
-      'en-US': '/en',
-      'pt-BR': '/pt',
-      'fr-FR': '/fr',
+      'en-US': 'https://lucilua.com.br/en',
+      'pt-BR': 'https://lucilua.com.br/pt',
+      'fr-FR': 'https://lucilua.com.br/fr',
     }
   },
   category: "technology",
