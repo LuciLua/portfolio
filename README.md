@@ -1,9 +1,9 @@
 ### ✨ Portfólio Repo
 
-<div align="center" style="witdh:100%"> 
+<div style="witdh:100%"> 
   <table>
     <tr>
-      <td width="100px"><b>Technologies used<b></td>
+      <td align="center" width="100px"><b>Technologies used<b></td>
     </tr>
     <tr>
       <td valign="center" align="center" width="300px">
