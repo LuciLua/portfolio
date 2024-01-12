@@ -8,7 +8,7 @@ import { BiMenu } from "react-icons/bi"
 import { useState } from "react"
 import Link from "next/link"
 
-export function Menu() {
+export default function Menu() {
   const { menuStateColor } = useMenuStateColor()
   const { translations, currentPathname, lang } = useTranslation()
   const { toggleTheme, theme } = useTheme()

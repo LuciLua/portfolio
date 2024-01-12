@@ -1,11 +1,11 @@
 import { Montserrat } from "next/font/google"
 import "../../styles/globals.css"
 import { Providers } from "../../components/Providers"
-import { Menu } from "../../components/Menu/Menu"
 import { ProjectModal } from "../../components/ProjectModal"
 import { CurriculumModal } from "../../components/CurriculumModal"
 import { notFound } from "next/navigation"
 import { Metadata } from "next"
+import Menu  from "../../components/Menu/Menu"
 
 const montserrat = Montserrat({
   subsets: ["latin-ext"],
