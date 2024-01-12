@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:ror="http://rorweb.com/0.1/" >
+<channel>
+  <title>ROR Sitemap for https://www.lucilua.com.br/</title>
+  <link>https://www.lucilua.com.br/</link>
+
+<item>
+     <link>https://www.lucilua.com.br/en</link>
+     <title>LuciLua Portfólio</title>
+     <description>Frontend Developer Portfólio - Luci Lua</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>0</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://www.lucilua.com.br/en/projects</link>
+     <title>LuciLua Portfólio</title>
+     <description>Frontend Developer Portfólio - Luci Lua</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>1</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://www.lucilua.com.br/en/about</link>
+     <title>LuciLua Portfólio</title>
+     <description>Frontend Developer Portfólio - Luci Lua</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>1</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://www.lucilua.com.br/pt</link>
+     <title>LuciLua Portfólio</title>
+     <description>Frontend Developer Portfólio - Luci Lua</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>0</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://www.lucilua.com.br/pt/projects</link>
+     <title>LuciLua Portfólio</title>
+     <description>Frontend Developer Portfólio - Luci Lua</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>1</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://www.lucilua.com.br/pt/about</link>
+     <title>LuciLua Portfólio</title>
+     <description>Frontend Developer Portfólio - Luci Lua</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>1</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://www.lucilua.com.br/fr</link>
+     <title>LuciLua Portfólio</title>
+     <description>Frontend Developer Portfólio - Luci Lua</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>0</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://www.lucilua.com.br/fr/projects</link>
+     <title>LuciLua Portfólio</title>
+     <description>Frontend Developer Portfólio - Luci Lua</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>1</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://www.lucilua.com.br/fr/about</link>
+     <title>LuciLua Portfólio</title>
+     <description>Frontend Developer Portfólio - Luci Lua</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>1</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://www.lucilua.com.br/docs/arts.pdf</link>
+     <title></title>
+     
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>1</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://www.lucilua.com.br/assets/cv/curriculum.pdf</link>
+     <title></title>
+     
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>1</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+</channel>
+</rss>
+  
