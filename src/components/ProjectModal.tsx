@@ -73,7 +73,7 @@ export function ProjectModal() {
           </div>
           <div className="custom-scrollbar overflow-y-scroll overflow-x-hidden scroll-py-[1px]">
             <p className="p-4 text-[var(--text-default)]">{newDescription}</p>
-            <img src={img} alt="Project Image" className="py-4" />
+            <img src={img} alt="project_image_modal" className="py-4" />
           </div>
           <a
             className="bg-[var(--btn-bg-primary)] font-[700] text-[var(--btn-text-primary)] px-5 py-3 mt-2 h-fit rounded-[3px] flex justify-center items-center"

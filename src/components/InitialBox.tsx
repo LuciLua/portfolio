@@ -87,6 +87,7 @@ export function InitialBox() {
           <img
             className="z-10 top-[-129px] xl:top-[-142px] xl:left-[-25px] xl:max-h-[650px] xl:min-h-[650px] max-h-[350px] min-h-[350px] object-cover absolute "
             src="assets/outro.svg"
+            alt="lucilua"
           />
         </div>
 

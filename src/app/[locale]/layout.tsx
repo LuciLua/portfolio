@@ -5,7 +5,7 @@ import { ProjectModal } from "../../components/ProjectModal"
 import { CurriculumModal } from "../../components/CurriculumModal"
 import { notFound } from "next/navigation"
 import { Metadata } from "next"
-import Menu  from "../../components/Menu"
+import Menu from "../../components/Menu"
 
 const montserrat = Montserrat({
   subsets: ["latin-ext"],
@@ -22,7 +22,7 @@ export const metadata: Metadata = {
   twitter: { site: 'https://twitter.com/l4dev', creator: 'LuciLua', description: 'My Twitter' },
   keywords: ['LuciLua, frontend, developer, backend, web developer, desenvolvimento de sites, portfolio, Luci Lua'],
   alternates: {
-    canonical: '/',
+    canonical: 'https://lucilua.com.br/',
     languages: {
       'en-US': '/en',
       'pt-BR': '/pt',
@@ -51,6 +51,9 @@ export default function root_layout({ children, params }) {
         <meta charSet="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>LuciLua Portfólio</title>
+        <link rel="alternate" hrefLang="pt" href="https://lucilua.com.br/pt" />
+        <link rel="alternate" hrefLang="en" href="https://lucilua.com.br/en" />
+        <link rel="alternate" hrefLang="fr" href="https://lucilua.com.br/fr" />
       </head>
       <body className={`${montserrat.className} custom-scrollbar`}>
         <Providers params={params}>

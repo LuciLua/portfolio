@@ -17,6 +17,7 @@ export default function about() {
       <div className="flex justify-center  items-center flex-col text-[var(--text-default)] gap-3 min-w-[250px]">
         <div className="relative z-0 overflow-hidden rounded-full w-[250px] h-[250px]">
           <img
+            alt="Lúcia Maria Rosa Guelber"
             src="/assets/images/coding1.jpg"
             className="w-full h-full object-cover"
           />
