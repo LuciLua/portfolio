@@ -1,9 +1,9 @@
 "use client"
 
 import { ItemMenuDropdown } from "./ItemMenuDropdown"
-import { useMenuStateColor } from "../../hooks/useMenuStateColor"
-import { useTranslation } from "../../hooks/useTranslation"
-import { useTheme } from "../../hooks/useTheme"
+import { useMenuStateColor } from "../hooks/useMenuStateColor"
+import { useTranslation } from "../hooks/useTranslation"
+import { useTheme } from "../hooks/useTheme"
 import { BiMenu } from "react-icons/bi"
 import { useState } from "react"
 import Link from "next/link"
