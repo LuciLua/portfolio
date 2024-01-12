@@ -1,0 +1,96 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@tailwind variants;
+
+*::before,
+*,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+*::selection {
+  background-color: #262626;
+  color: #fff;
+  -webkit-font-smoothing: antialiased;
+  scroll-snap-type: proximity;
+  font-smooth: always;
+}
+
+html,
+body {
+  min-height: 100svh;
+  width: 100%;
+  scroll-behavior: smooth;
+  transition: 0.3s;
+  -webkit-text-size-adjust: none;
+  -webkit-font-smoothing: antialiased;
+}
+
+@layer utilities {
+  /* Chrome, Safari and Opera */
+  .custom-scrollbar::-webkit-scrollbar {
+    width: 10px;
+    /* background-color: rgb(235, 235, 235); */
+    background-color: var(--bg-medium-soft);
+    border-radius: 30px;
+  }
+  .custom-scrollbar::-webkit-scrollbar-thumb {
+    width: 10px;
+    background-color: var(--bg-medium);
+    border-radius: 30px;
+  }
+  .custom-scrollbar::-webkit-scrollbar-button {
+    background-color: var(--bg-medium);
+  }
+}
+
+:root body.light,
+html.light {
+  --bg-default: #fff;
+  --bg-default-opacity50: #ffffff72;
+  --bg-medium: #ddd;
+  --bg-medium-soft: #f4f4f4;
+
+  --bg-dropdown: #ddd;
+  --bg-dropdown-hover: #252525;
+  --bg-dropdown-active: #ffffff;
+  --text-dropdown: #0e0e0e;
+  --text-dropdown-hover: #fafafa;
+
+  --lines_contrast: #000;
+  --text-default: #121212;
+  --text-h1: #000000;
+  --text-h2: #363636;
+  --text-h3: #191919;
+  --border-medium: #ddd;
+
+  --btn-bg-primary: #000;
+  --btn-text-primary: #fff;
+}
+
+:root body.dark,
+html.dark {
+  --bg-default: #0a0b0e;
+  --bg-default-opacity50: #13131b75;
+  --bg-medium: #343539;
+  --bg-medium-soft: #15151a;
+
+  --bg-dropdown: #27272b;
+  --bg-dropdown-hover: #33333b;
+  --bg-dropdown-active: #0d0d0e;
+  --text-dropdown: #eae8ee;
+  --text-dropdown-hover: #ffffff;
+
+  --lines-contrast: rgb(210, 210, 210);
+  --text-default: #9394a1;
+  --text-h1: #e8eaff;
+  --text-h2: #616161;
+  --text-h3: #d9d9d9;
+  --border-medium: #48484a;
+
+  --btn-bg-primary: #fafafa;
+  --btn-text-primary: #0f0f0f;
+}

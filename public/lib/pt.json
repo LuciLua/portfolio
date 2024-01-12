@@ -1,0 +1,104 @@
+{
+    "current_lang": "Português",
+    "lang_opt_1": "Inglês",
+    "lang_opt_2": "Português",
+    "lang_opt_3": "Francês",
+    "menu": {
+        "logo": "Desenvolvedora Frontend",
+        "homepage": "Inicial",
+        "projects": "Projetos",
+        "about": "Sobre mim",
+        "config": "Configuração",
+        "theme_config": "Trocar Tema",
+        "primary_btn": "Fale comigo"
+    },
+    "contact": {
+        "sendMessage": "Me envie uma mensagem agora"
+    },
+    "initial_box": {
+        "h1": "Luci Lua",
+        "h2": "Desenvolvedora front-end",
+        "about_me": "Sobre mim",
+        "p": "Sou uma desenvolvedora web focada em frontend, também tenho conhecimento em backend. Adoro tecnologia e estudo continuamente, buscando sempre aprender novidades. Sou formada em Artes e Design pela UFJF e possuo graduação em Cinema e Audiovisual pela mesma instituição.",
+        "primary_btn": "Fale comigo",
+        "secondary_btn": "Conheça mais"
+    },
+    "projects": {
+        "discovery": "Descubra mais projetos",
+        "h1": "Projetos",
+        "h2": "Alguns projetos em destaque",
+        "cards": {
+            "title": "Hidrofobia",
+            "primary_btn": "Sobre",
+            "secundary_btn": "Acessar"
+        },
+        "primary_btn": "Acessar",
+        "hidrofobia_modal": {
+            "title": "Hidrofobia",
+            "about": "Hidrofobia é um site desenvolvido com o propósito de promover o filme que eu produzi e dirigi. Não apenas para publicidade, mas como meio de arrecadar fundos para a produção do filme através de um formulário personalizado e exclusivo integrado ao Google Forms. Neste projeto, há também uma galeria de fotos dos bastidores dos dias de gravação."
+        },
+        "somuuh_modal": {
+            "title": "Somuuh",
+            "about": "Somuuh é um projeto de rede social focado em autenticação e design. Explorando referências como Instagram, Twitter e Spotify."
+        },
+        "notein_modal": {
+            "title": "NoteIn",
+            "about": "NoteIn é um projeto no qual me concentrei em trabalhar com autenticação com um banco de dados não real (mongoDB)."
+        },
+        "pokedex_modal": {
+            "title": "Pokédex",
+            "about": "Pokédex é um projeto que tem como objetivo reunir todos os Pokémon em um só lugar, com suas informações, como habilidades (em barras) e imagens."
+        },
+        "todo_modal": {
+            "title": "ToDo",
+            "about": "ToDo é uma aplicação web que busca armazenar itens definidos pelo usuário no navegador, marcá-los como concluídos ou até mesmo removê-los. Foram utilizados React, Next.js, LocalStorage, TypeScript e SASS."
+        },
+        "compare_modal": {
+            "title": "Comparar",
+            "about": "Comparar é uma aplicação que compara uma lista de seguidores de um usuário no GitHub com a lista de pessoas que esse usuário segue, gerando outras duas listas: a de usuários que o usuário atual segue, mas que não o seguem de volta, e a de usuários que o usuário atual não segue, mas o seguem. Gerando um link para o perfil de cada usuário nessas duas listas, permitindo seguir ou deixar de seguir os usuários."
+        }
+    },
+    "skills": {
+        "h1": "Habilidades",
+        "h2": "Habilidades Técnicas",
+        "others": "Outros",
+        "main": "Principal"
+    },
+    "about": {
+        "h1": "Sobre mim",
+        "h2": "um pouco sobre mim",
+        "about_1": "Sou uma pessoa que ama tecnologia e busco sempre aprender as mais novas ferramentas para dar forma às minhas ideias, tentando atender necessidades pessoais e de outras pessoas. Sou formada em Artes e Design pela Universidade Federal de Juiz de Fora e em Cinema e Audiovisual, também na UFJF.",
+        "about_2": "Minha formação me proporciona, além de todo o conhecimento artístico e teórico nessas áreas, um repertório rico em ideias inovadoras e interativas, que trazem para os meus projetos uma complexidade conceitual e teórica que, somada ao processo de desenvolvimento, traz algumas camadas a mais no meu trabalho, fazendo com que o que produzo seja realmente único e exclusivo.",
+        "about_3": "Comecei com programação em 2019, e desde então estou em aprendizado constante sobre tudo que me atiça a curiosidade. Comecei desenvolvendo sites simples com HTML, CSS e JavaScript e hoje já consigo fazer algo mais complexo utilizando React, Next.js, Typescript e demais ferramentas para frontend.",
+        "about_4": "Apesar de me focar bastante em frontend, também consigo desenvolver CRUDS com Node e Express e manipular dados em banco de dados (MySql e MongoDB). Alguns projetos meus são experimentos onde eu integro o frontend com o backend, buscando entender mais os conceitos e as boas práticas."
+    },
+    "education": {
+        "h1": "Educação",
+        "download_cv": "Baixar CV",
+        "view_cv": "Visualizar CV",
+        "box_course_webModerno": {
+            "id": "webModerno",
+            "title": "Curso Completo de Desenvolvimento Web Moderno - Udemy",
+            "date": "2021-2023",
+            "description": "Neste curso, aprendi sobre Javascript, Conceitos Web, HTML e CSS, Ajax Webpack, jQuery, Bootstrap, React, VueJs, Electron, Angular 9, Banco de Dados (relacional e NoSQL) e Express.",
+            "credentials": "Certificado",
+            "duration": "97 horas"
+        },
+        "box_course_biArts": {
+            "id": "biArts",
+            "title": "Bacharelado Interdisciplinar em Artes e Design | UFJF",
+            "date": "2019-2022",
+            "description": "Graduada em Artes e Design pela UFJF, tive contato com as áreas de Design, Cinema e Audiovisual, Moda e Artes Visuais. Durante esse período, absorvi conteúdo relacionado às artes e suas reverberações.",
+            "credentials": "Diploma Universitário",
+            "duration": "3 anos"
+        },
+        "box_course_biCinema": {
+            "id": "biCinema",
+            "title": "Bacharelado em Cinema e Audiovisual | UFJF",
+            "date": "2022-2024",
+            "description": "Como estudante de Cinema e Audiovisual, tenho conhecimento em roteiro, montagem e edição (de vídeos/filmes), teoria do cinema, entre outros. Já produzi alguns conteúdos audiovisuais e filmes. Dirigi e produzi o curta metragem Hidrofobia.",
+            "credentials": "Diploma Universitário",
+            "duration": "2 anos"
+        }
+    }
+}

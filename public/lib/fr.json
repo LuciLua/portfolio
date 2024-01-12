@@ -1,0 +1,104 @@
+{
+    "current_lang": "Français",
+    "lang_opt_1": "Anglais",
+    "lang_opt_2": "Portugais",
+    "lang_opt_3": "Français",
+    "menu": {
+        "logo": "Développeur Frontend",
+        "homepage": "Maison",
+        "projects": "Projets",
+        "about": "Sur moi",
+        "config": "Paramètres",
+        "theme_config": "Basculer le Thème",
+        "primary_btn": "Parle moi"
+    },
+    "contact": {
+        "sendMessage": "Envoyez-moi un message maintenant"
+    },
+    "initial_box": {
+        "h1": "Luci Lua",
+        "h2": "Développeur frontend",
+        "about_me": "sur moi",
+        "p": "Je suis un développeur web axé sur le frontend, j'ai également des connaissances en backend. J'aime la technologie et j'étudie continuellement, cherchant toujours à apprendre les nouveautés. Je suis diplômée en Arts et Design de l'UFJF et j'ai une licence en Cinéma et Audiovisuel de la même institution.",
+        "primary_btn": "Parle moi",
+        "secondary_btn": "Trouve-le"
+    },
+    "projects": {
+        "discovery": "Découverte plus de projets",
+        "h1": "Projets",
+        "h2": "Quelques projets mis en avant",
+        "cards": {
+            "title": "Hidrofobia",
+            "primary_btn": "À propos",
+            "secundary_btn": "Accéder"
+        },
+        "primary_btn": "Accès",
+        "hidrofobia_modal": {
+            "title": "Hydrophobie",
+            "about": "Hydrophobie est un site web développé dans le but de promouvoir le film que j'ai produit et réalisé. Non seulement pour la publicité, mais aussi comme moyen de collecte de fonds pour la production du film à travers un formulaire personnalisé et exclusif intégré à Google Forms. Dans ce projet, il y a également une galerie de photos des coulisses des jours de tournage."
+        },
+        "somuuh_modal": {
+            "title": "Somuuh",
+            "about": "Somuuh est un projet de réseau social axé sur l'authentification et le design. En explorant des références telles qu'Instagram, Twitter et Spotify."
+        },
+        "notein_modal": {
+            "title": "NoteIn",
+            "about": "NoteIn est un projet sur lequel j'ai travaillé avec l'authentification et une base de données non réelle (mongoDB)."
+        },
+        "pokedex_modal": {
+            "title": "Pokédex",
+            "about": "Pokédex est un projet qui vise à regrouper tous les Pokémon en un seul endroit, avec leurs informations telles que les capacités (en barres) et les images."
+        },
+        "todo_modal": {
+            "title": "ToDo",
+            "about": "ToDo est une application web qui cherche à stocker des éléments définis par l'utilisateur dans le navigateur, les marquer comme terminés ou même les supprimer. React, Next.js, LocalStorage, TypeScript et SASS ont été utilisés."
+        },
+        "compare_modal": {
+            "title": "Comparer",
+            "about": "Comparer est une application qui compare une liste d'abonnés d'un utilisateur sur GitHub avec la liste des personnes que cet utilisateur suit, générant deux autres listes : celle des utilisateurs que l'utilisateur actuel suit mais qui ne le suivent pas en retour, et celle des utilisateurs que l'utilisateur actuel ne suit pas mais qui le suivent. Générant un lien pour chaque profil d'utilisateur dans ces deux listes, permettant de suivre ou de ne pas suivre les utilisateurs."
+        }
+    },
+    "skills": {
+        "h1": "Compétences",
+        "h2": "Capacités techniques",
+        "others": "Autres",
+        "main": "Principal"
+    },
+    "about": {
+        "h1": "Sur moi",
+        "h2": "un peu de moi",
+        "about_1": "Je suis une personne passionnée par la technologie et je cherche toujours à apprendre les nouvelles technologies pour donner forme à mes idées, en essayant de répondre aux besoins personnels et des autres. Je suis diplômée en Arts et Design de l'Université Fédérale de Juiz de Fora et en Cinéma et Audiovisuel, également à l'UFJF.",
+        "about_2": "Ma formation me procure, en plus de toutes les connaissances artistiques et théoriques dans ces domaines, un répertoire riche en idées novatrices et interactives, apportant à mes projets une complexité conceptuelle et théorique qui, ajoutée au processus de développement, apporte quelques couches supplémentaires à mon travail, le rendant vraiment unique et exclusif.",
+        "about_3": "J'ai commencé à programmer en 2019, et depuis, je suis en apprentissage constant sur tout ce qui suscite ma curiosité. J'ai commencé par développer des sites simples avec HTML, CSS et JavaScript et aujourd'hui, je suis capable de créer quelque chose de plus complexe en utilisant React, Next.js, Typescript et d'autres outils pour le frontend.",
+        "about_4": "Bien que je me concentre principalement sur le frontend, je suis également capable de développer des CRUD avec Node et Express et de manipuler des données dans des bases de données (MySql et MongoDB). Certains de mes projets sont des expérimentations où j'intègre le frontend avec le backend, cherchant à comprendre davantage les concepts et les bonnes pratiques."
+    },
+    "education": {
+        "h1": "Éducation",
+        "download_cv": "Télécharger CV",
+        "view_cv": "Voir CV",
+        "box_course_webModerno": {
+            "id": "webModerno",
+            "title": "Cours complet sur le développement web moderne - Udemy",
+            "date": "2021-2023",
+            "description": "Dans ce cours, j'ai appris sur Javascript, les concepts Web, HTML et CSS, Ajax Webpack, jQuery, Bootstrap, React, VueJs, Electron, Angular 9, la base de données (relationnelle et NoSQL) et Express.",
+            "credentials": "Certificats",
+            "duration": "97 heures"
+        },
+        "box_course_biArts": {
+            "id": "biArts",
+            "title": "Diplôme de baccalauréat interdisciplinaire en arts et design | UFJF",
+            "date": "2019-2022",
+            "description": "Diplômé en arts et design de l'UFJF, j'ai eu des contacts avec les domaines du design, du cinéma et de l'audiovisuel, de la mode et des arts visuels. Pendant cette période, j'ai assimilé du contenu lié aux arts et à leurs répercussions.",
+            "credentials": "Diplôme universitaire",
+            "duration": "3 ans"
+        },
+        "box_course_biCinema": {
+            "id": "biCinema",
+            "title": "Diplôme de baccalauréat en cinéma et audiovisuel | UFJF",
+            "date": "2022-2024",
+            "description": "En tant qu'étudiant en cinéma et audiovisuel, j'ai des connaissances en scénarisation, montage et édition (de vidéos/films), théorie du cinéma, entre autres. J'ai déjà produit du contenu audiovisuel et des films. J'ai réalisé et produit le court métrage Hidrofobia.",
+            "credentials": "Diplôme universitaire",
+            "duration": "2 ans"
+        }
+    }
+}

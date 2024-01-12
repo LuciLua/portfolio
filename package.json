@@ -1,47 +1,35 @@
 {
   "name": "portfolio",
   "version": "1.0.0",
-  "description": "Repositório do meu portfólio",
-  "main": "app.js",
+  "main": "index.js",
+  "repository": "git@github.com:LuciLua/portfolio.git",
+  "author": "Luci Lua <luci.lua81@gmail.com>",
+  "license": "MIT",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "next",
     "start": "next start",
-    "build": "next build"
+    "build": "next build",
+    "prettier": "prettier ./src --check",
+    "format": "prettier ./src --check --write"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/LuciLua/portfolio.git"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/LuciLua/portfolio/issues"
-  },
-  "homepage": "https://github.com/LuciLua/portfolio#readme",
   "dependencies": {
-    "@ctrl/react-adsense": "^1.6.1",
-    "@types/typescript": "^2.0.0",
-    "next": "12.2.5",
-    "nodemon": "^2.0.19",
-    "npm-check-updates": "^16.0.5",
+    "js-cookie": "^3.0.5",
+    "next": "^14.0.4",
+    "next-intl": "^3.4.1",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "react-icons": "^4.4.0",
-    "sass": "^1.54.4",
-    "sharp": "^0.30.7"
+    "react-dom": "^18.2.0"
   },
   "devDependencies": {
-    "@types/node": "^18.7.3",
-    "@types/react": "^18.0.17",
-    "eslint": "^8.33.0",
-    "eslint-config-next": "^13.1.6",
-    "json-schema": ">=0.4.0",
-    "prettier": "^2.7.1",
-    "typescript": "^4.7.4"
-  },
-  "resolutions": {
-    "minimist": "1.2.6"
+    "@types/node": "^20.10.5",
+    "@types/react": "^18.2.46",
+    "autoprefixer": "^10.4.16",
+    "framer-motion": "^10.16.16",
+    "postcss": "^8.4.32",
+    "prettier": "^3.1.1",
+    "prettier-plugin-tailwindcss": "^0.5.10",
+    "react-icons": "^4.12.0",
+    "react-toastify": "^9.1.3",
+    "tailwindcss": "^3.4.0",
+    "typescript": "^5.3.3"
   }
 }
