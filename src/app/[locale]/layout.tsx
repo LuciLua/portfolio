@@ -6,6 +6,7 @@ import { CurriculumModal } from "../../components/CurriculumModal"
 import { notFound } from "next/navigation"
 import { Metadata } from "next"
 import Menu from "../../components/Menu"
+import { Footer } from "../../components/Footer"
 
 const montserrat = Montserrat({
   subsets: ["latin-ext"],
@@ -19,7 +20,6 @@ export const metadata: Metadata = {
   description: 'Frontend Developer Portfólio - Luci Lua',
   authors: [{ name: 'Lúcia Maria Rosa Guelber', url: 'https://lucilua.com.br/' }, { name: 'Luci Lua', url: 'https://lucilua.com.br/' }, { name: 'LuciLua', url: 'https://lucilua.com.br/' }],
   creator: 'LuciLua',
-  twitter: { site: 'https://twitter.com/l4dev', creator: 'LuciLua', description: 'My Twitter' },
   keywords: ['LuciLua, frontend, developer, backend, web developer, desenvolvimento de sites, portfolio, Luci Lua'],
   alternates: {
     canonical: 'https://lucilua.com.br/',
@@ -61,6 +61,7 @@ export default function root_layout({ children, params }) {
           {children}
           <ProjectModal />
           <CurriculumModal />
+          <Footer />
         </Providers>
       </body>
     </html>
