@@ -12,7 +12,11 @@ export function Form() {
 
   return (
     <div className="w-full max-w-[900px] p-10">
-      <h1 className="bg-[#000] text-[#fff] px-8 py-2">Contate-me</h1>
+      <h1 className="bg-[#000] text-[#fff] px-8 py-2">
+        Me mande uma mensagem rápida
+      </h1>
+      <h2>ou faça um orçamento prévio mais detalhado com um</h2>
+      <button>simples formulário</button>
       <form
         ref={formRef}
         className="flex flex-col max-w-[900px] min-h-[300px] h-fit border-[1px] rounded-[12px] mt-[20px] inset-3 shadow-[inset_0_0_12px_#0004] p-[30px] gap-[30px]"

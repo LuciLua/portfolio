@@ -8,7 +8,6 @@ import Link from "next/link"
 import { ItemMenuDropdown } from "./ItemMenuDropdown"
 import { BiMenu } from "react-icons/bi"
 
-
 export default function Menu() {
   const { menuStateColor } = useMenuStateColor()
   const { translations, currentPathname, lang } = useTranslation()
@@ -25,8 +24,9 @@ export default function Menu() {
 
   return (
     <div
-      className={`min-w-[100vw] w-full h-[70px] backdrop-blur-[12px] flex justify-center fixed z-40 transition-[1s] ${menuStateColor ? hiddenMenuStateColor() : visibleMenuStateColor()
-        }`}
+      className={`min-w-[100vw] w-full h-[70px] backdrop-blur-[12px] flex justify-center fixed z-40 transition-[1s] ${
+        menuStateColor ? hiddenMenuStateColor() : visibleMenuStateColor()
+      }`}
     >
       <div className="list-none flex justify-between w-full max-w-[1300px] h-full  items-center px-[10px]">
         <ul className="flex h-full justify-center items-center gap-5">
@@ -36,7 +36,8 @@ export default function Menu() {
               title="logo: back to home"
               aria-label="logo: back to home"
               href={`/${lang}#`}
-              className="text-[12px] font-medium hover:underline">
+              className="text-[12px] font-medium hover:underline"
+            >
               {translations.menu.logo}
             </Link>
           </li>
@@ -48,7 +49,8 @@ export default function Menu() {
                 title="back to home"
                 aria-label="back to home"
                 href={`/${lang}/`}
-                className="hover:underline" >
+                className="hover:underline"
+              >
                 {translations.menu.homepage}
               </Link>
             </li>
@@ -57,7 +59,8 @@ export default function Menu() {
                 title="projects"
                 aria-label="projects"
                 href={`/${lang}/projects`}
-                className="hover:underline">
+                className="hover:underline"
+              >
                 {translations.menu.projects}
               </Link>
             </li>
@@ -66,7 +69,8 @@ export default function Menu() {
                 title="about"
                 aria-label="about"
                 href={`/${lang}/about`}
-                className="hover:underline">
+                className="hover:underline"
+              >
                 {translations.menu.about}
               </Link>
             </li>
@@ -104,7 +108,8 @@ export default function Menu() {
                   <Link
                     title="contact"
                     href={`/${lang}/#contact`}
-                    aria-label="contact">
+                    aria-label="contact"
+                  >
                     {translations.menu.primary_btn}
                   </Link>
                 </li>

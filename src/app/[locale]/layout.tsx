@@ -16,27 +16,33 @@ const montserrat = Montserrat({
 const locales = ["en", "pt", "fr"]
 
 export const metadata: Metadata = {
-  title: 'LuciLua Portfólio',
-  description: 'Frontend Developer Portfólio - Luci Lua',
-  authors: [{ name: 'Lúcia Maria Rosa Guelber', url: 'https://lucilua.com.br/' }, { name: 'Luci Lua', url: 'https://lucilua.com.br/' }, { name: 'LuciLua', url: 'https://lucilua.com.br/' }],
-  creator: 'LuciLua',
-  keywords: ['LuciLua, frontend, developer, backend, web developer, desenvolvimento de sites, portfolio, Luci Lua'],
+  title: "LuciLua Portfólio",
+  description: "Frontend Developer Portfólio - Luci Lua",
+  authors: [
+    { name: "Lúcia Maria Rosa Guelber", url: "https://lucilua.com.br/" },
+    { name: "Luci Lua", url: "https://lucilua.com.br/" },
+    { name: "LuciLua", url: "https://lucilua.com.br/" },
+  ],
+  creator: "LuciLua",
+  keywords: [
+    "LuciLua, frontend, developer, backend, web developer, desenvolvimento de sites, portfolio, Luci Lua",
+  ],
   alternates: {
-    canonical: 'https://lucilua.com.br/',
+    canonical: "https://lucilua.com.br/",
     languages: {
-      'en-US': 'https://lucilua.com.br/en',
-      'pt-BR': 'https://lucilua.com.br/pt',
-      'fr-FR': 'https://lucilua.com.br/fr',
-    }
+      "en-US": "https://lucilua.com.br/en",
+      "pt-BR": "https://lucilua.com.br/pt",
+      "fr-FR": "https://lucilua.com.br/fr",
+    },
   },
   category: "technology",
   icons: {
-    icon: '/assets/ico.ico'
+    icon: "/assets/ico.ico",
   },
   other: {
     email: "luci.lua81@gmail.com",
-    name: "Lúcia Maria Rosa Guelber"
-  }
+    name: "Lúcia Maria Rosa Guelber",
+  },
 }
 
 export default function root_layout({ children, params }) {

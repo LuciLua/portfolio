@@ -8,7 +8,6 @@ import { GoGear } from "react-icons/go"
 import { useState } from "react"
 import { TfiAngleDown } from "react-icons/tfi"
 
-
 type ItemMenuDropdownTypes = {
   label?: string
   type?: "config" | "lang"
@@ -20,23 +19,26 @@ export function LanguageChoice() {
   return (
     <div className="w-full" role="none">
       <BtnToggleLocale
-        className={`w-full px-4 py-2 text-sm  hover:bg-[var(--bg-dropdown-hover)] hover:text-[var(--text-dropdown-hover)] ${translations.current_lang === translations.lang_opt_1 &&
+        className={`w-full px-4 py-2 text-sm  hover:bg-[var(--bg-dropdown-hover)] hover:text-[var(--text-dropdown-hover)] ${
+          translations.current_lang === translations.lang_opt_1 &&
           "bg-[var(--bg-dropdown-active)] text-[var(--text-dropdown)]"
-          }`}
+        }`}
         lang={"en"}
         lang_label={translations.lang_opt_1}
       />
       <BtnToggleLocale
-        className={`w-full px-4 py-2 text-sm hover:bg-[var(--bg-dropdown-hover)] hover:text-[var(--text-dropdown-hover)] ${translations.current_lang === translations.lang_opt_2 &&
+        className={`w-full px-4 py-2 text-sm hover:bg-[var(--bg-dropdown-hover)] hover:text-[var(--text-dropdown-hover)] ${
+          translations.current_lang === translations.lang_opt_2 &&
           "bg-[var(--bg-dropdown-active)] text-[var(--text-dropdown)]"
-          }`}
+        }`}
         lang={"pt"}
         lang_label={translations.lang_opt_2}
       />
       <BtnToggleLocale
-        className={`w-full px-4 py-2 text-sm hover:bg-[var(--bg-dropdown-hover)] hover:text-[var(--text-dropdown-hover)] ${translations.current_lang === translations.lang_opt_3 &&
+        className={`w-full px-4 py-2 text-sm hover:bg-[var(--bg-dropdown-hover)] hover:text-[var(--text-dropdown-hover)] ${
+          translations.current_lang === translations.lang_opt_3 &&
           "bg-[var(--bg-dropdown-active)] text-[var(--text-dropdown)]"
-          }`}
+        }`}
         lang={"fr"}
         lang_label={translations.lang_opt_3}
       />
