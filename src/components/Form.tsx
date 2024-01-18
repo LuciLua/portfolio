@@ -7,7 +7,7 @@ import { animate, motion } from "framer-motion"
 import { FaRegBuilding } from "react-icons/fa"
 import { CgWebsite } from "react-icons/cg"
 import { BsPostcardHeart } from "react-icons/bs"
-import { RiMessageLine } from "react-icons/ri";
+import { RiMessageLine } from "react-icons/ri"
 
 export function Form() {
   const formUsername = useRef(null)
@@ -17,27 +17,25 @@ export function Form() {
   const formBtnSend = useRef(null)
 
   const [simpleFormOpen, setSimpleFormOpen] = useState<boolean>(true)
-  const carouselRef = useRef<HTMLDivElement | null>(null);
-  const [width, setWidth] = useState(0);
+  const carouselRef = useRef<HTMLDivElement | null>(null)
+  const [width, setWidth] = useState(0)
 
   useEffect(() => {
     function updateStateOnResize() {
-      if (!carouselRef.current) return;
-      const { scrollWidth, offsetWidth } = carouselRef.current;
-      setWidth(() => scrollWidth - offsetWidth);
+      if (!carouselRef.current) return
+      const { scrollWidth, offsetWidth } = carouselRef.current
+      setWidth(() => scrollWidth - offsetWidth)
     }
 
-    updateStateOnResize();
+    updateStateOnResize()
 
-    window.addEventListener("resize", updateStateOnResize);
-    return () => window.removeEventListener("resize", updateStateOnResize);
-  }, []);
+    window.addEventListener("resize", updateStateOnResize)
+    return () => window.removeEventListener("resize", updateStateOnResize)
+  }, [])
 
   return (
     <div className="w-full max-w-[1300px] flex flex-col justify-center items-center">
-
       <div className="p-5 w-full h-full flex flex-col items-center justify-center">
-
         <div className="flex flex-col max-w-[350px] xl:max-w-none text-center">
           <h1 className="text-[#121212] text-[2em] font-[600] xl:text-[30px]">
             Me mande uma mensagem rápida
@@ -67,7 +65,6 @@ export function Form() {
         </div>
       </div>
 
-
       {simpleFormOpen ? (
         <motion.form
           initial={{ y: -50, opacity: 0 }}
@@ -78,7 +75,9 @@ export function Form() {
           action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSfDbayAADAu06mZo2VSV5nJvENCnEJlqOVhkxL9mE2D8yNXEg/formResponse"
           target="iframeForm"
         >
-          <h1 className="font-[600] text-[20px] flex gap-2 justify-center items-center w-fit"><RiMessageLine /> Mensagem Rápida</h1>
+          <h1 className="font-[600] text-[20px] flex gap-2 justify-center items-center w-fit">
+            <RiMessageLine /> Mensagem Rápida
+          </h1>
           <div className="flex flex-col w-full relative mt-[20px]">
             <input
               ref={formUsername}
@@ -165,7 +164,9 @@ export function Form() {
             animate={{ opacity: 1 }}
             transition={{ duration: 0.4 }}
             whileTap={{ cursor: "grabbing" }}
-            ref={carouselRef} className=" cursor-grab overflow-hidden flex justify-center w-full gap-10">
+            ref={carouselRef}
+            className=" cursor-grab overflow-hidden flex justify-center w-full gap-10"
+          >
             <motion.div
               key={width}
               drag="x"
@@ -248,7 +249,6 @@ export function Form() {
               </motion.div>
               {/* end caroussel */}
             </motion.div>
-
           </motion.div>
 
           <button
