@@ -3,10 +3,10 @@
 import { useRef, useState } from "react"
 import { toast } from "react-toastify"
 import { AiOutlineArrowRight } from "react-icons/ai"
-import { animate, motion } from 'framer-motion'
-import { FaRegBuilding } from "react-icons/fa";
-import { CgWebsite } from "react-icons/cg";
-import { BsPostcardHeart } from "react-icons/bs";
+import { animate, motion } from "framer-motion"
+import { FaRegBuilding } from "react-icons/fa"
+import { CgWebsite } from "react-icons/cg"
+import { BsPostcardHeart } from "react-icons/bs"
 
 export function Form() {
   const formUsername = useRef(null)
@@ -22,14 +22,29 @@ export function Form() {
       <h1 className="text-[#121212] px-8 py-2 text-[35px] font-[600]">
         Me mande uma mensagem rápida
       </h1>
-      <h2 className="text-[15px]">ou faça um orçamento prévio mais detalhado com um simples formulário</h2>
+      <h2 className="text-[15px]">
+        ou faça um orçamento prévio mais detalhado com um simples formulário
+      </h2>
       <div className="flex gap-4 py-[30px]  w-full justify-center items-center">
-        <button onClick={() => { setSimpleFormOpen(false); toast("Ainda não disponível", { type: "warning" }) }} className="h-full w-fit bg-[var(--text-h1)] text-[var(--bg-default)] text-[14px] p-[10px] font-[600] rounded-[3px] text-nowrap xl:flex hover:bg-[var(--bg-dropdown-hover)] hover:text-[var(--text-dropdown-hover)]" >Fazer orçamento</button>
-        <button onClick={() => setSimpleFormOpen(true)} className="underline flex gap-3 p-[10px] text-[14px] justify-center items-center group"><AiOutlineArrowRight className="group-hover:delay-75 group-hover:translate-x-1 group-hover:duration-1 transition-[1s]" /> Mensagem Rápida</button>
+        <button
+          onClick={() => {
+            setSimpleFormOpen(false)
+            toast("Ainda não disponível", { type: "warning" })
+          }}
+          className="h-full w-fit bg-[var(--text-h1)] text-[var(--bg-default)] text-[14px] p-[10px] font-[600] rounded-[3px] text-nowrap xl:flex hover:bg-[var(--bg-dropdown-hover)] hover:text-[var(--text-dropdown-hover)]"
+        >
+          Fazer orçamento
+        </button>
+        <button
+          onClick={() => setSimpleFormOpen(true)}
+          className="underline flex gap-3 p-[10px] text-[14px] justify-center items-center group"
+        >
+          <AiOutlineArrowRight className="group-hover:delay-75 group-hover:translate-x-1 group-hover:duration-1 transition-[1s]" />{" "}
+          Mensagem Rápida
+        </button>
       </div>
 
-
-      {simpleFormOpen ?
+      {simpleFormOpen ? (
         <motion.form
           initial={{ y: -50, opacity: 0 }}
           exit={{ y: 0, opacity: 1 }}
@@ -118,42 +133,95 @@ export function Form() {
             Send message
           </button>
         </motion.form>
-        :
+      ) : (
         <div className="flex flex-col justify-center items-center min-h-[460px] w-full h-fit gap-4">
           <h1 className="pb-5">Mais pedidos</h1>
           <div className="flex justify-center w-full gap-10 flex-wrap">
-
             <div className="h-[285px] w-[230px] bg-gradient-to-t to-[#fff] hover:border-[#465d88] transition-[0.3s] from-[#d9e0f5] border-[1px] border-[#f4f4f4] rounded-[12px] flex justify-center items-center flex-col">
-              <span><FaRegBuilding className="text-[35px] text-[#121212]" /></span>
+              <span>
+                <FaRegBuilding className="text-[35px] text-[#121212]" />
+              </span>
               <h1 className="text-[23px] font-[500]">Institucional</h1>
               <div className="flex  flex-col pt-[30px] gap-3">
-                <button onClick={() => { toast("Ainda não disponível", { type: "warning" }) }} className="underline">Saiba mais</button>
-                <button onClick={() => { toast("Ainda não disponível", { type: "warning" }) }} className="bg-[#090e14]  text-white rounded-[30px] px-5 py-1">Quero esse</button>
+                <button
+                  onClick={() => {
+                    toast("Ainda não disponível", { type: "warning" })
+                  }}
+                  className="underline"
+                >
+                  Saiba mais
+                </button>
+                <button
+                  onClick={() => {
+                    toast("Ainda não disponível", { type: "warning" })
+                  }}
+                  className="bg-[#090e14]  text-white rounded-[30px] px-5 py-1"
+                >
+                  Quero esse
+                </button>
               </div>
             </div>
 
             <div className="h-[300px] w-[250px] bg-gradient-to-t to-[#fff] hover:border-[#465d88] transition-[0.3s] from-[#d9e0f5] border-[1px] border-[#f4f4f4] rounded-[12px] flex justify-center items-center flex-col">
-              <span><CgWebsite className="text-[35px] text-[#121212]" /></span>
+              <span>
+                <CgWebsite className="text-[35px] text-[#121212]" />
+              </span>
               <h1 className="text-[23px] font-[500]">Landing Page</h1>
               <div className="flex  flex-col pt-[30px] gap-3">
-                <button onClick={() => { toast("Ainda não disponível", { type: "warning" }) }} className="underline">Saiba mais</button>
-                <button onClick={() => { toast("Ainda não disponível", { type: "warning" }) }} className="bg-[#090e14]  text-white rounded-[30px] px-5 py-1">Quero esse</button>
+                <button
+                  onClick={() => {
+                    toast("Ainda não disponível", { type: "warning" })
+                  }}
+                  className="underline"
+                >
+                  Saiba mais
+                </button>
+                <button
+                  onClick={() => {
+                    toast("Ainda não disponível", { type: "warning" })
+                  }}
+                  className="bg-[#090e14]  text-white rounded-[30px] px-5 py-1"
+                >
+                  Quero esse
+                </button>
               </div>
             </div>
 
             <div className="h-[285px] w-[230px] bg-gradient-to-t to-[#fff] hover:border-[#465d88] transition-[0.3s] from-[#d9e0f5] border-[1px] border-[#f4f4f4] rounded-[12px] flex justify-center items-center flex-col">
-              <span><BsPostcardHeart className="text-[35px] text-[#121212]" /></span>
+              <span>
+                <BsPostcardHeart className="text-[35px] text-[#121212]" />
+              </span>
               <h1 className="text-[23px] font-[500]">Portfólio</h1>
               <div className="flex  flex-col pt-[30px] gap-3">
-                <button onClick={() => { toast("Ainda não disponível", { type: "warning" }) }} className="underline">Saiba mais</button>
-                <button onClick={() => { toast("Ainda não disponível", { type: "warning" }) }} className="bg-[#090e14]  text-white rounded-[30px] px-5 py-1">Quero esse</button>
+                <button
+                  onClick={() => {
+                    toast("Ainda não disponível", { type: "warning" })
+                  }}
+                  className="underline"
+                >
+                  Saiba mais
+                </button>
+                <button
+                  onClick={() => {
+                    toast("Ainda não disponível", { type: "warning" })
+                  }}
+                  className="bg-[#090e14]  text-white rounded-[30px] px-5 py-1"
+                >
+                  Quero esse
+                </button>
               </div>
             </div>
-
           </div>
-          <button className="underline flex gap-3 p-[10px] text-[14px] justify-center items-center group " onClick={() => { toast("Ainda não disponível", { type: "warning" }) }}>Quero outro tipo de site</button>
+          <button
+            className="underline flex gap-3 p-[10px] text-[14px] justify-center items-center group "
+            onClick={() => {
+              toast("Ainda não disponível", { type: "warning" })
+            }}
+          >
+            Quero outro tipo de site
+          </button>
         </div>
-      }
+      )}
       <iframe
         src="https://docs.google.com/forms/u/0/d/e/1FAIpQLSfDbayAADAu06mZo2VSV5nJvENCnEJlqOVhkxL9mE2D8yNXEg/formResponse"
         name="iframeForm"
