@@ -7,7 +7,7 @@ export function Footer() {
   const { lang, translations } = useTranslation()
 
   return (
-    <footer className="w-full min-h-[80px] h-fit border-t-[1px] border-t-[var(--lines_contrast)] flex justify-center items-center">
+    <footer className="bg-[var(--bg-default)] text-[--text-default] w-full min-h-fit border-t-[1px] border-t-[var(--lines_contrast)] flex justify-center items-center bottom-0 relative xl:h-[140px]">
       <div className="flex flex-col items-center w-full max-w-[1300px] h-fit">
         <div className="flex py-4 w-full justify-between p-5">
           <ul className="flex gap-4 xl:flex-row flex-col">

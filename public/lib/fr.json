@@ -1,7 +1,7 @@
 {
     "current_lang": "Français",
-    "lang_opt_1": "Anglais",
-    "lang_opt_2": "Portugais",
+    "lang_opt_1": "English",
+    "lang_opt_2": "Português",
     "lang_opt_3": "Français",
     "menu": {
         "logo": "Développeur Frontend",
@@ -9,6 +9,9 @@
         "projects": "Projets",
         "about": "Sur moi",
         "config": "Paramètres",
+        "services": "prestations de service",
+        "budget": "Budget",
+        "plans": "des plans",
         "theme_config": "Basculer le Thème",
         "primary_btn": "Parle moi"
     },

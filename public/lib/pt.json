@@ -1,14 +1,17 @@
 {
     "current_lang": "Português",
-    "lang_opt_1": "Inglês",
+    "lang_opt_1": "English",
     "lang_opt_2": "Português",
-    "lang_opt_3": "Francês",
+    "lang_opt_3": "Français",
     "menu": {
         "logo": "Desenvolvedora Frontend",
         "homepage": "Inicial",
         "projects": "Projetos",
         "about": "Sobre mim",
         "config": "Configuração",
+        "services": "Serviços",
+        "budget": "Orçamento",
+        "plans": "Planos",
         "theme_config": "Trocar Tema",
         "primary_btn": "Fale comigo"
     },

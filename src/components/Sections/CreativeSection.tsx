@@ -2,19 +2,17 @@
 
 import { useEffect, useRef } from "react"
 import {
-  AnimatePresence,
   motion,
   useInView,
   useScroll,
   useTransform,
 } from "framer-motion"
-import { useMenuStateColor } from "../hooks/useMenuStateColor"
-import { LazyMotion, m } from "framer-motion"
-import { domAnimation } from "framer-motion"
+import { useMenuStateColor } from "../../hooks/useMenuStateColor"
 
 import { useSpring } from "framer-motion"
+import { HomepageWrap } from "../Wrap/HomepageWrap"
 
-export function HorizontalScrolling() {
+export function CreativeSection() {
   const targetRef = useRef<HTMLDivElement | null>(null)
   const { scrollYProgress } = useScroll({
     target: targetRef,
@@ -34,7 +32,6 @@ export function HorizontalScrolling() {
   const isInView = useInView(targetRef, { margin: "-50%" })
 
   const xs = useSpring(0)
-  const spring = useSpring(xs, { stiffness: 1000, damping: 10 })
 
   const { toggleMenuStateColor, menuStateColor } = useMenuStateColor()
 
@@ -47,7 +44,7 @@ export function HorizontalScrolling() {
   }, [isInView])
 
   return (
-    <div className="mx-auto w-full  py-[20px] px-[10px] bg-[#000] flex justify-center items-center overflow-hidden h-fit relative">
+    <HomepageWrap type="full" classNames="bg-[#000] overflow-hidden">
       <div
         ref={targetRef}
         className="h-[150vh] relative w-full max-w-[1300px] flex justify-center items-center"
@@ -96,6 +93,6 @@ export function HorizontalScrolling() {
           <p className="font-[500]">LuciLua@2024</p>
         </motion.div>
       </div>
-    </div>
+    </HomepageWrap>
   )
 }

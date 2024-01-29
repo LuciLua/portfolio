@@ -1,9 +1,9 @@
 "use client"
 
 import { useState } from "react"
-import { useMenuStateColor } from "../hooks/useMenuStateColor"
-import { useTheme } from "../hooks/useTheme"
-import { useTranslation } from "../hooks/useTranslation"
+import { useMenuStateColor } from "../../hooks/useMenuStateColor"
+import { useTheme } from "../../hooks/useTheme"
+import { useTranslation } from "../../hooks/useTranslation"
 import Link from "next/link"
 import { ItemMenuDropdown } from "./ItemMenuDropdown"
 import { BiMenu } from "react-icons/bi"
@@ -24,9 +24,8 @@ export default function Menu() {
 
   return (
     <div
-      className={`min-w-[100vw] w-full h-[70px] backdrop-blur-[12px] flex justify-center fixed z-40 transition-[1s] ${
-        menuStateColor ? hiddenMenuStateColor() : visibleMenuStateColor()
-      }`}
+      className={`min-w-[100vw] w-full h-[70px] backdrop-blur-[12px] flex justify-center fixed z-40 transition-[1s] ${menuStateColor ? hiddenMenuStateColor() : visibleMenuStateColor()
+        }`}
     >
       <div className="list-none flex justify-between w-full max-w-[1300px] h-full  items-center px-[10px]">
         <ul className="flex h-full justify-center items-center gap-5">
@@ -76,6 +75,13 @@ export default function Menu() {
             </li>
             <li>
               <ItemMenuDropdown
+                label={translations.menu.services}
+                type="services"
+                clickable
+              />
+            </li>
+            <li>
+              <ItemMenuDropdown
                 label={translations.menu.config}
                 type="config"
               />
@@ -92,6 +98,7 @@ export default function Menu() {
             </Link>
           </li>
 
+          {/*MENU items */}
           <div className="xl:hidden flex">
             <button
               className={`relative bg-[var(--text-h1)] text-[var(--bg-default)] text-[14px] p-[10px] font-[600] rounded-[3px] text-nowrap`}
@@ -106,27 +113,31 @@ export default function Menu() {
                   onClick={() => setOpenMenu(false)}
                 >
                   <Link
-                    title="contact"
+                    title={translations.menu.primary_btn}
                     href={`/${lang}/#contact`}
-                    aria-label="contact"
+                    aria-label={translations.menu.primary_btn}
                   >
                     {translations.menu.primary_btn}
                   </Link>
                 </li>
-                <li className="w-full" onClick={() => setOpenMenu(false)}>
+                <li
+                  className="w-full"
+                  onClick={() => setOpenMenu(false)}>
                   <Link
-                    title="back_to_home"
-                    aria-label="back_to_home"
+                    title={translations.menu.homepage}
+                    aria-label={translations.menu.homepage}
                     href={`/${lang}/`}
                     className="px-4 py-2 text-sm hover:bg-[var(--bg-dropdown-hover)] hover:text-[var(--text-dropdown-hover)] bg-[var(--bg-dropdown)] text-[var(--text-dropdown)] w-full flex"
                   >
                     {translations.menu.homepage}
                   </Link>
                 </li>
-                <li className="w-full" onClick={() => setOpenMenu(false)}>
+                <li
+                  className="w-full"
+                  onClick={() => setOpenMenu(false)}>
                   <Link
-                    title="projects"
-                    aria-label="projects"
+                    title={translations.menu.projects}
+                    aria-label={translations.menu.projects}
                     href={`/${lang}/projects`}
                     className="px-4 py-2 text-sm hover:bg-[var(--bg-dropdown-hover)] hover:text-[var(--text-dropdown-hover)] bg-[var(--bg-dropdown)] text-[var(--text-dropdown)] w-full flex"
                   >
@@ -135,15 +146,50 @@ export default function Menu() {
                 </li>
                 <li
                   className="w-full h-full"
-                  onClick={() => setOpenMenu(false)}
-                >
+                  onClick={() => setOpenMenu(false)}>
                   <Link
-                    title="about"
-                    aria-label="about"
+                    title={translations.menu.about}
+                    aria-label={translations.menu.about}
                     href={`/${lang}/about`}
                     className="px-4 py-2 text-sm hover:bg-[var(--bg-dropdown-hover)] hover:text-[var(--text-dropdown-hover)] bg-[var(--bg-dropdown)] text-[var(--text-dropdown)] w-full flex"
                   >
                     {translations.menu.about}
+                  </Link>
+                </li>
+                <li
+                  className="w-full h-full"
+                  onClick={() => setOpenMenu(false)}>
+                  <Link
+                    title={translations.menu.services}
+                    aria-label={translations.menu.services}
+                    href={`/${lang}/services`}
+                    className="px-4 py-2 text-sm hover:bg-[var(--bg-dropdown-hover)] hover:text-[var(--text-dropdown-hover)] bg-[var(--bg-dropdown)] text-[var(--text-dropdown)] w-full flex"
+                  >
+                    {translations.menu.services}
+                  </Link>
+                </li>
+                <li
+                  className="w-full h-full"
+                  onClick={() => setOpenMenu(false)}>
+                  <Link
+                    title={translations.menu.plans}
+                    aria-label={translations.menu.plans}
+                    href={`/${lang}/plans`}
+                    className="px-4 py-2 text-sm hover:bg-[var(--bg-dropdown-hover)] hover:text-[var(--text-dropdown-hover)] bg-[var(--bg-dropdown)] text-[var(--text-dropdown)] w-full flex"
+                  >
+                    {translations.menu.plans}
+                  </Link>
+                </li>
+                <li
+                  className="w-full h-full"
+                  onClick={() => setOpenMenu(false)}>
+                  <Link
+                    title={translations.menu.budget}
+                    aria-label={translations.menu.budget}
+                    href={`/${lang}/budget`}
+                    className="px-4 py-2 text-sm hover:bg-[var(--bg-dropdown-hover)] hover:text-[var(--text-dropdown-hover)] bg-[var(--bg-dropdown)] text-[var(--text-dropdown)] w-full flex"
+                  >
+                    {translations.menu.budget}
                   </Link>
                 </li>
                 <li className="w-full h-full">
@@ -162,6 +208,7 @@ export default function Menu() {
               </div>
             )}
           </div>
+          {/* LANG Selector */}
           <li>
             <ItemMenuDropdown type="lang" interaction="click" />
           </li>

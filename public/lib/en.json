@@ -1,14 +1,17 @@
 {
     "current_lang": "English",
     "lang_opt_1": "English",
-    "lang_opt_2": "Portuguese",
-    "lang_opt_3": "French",
+    "lang_opt_2": "Português",
+    "lang_opt_3": "Français",
     "menu": {
         "logo": "Frontend Developer",
         "homepage": "Homepage",
         "projects": "Projects",
         "about": "About me",
         "config": "Settings",
+        "services": "Services",
+        "budget": "Budget",
+        "plans": "Plans",
         "theme_config": "Toggle Theme",
         "primary_btn": "Talk with me"
     },
