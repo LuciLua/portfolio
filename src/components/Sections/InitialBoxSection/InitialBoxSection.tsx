@@ -6,7 +6,7 @@ import { Footer } from "./InitialBoxContents/Footer"
 
 export async function InitialBoxSection() {
 
-  await new Promise(resolve => {setTimeout(resolve, 2000)})
+  // await new Promise(resolve => {setTimeout(resolve, 2000)})
 
   return (
     <HomepageWrap type="strict" className="xl:min-h-[900px] pt-[120px] justify-center">
