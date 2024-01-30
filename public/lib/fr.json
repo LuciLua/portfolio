@@ -16,7 +16,16 @@
         "primary_btn": "Parle moi"
     },
     "contact": {
-        "sendMessage": "Envoyez-moi un message maintenant"
+        "title_message": "Envoyez-moi un message maintenant",
+        "subtitle_budget": "ou faites un devis préliminaire plus détaillé avec un simple formulaire",
+        "btn_budget": "Faire un budget",
+        "btn_send_message": "Message rapide",
+        "btn_send_message_form": "Envoyer le message",
+        "form": {
+            "name": "Votre nom",
+            "email": "Votre email",
+            "message": "Votre message"
+        }
     },
     "initial_box": {
         "h1": "Luci Lua",
@@ -103,5 +112,8 @@
             "credentials": "Diplôme universitaire",
             "duration": "2 ans"
         }
-    }
+    },
+    "talkToMeSectionSeparator_1": "Parlez-moi",
+    "talkToMeSectionSeparator_2": "et je peux vous parler de mes",
+    "talkToMeSectionSeparator_3": "compétences humaines !"
 }

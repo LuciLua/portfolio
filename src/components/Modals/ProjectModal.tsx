@@ -2,8 +2,8 @@
 
 import { AiFillCloseCircle } from "react-icons/ai"
 import { motion } from "framer-motion"
-import { useModal } from "../hooks/useModal"
-import { useTranslation } from "../hooks/useTranslation"
+import { useModal } from "../../hooks/useModal"
+import { useTranslation } from "../../hooks/useTranslation"
 import { useEffect, useState } from "react"
 
 export function ProjectModal() {

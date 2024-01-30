@@ -73,7 +73,7 @@ html.light {
 
 :root body.dark,
 html.dark {
-  --bg-default: #0a0b0e;
+  --bg-default: #131416;
   --bg-default-opacity50: #13131b75;
   --bg-medium: #343539;
   --bg-medium-soft: #15151a;
@@ -86,7 +86,7 @@ html.dark {
 
   --lines-contrast: rgb(210, 210, 210);
   --text-default: #9394a1;
-  --text-h1: #e8eaff;
+  --text-h1: #f0f1fc;
   --text-h2: #616161;
   --text-h3: #d9d9d9;
   --border-medium: #48484a;

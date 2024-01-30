@@ -74,6 +74,21 @@ export function Footer() {
               </Link>
             </li>
             <li>
+              <Link className="hover:underline" href={`/${lang}/services`}>
+                {translations.menu.services}
+              </Link>
+            </li>
+            <li>
+              <Link className="hover:underline" href={`/${lang}/services/budget`}>
+                {translations.menu.budget}
+              </Link>
+            </li>
+            <li>
+              <Link className="hover:underline" href={`/${lang}/services/plans`}>
+                {translations.menu.plans}
+              </Link>
+            </li>
+            <li>
               <Link className="hover:underline" href={`/${lang}#contact`}>
                 {translations.menu.primary_btn}
               </Link>

@@ -2,8 +2,8 @@
 
 import { motion, useInView } from "framer-motion"
 import { useRef } from "react"
-import { useModal } from "../hooks/useModal"
-import { useTranslation } from "../hooks/useTranslation"
+import { useModal } from "../../../hooks/useModal"
+import { useTranslation } from "../../../hooks/useTranslation"
 import Image from "next/image"
 
 export function Project({ name, img, url, stack, description }) {

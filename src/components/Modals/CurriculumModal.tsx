@@ -1,7 +1,7 @@
 "use client"
 
 import { AiFillCloseCircle } from "react-icons/ai"
-import { useModal } from "../hooks/useModal"
+import { useModal } from "../../hooks/useModal"
 
 export function CurriculumModal() {
   const { modalOpen, toggleModalOpen, modalType } = useModal()

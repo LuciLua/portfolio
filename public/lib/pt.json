@@ -16,7 +16,16 @@
         "primary_btn": "Fale comigo"
     },
     "contact": {
-        "sendMessage": "Me envie uma mensagem agora"
+        "title_message": "Me envie uma mensagem agora",
+        "subtitle_budget": "ou faça um orçamento prévio mais detalhado com um simples ",
+        "btn_budget": "Fazer orçamento",
+        "btn_send_message": "Mensagem rápida",
+        "btn_send_message_form": "Enviar mensagem",
+        "form": {
+            "name": "Seu Nome",
+            "email": "Seu Email",
+            "message": "Sua Mensagem"
+        }
     },
     "initial_box": {
         "h1": "Luci Lua",
@@ -103,5 +112,8 @@
             "credentials": "Diploma Universitário",
             "duration": "2 anos"
         }
-    }
+    },
+    "talkToMeSectionSeparator_1": "Fale comigo",
+    "talkToMeSectionSeparator_2": "e eu posso te contar sobre as minhas",
+    "talkToMeSectionSeparator_3": "soft skills!"
 }

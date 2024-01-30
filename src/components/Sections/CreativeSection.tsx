@@ -44,7 +44,7 @@ export function CreativeSection() {
   }, [isInView])
 
   return (
-    <HomepageWrap type="full" classNames="bg-[#000] overflow-hidden">
+    <HomepageWrap type="full" className="bg-[#000] overflow-hidden">
       <div
         ref={targetRef}
         className="h-[150vh] relative w-full max-w-[1300px] flex justify-center items-center"

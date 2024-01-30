@@ -1,7 +1,7 @@
-import { DiscoveryMoreProjects } from "../Btns/DiscoveyMoreProjects";
-import { Project } from "../Project";
-import { TitleHomeSections } from "../TitleHomeSections";
-import { HomepageWrap } from "../Wrap/HomepageWrap";
+import { DiscoveryMoreProjects } from "../../Btns/DiscoveyMoreProjects";
+import { Project } from "./Project";
+import { TitleHomeSections } from "../../TitleHomeSections";
+import { HomepageWrap } from "../../Wrap/HomepageWrap";
 
 export function ProjectsSection() {
     return (

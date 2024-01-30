@@ -80,7 +80,7 @@ export function EducationBox({
         scale: scaleProgess,
         opacity: opacityProgess,
       }}
-      className={`${style} border-[1px] border-[var(--border-medium)] shadow-lg mr-auto flex flex-col p-4 justify-between w-full rounded-[4px] h-fit bg-[var(--bg-medium-soft)]`}
+      className={`${style} border-[1px] border-[var(--border-medium)] shadow-lg mr-auto flex flex-col p-4 justify-between  rounded-[4px] h-fit bg-[var(--bg-medium-soft)] xl:w-full w-[800px] xl:m-0 m-auto`}
     >
       <div className="flex flex-col w-full">
         <div className="flex justify-between">

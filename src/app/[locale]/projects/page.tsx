@@ -1,4 +1,4 @@
-import { Project } from "../../../components/Project"
+import { Project } from "../../../components/Sections/ProjectsSection/Project"
 import { TitleHomeSections } from "../../../components/TitleHomeSections"
 
 export default function projects() {

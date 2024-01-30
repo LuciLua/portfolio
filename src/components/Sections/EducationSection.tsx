@@ -1,12 +1,12 @@
 import { ViewCV } from "../Btns/ViewCV";
-import { CurriculumModal } from "../CurriculumModal";
+import { CurriculumModal } from "../Modals/CurriculumModal";
 import { EducationBox } from "../EducationBox";
 import { TitleHomeSections } from "../TitleHomeSections";
 import { HomepageWrap } from "../Wrap/HomepageWrap";
 
 export function EducationSection() {
     return (
-        <HomepageWrap type="strict">
+        <HomepageWrap type="strict" className="flex-col">
             <TitleHomeSections section="education" />
             <div className="flex w-full justify-center gap-5 flex-wrap p-[20px]">
                 <EducationBox

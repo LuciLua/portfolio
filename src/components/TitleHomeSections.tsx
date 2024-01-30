@@ -31,8 +31,8 @@ export function TitleHomeSections({
 
   return (
     <>
-      <h1 className="text-[35px] font-[700] text-[var(--text-h1)]">{title}</h1>
-      {h2 && <h2 className="text-[var(--text-h2)]">{h2}</h2>}
+      <h1 className="text-[35px] font-[700] text-[var(--text-h1)] self-start">{title}</h1>
+      {h2 && <h2 className="text-[var(--text-h2)] self-start">{h2}</h2>}
     </>
   )
 }

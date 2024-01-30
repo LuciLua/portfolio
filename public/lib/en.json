@@ -16,7 +16,16 @@
         "primary_btn": "Talk with me"
     },
     "contact": {
-        "sendMessage": "Send me a message now"
+        "title_message": "Send me a message now",
+        "subtitle_budget": "or make a more detailed preliminary quote with a simple form",
+        "btn_budget": "Make budget",
+        "btn_send_message": "Quick Message",
+        "btn_send_message_form": "Send message",
+        "form": {
+            "name": "Your Name",
+            "email": "Your Email",
+            "message": "Your Message"
+        }
     },
     "initial_box": {
         "h1": "Luci Lua",
@@ -103,5 +112,8 @@
             "credentials": "University Degree",
             "duration": "2 years"
         }
-    }
+    },
+    "talkToMeSectionSeparator_1": "Talk to me",
+    "talkToMeSectionSeparator_2": "and I can tell you about my",
+    "talkToMeSectionSeparator_3": "soft skills!"
 }
