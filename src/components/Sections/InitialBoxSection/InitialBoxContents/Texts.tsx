@@ -20,11 +20,12 @@ export function Texts() {
                     {translations.initial_box.about_me}
                 </h1>
                 <p className="font-[500]">{translations.initial_box.p}</p>
-                <div className="flex  mt-[30px] z-20  m-auto xl:m-0 xl:w-fit w-full justify-center xl:gap-2 gap-5 xl:pt-4 pt-1">
+                <div className="flex  mt-[30px] z-20  m-auto xl:m-0 xl:w-fit w-full justify-center gap-2 xl:pt-4 pt-1">
                     <Link
                         href={`/${lang}/#contact`}
                         className="bg-[var(--btn-bg-primary)] text-[var(--btn-text-primary)] px-[30px] py-[10px] font-[500] rounded-[3px] text-nowrap"
                         aria-label="contact me now"
+                        title="contact me now"
                     >
                         {translations.initial_box.primary_btn}
                     </Link>
@@ -32,6 +33,7 @@ export function Texts() {
                         href={`/${lang}/about`}
                         className="bg-[var(--bg-medium)] text-[var(--text-h1)] px-[30px] py-[10px] font-[500] rounded-[3px] text-nowrap"
                         aria-label="about me"
+                        title="about me"
                     >
                         {translations.initial_box.secondary_btn}
                     </Link>

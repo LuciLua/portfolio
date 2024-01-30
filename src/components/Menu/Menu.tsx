@@ -10,8 +10,8 @@ import { BiMenu } from "react-icons/bi"
 
 export default function Menu() {
   const { menuStateColor } = useMenuStateColor()
-  const { translations, currentPathname, lang } = useTranslation()
-  const { toggleTheme, theme } = useTheme()
+  const { translations, lang } = useTranslation()
+  const { toggleTheme } = useTheme()
 
   const [openMenu, setOpenMenu] = useState(false)
 
@@ -29,7 +29,7 @@ export default function Menu() {
     >
       <div className="list-none flex justify-between w-full max-w-[1300px] h-full  items-center px-[10px]">
         <ul className="flex h-full justify-center items-center gap-5">
-          <li className="flex flex-col justify-center leading-[20px]">
+          <li className="flex flex-col justify-center leading-[20px]" aria-label="logo">
             <h1 className="text-[22px] font-black">LuciLua /{">"}</h1>
             <Link
               title="logo: back to home"
@@ -41,9 +41,9 @@ export default function Menu() {
             </Link>
           </li>
         </ul>
-        <ul className="list-none xl:gap-10 gap-3 flex items-center w-fit h-full font-[600]">
-          <div className="lg:flex gap-10 hidden text-[14px]">
-            <li>
+        <div className="list-none xl:gap-10 gap-3 flex items-center w-fit h-full font-[600]">
+          <ul className="lg:flex gap-10 hidden text-[14px]">
+            <li aria-label="back to home">
               <Link
                 title="back to home"
                 aria-label="back to home"
@@ -53,7 +53,7 @@ export default function Menu() {
                 {translations.menu.homepage}
               </Link>
             </li>
-            <li>
+            <li aria-label="projects">
               <Link
                 title="projects"
                 aria-label="projects"
@@ -63,7 +63,7 @@ export default function Menu() {
                 {translations.menu.projects}
               </Link>
             </li>
-            <li>
+            <li aria-label="about">
               <Link
                 title="about"
                 aria-label="about"
@@ -73,21 +73,21 @@ export default function Menu() {
                 {translations.menu.about}
               </Link>
             </li>
-            <li>
+            <li aria-label="services">
               <ItemMenuDropdown
                 label={translations.menu.services}
                 type="services"
                 clickable
               />
             </li>
-            <li>
+            <li aria-label="config">
               <ItemMenuDropdown
                 label={translations.menu.config}
                 type="config"
               />
             </li>
-          </div>
-          <li>
+          </ul>
+          <div aria-label="contact">
             <Link
               title="contact"
               aria-label="contact"
@@ -96,9 +96,9 @@ export default function Menu() {
             >
               {translations.menu.primary_btn}
             </Link>
-          </li>
+          </div>
 
-          {/*MENU items */}
+          {/*MENU items MOBILE*/}
           <div className="xl:hidden flex">
             <button
               className={`relative bg-[var(--text-h1)] text-[var(--bg-default)] text-[14px] p-[10px] font-[600] rounded-[3px] text-nowrap`}
@@ -208,11 +208,11 @@ export default function Menu() {
               </div>
             )}
           </div>
-          {/* LANG Selector */}
-          <li>
+          {/* LANG Selector MOBILE*/}
+          <div title="lang selector">
             <ItemMenuDropdown type="lang" interaction="click" />
-          </li>
-        </ul>
+          </div>
+        </div>
       </div>
     </div>
   )

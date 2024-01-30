@@ -88,10 +88,13 @@ export function ButtonChoice({
   interaction,
   dropDownOpen,
   setDropDownOpen,
+  label
 }) {
   if (interaction === "click") {
     return (
       <button
+        title={label}
+        aria-label={label}
         className="flex gap-1 justify-center items-center"
         onClick={() => setDropDownOpen(!dropDownOpen)}
       >
@@ -102,6 +105,8 @@ export function ButtonChoice({
   if (interaction === "hover") {
     return (
       <button
+        title={label}
+        aria-label={label}
         className="flex gap-1 justify-center items-center"
         onPointerEnter={() => setDropDownOpen(true)}
       >
@@ -138,6 +143,7 @@ export function ItemMenuDropdown({
       onPointerLeave={() => setDropDownOpen(false)}>
       {/* LABEL and ICON */}
       <ButtonChoice
+        label={label}
         interaction={interaction}
         dropDownOpen={dropDownOpen}
         setDropDownOpen={setDropDownOpen}
