@@ -43,7 +43,7 @@ export default function Menu() {
         </ul>
         <div className="list-none xl:gap-10 gap-3 flex items-center w-fit h-full font-[600]">
           <ul className="lg:flex gap-10 hidden text-[14px]">
-            <li aria-label="back to home">
+            <li aria-label="back to home" title="back to home">
               <Link
                 title="back to home"
                 aria-label="back to home"
@@ -53,7 +53,7 @@ export default function Menu() {
                 {translations.menu.homepage}
               </Link>
             </li>
-            <li aria-label="projects">
+            <li aria-label="projects" title="projects">
               <Link
                 title="projects"
                 aria-label="projects"
@@ -63,7 +63,7 @@ export default function Menu() {
                 {translations.menu.projects}
               </Link>
             </li>
-            <li aria-label="about">
+            <li aria-label="about" title="about">
               <Link
                 title="about"
                 aria-label="about"
@@ -73,21 +73,21 @@ export default function Menu() {
                 {translations.menu.about}
               </Link>
             </li>
-            <li aria-label="services">
+            <li aria-label="services" title="services">
               <ItemMenuDropdown
                 label={translations.menu.services}
                 type="services"
                 clickable
               />
             </li>
-            <li aria-label="config">
+            <li aria-label="config" title="config">
               <ItemMenuDropdown
                 label={translations.menu.config}
                 type="config"
               />
             </li>
           </ul>
-          <div aria-label="contact">
+          <div aria-label="contact" title="contact">
             <Link
               title="contact"
               aria-label="contact"
@@ -101,13 +101,15 @@ export default function Menu() {
           {/*MENU items MOBILE*/}
           <div className="xl:hidden flex">
             <button
+              aria-label="menu_burguer"
+              title="menu_burguer"
               className={`relative bg-[var(--text-h1)] text-[var(--bg-default)] text-[14px] p-[10px] font-[600] rounded-[3px] text-nowrap`}
               onClick={() => setOpenMenu(!openMenu)}
             >
               <BiMenu />
             </button>
             {openMenu && (
-              <div className="absolute top-[55px] right-[60px] bg-[var(--bg-default)]">
+              <ul className="absolute top-[55px] right-[60px] bg-[var(--bg-default)]">
                 <li
                   className={`bg-[var(--text-h1)] text-[var(--bg-default)] text-[14px] px-[30px] py-[10px] font-[600] rounded-[3px] text-nowrap`}
                   onClick={() => setOpenMenu(false)}
@@ -133,6 +135,8 @@ export default function Menu() {
                   </Link>
                 </li>
                 <li
+                  title={translations.menu.projects}
+                  aria-label={translations.menu.projects}
                   className="w-full"
                   onClick={() => setOpenMenu(false)}>
                   <Link
@@ -145,6 +149,8 @@ export default function Menu() {
                   </Link>
                 </li>
                 <li
+                  title={translations.menu.about}
+                  aria-label={translations.menu.about}
                   className="w-full h-full"
                   onClick={() => setOpenMenu(false)}>
                   <Link
@@ -157,6 +163,8 @@ export default function Menu() {
                   </Link>
                 </li>
                 <li
+                  title={translations.menu.services}
+                  aria-label={translations.menu.services}
                   className="w-full h-full"
                   onClick={() => setOpenMenu(false)}>
                   <Link
@@ -169,30 +177,35 @@ export default function Menu() {
                   </Link>
                 </li>
                 <li
+                  title={translations.menu.plans}
+                  aria-label={translations.menu.plans}
                   className="w-full h-full"
                   onClick={() => setOpenMenu(false)}>
                   <Link
                     title={translations.menu.plans}
                     aria-label={translations.menu.plans}
-                    href={`/${lang}/plans`}
+                    href={`/${lang}/services/plans`}
                     className="px-4 py-2 text-sm hover:bg-[var(--bg-dropdown-hover)] hover:text-[var(--text-dropdown-hover)] bg-[var(--bg-dropdown)] text-[var(--text-dropdown)] w-full flex"
                   >
                     {translations.menu.plans}
                   </Link>
                 </li>
                 <li
+                  title={translations.menu.budget}
+                  aria-label={translations.menu.budget}
                   className="w-full h-full"
                   onClick={() => setOpenMenu(false)}>
                   <Link
                     title={translations.menu.budget}
                     aria-label={translations.menu.budget}
-                    href={`/${lang}/budget`}
+                    href={`/${lang}/services/budget`}
                     className="px-4 py-2 text-sm hover:bg-[var(--bg-dropdown-hover)] hover:text-[var(--text-dropdown-hover)] bg-[var(--bg-dropdown)] text-[var(--text-dropdown)] w-full flex"
                   >
                     {translations.menu.budget}
                   </Link>
                 </li>
-                <li className="w-full h-full">
+                <li className="w-full h-full" title="toggle theme"
+                  aria-label="toggle theme">
                   <button
                     title="toggle theme"
                     aria-label="toggle theme"
@@ -205,11 +218,11 @@ export default function Menu() {
                     {translations.menu.theme_config}
                   </button>
                 </li>
-              </div>
+              </ul>
             )}
           </div>
-          {/* LANG Selector MOBILE*/}
-          <div title="lang selector">
+          {/* LANG Selector*/}
+          <div title="lang selector" aria-label="lang selector">
             <ItemMenuDropdown type="lang" interaction="click" />
           </div>
         </div>

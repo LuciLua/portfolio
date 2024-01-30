@@ -149,7 +149,10 @@ export function ItemMenuDropdown({
         setDropDownOpen={setDropDownOpen}
       >
         {clickable ?
-          <a href={`/${lang}/${type}`} className="hover:underline z-10 w-full flex justify-center items-center gap-1">
+          <a href={`/${lang}/${type}`}
+            className="hover:underline z-10 w-full flex justify-center items-center gap-1"
+            title={type}
+            aria-label={type}>
             {label && <p className="mr-[5px]">{label}</p>}
             {type === "lang" && <WordIcon />}
             {type === "config" && <ConfigIcon />}
@@ -158,7 +161,7 @@ export function ItemMenuDropdown({
           </a>
           :
           <>
-            {label && <p className="mr-[5px]">{label}</p>}
+            {label && <p title={label} aria-label={label} className="mr-[5px]">{label}</p>}
             {type === "lang" && <WordIcon />}
             {type === "config" && <ConfigIcon />}
             {type === "services" && <ServicesIcon />}
