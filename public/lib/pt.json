@@ -68,6 +68,10 @@
         "compare_modal": {
             "title": "Comparar",
             "about": "Comparar é uma aplicação que compara uma lista de seguidores de um usuário no GitHub com a lista de pessoas que esse usuário segue, gerando outras duas listas: a de usuários que o usuário atual segue, mas que não o seguem de volta, e a de usuários que o usuário atual não segue, mas o seguem. Gerando um link para o perfil de cada usuário nessas duas listas, permitindo seguir ou deixar de seguir os usuários."
+        },
+        "furia_modal": {
+            "title": "Furia Gamer",
+            "about": "Desenvolvi um site inovador que funciona como uma plataforma de vendas associada à Amazon e Shoppe. Com um design elegante e intuitivo no frontend, e robusto backend e API, os usuários podem explorar uma vasta gama de produtos de alta qualidade, diretamente das renomadas marcas. Oferecendo uma experiência de compra simplificada, este projeto combina tecnologia de ponta com praticidade para proporcionar aos clientes uma maneira conveniente de encontrar e adquirir seus produtos favoritos."
         }
     },
     "skills": {

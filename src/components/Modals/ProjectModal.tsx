@@ -34,6 +34,9 @@ export function ProjectModal() {
     if (name === "Compare") {
       setNewDescription(await translatedModals?.compare_modal?.about)
     }
+    if (name === "Furia Gamer") {
+      setNewDescription(await translatedModals?.furia_modal?.about)
+    }
   }
 
   useEffect(() => {

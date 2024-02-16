@@ -63,12 +63,12 @@ export function ProjectsSection() {
                         description="ToDo is a web application that seeks to store items defined by the user in the browser, mark them as completed or even remove them. React, Next.js, LocalStorage, Typescript and SASS were used."
                     />
                     <Project
-                        key={"Compare"}
-                        name={"Compare"}
-                        img={"/assets/projects/compare.png"}
-                        url={"https://compare-orpin.vercel.app/"}
-                        stack={["reactJS", "nextJS", "sass", "typescript", "axios"]}
-                        description="Compare is an application that compares a list of followers of a user on github with the list of people that this user follows, generating two other lists: that of users that the current user follows but does not follow him back, and that of users that the current user does not follow but follow him. Generating a link for each user profile in these two lists, allowing you to follow or unfollow users."
+                        key={"Furia Gamer"}
+                        name={"Furia Gamer"}
+                        img={"/assets/projects/furiagamer.png"}
+                        url={"https://furiagamer.vercel.app/"}
+                        stack={["reactJS", "nextJS", "typescript", "tailwindcss", "express", "nodeJS"]}
+                        description="I developed an innovative website that functions as a sales platform associated with Amazon and Shoppe. With an elegant and intuitive design on the frontend, and robust backend and API, users can explore a wide range of high-quality products, directly from renowned brands. Offering a simplified shopping experience, this project combines cutting-edge technology with convenience to provide customers with a convenient way to find and purchase their favorite products"
                     />
                 </div>
                 <div className="w-full flex justify-center items-center border-b-[1px] max-w-[1150px] mx-auto pb-[20px]">
