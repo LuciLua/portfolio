@@ -71,7 +71,7 @@ export default function projects() {
           key={"Furia Gamer"}
           name={"Furia Gamer"}
           img={"/assets/projects/furiagamer.png"}
-          url={"https://furiagamer.vercel.app/"}
+          url={"https://furiagamer.com/"}
           stack={["reactJS", "nextJS", "typescript", "tailwindcss", "express", "nodeJS"]}
           description="I developed an innovative website that functions as a sales platform associated with Amazon and Shoppe. With an elegant and intuitive design on the frontend, and robust backend and API, users can explore a wide range of high-quality products, directly from renowned brands. Offering a simplified shopping experience, this project combines cutting-edge technology with convenience to provide customers with a convenient way to find and purchase their favorite products"
         />
