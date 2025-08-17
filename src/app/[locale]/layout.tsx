@@ -61,6 +61,8 @@ export default function root_layout({ children, params }) {
         <link rel="alternate" hrefLang="en" href="https://lucilua.com.br/en" />
         <link rel="alternate" hrefLang="fr" href="https://lucilua.com.br/fr" />
         <meta name="google-adsense-account" content="ca-pub-1035225397173431"/>
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1035225397173431"
+     crossorigin="anonymous"></script>
       </head>
       <body className={`${montserrat.className} custom-scrollbar`}>
         <Providers params={params}>
