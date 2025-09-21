@@ -73,6 +73,17 @@ export default function Menu() {
                 {translations.menu.about}
               </Link>
             </li>
+            <li aria-label="blog" title="blog">
+              <Link
+                title="blog"
+                aria-label="blog"
+                target="_blank"
+                href={`https://blog.lucilua.com.br/`}
+                className="hover:underline"
+              >
+                Blog
+              </Link>
+            </li>
             <li aria-label="services" title="services">
               <ItemMenuDropdown
                 label={translations.menu.services}
@@ -160,6 +171,17 @@ export default function Menu() {
                     className="px-4 py-2 text-sm hover:bg-[var(--bg-dropdown-hover)] hover:text-[var(--text-dropdown-hover)] bg-[var(--bg-dropdown)] text-[var(--text-dropdown)] w-full flex"
                   >
                     {translations.menu.about}
+                  </Link>
+                </li>
+                <li aria-label="blog" title="blog">
+                  <Link
+                    title="blog"
+                    aria-label="blog"
+                    target="_blank"
+                    href={`https://blog.lucilua.com.br/`}
+                    className="px-4 py-2 text-sm hover:bg-[var(--bg-dropdown-hover)] hover:text-[var(--text-dropdown-hover)] bg-[var(--bg-dropdown)] text-[var(--text-dropdown)] w-full flex"
+                  >
+                    Blog
                   </Link>
                 </li>
                 <li
